@@ -1,0 +1,16 @@
+
+# IP address and port to bind to:
+
+httpfilter.interface="x.x.x.x:8080"
+
+
+# Hostname and port that clients access the filter server as, usually the same as the
+# httpfilter.interface unless special NAT or tcp forwarding is in use:
+
+httpfilter.visible.interface="x.x.x.x:8080"
+
+
+# maximum number of simultaneous incoming sockets (forks):
+httpfilter.max.sockets=40
+
+

@@ -1,0 +1,56 @@
+VPATH=.:$(TOP)/libzip/src:$(TOP)/libif2k/src:$(TOP)/libjdk/src:$(TOP)/libif2k/tool
+
+CC=$(CROSS_COMPILE)gcc
+CXX=$(CROSS_COMPILE)g++
+RANLIB=$(CROSS_COMPILE)ranlib
+
+ifeq ($(DEBUG),1)
+CFLAGS+=-g
+LDFLAGS+=-g
+else
+LDFLAGS+=-s
+CFLAGS+=-O2
+endif
+
+VPATH+=$(ODIR)
+
+CFLAGS+=-D JDK_IS_DEBUG=$(DEBUG) -I $(TOP)/libzip/include -I $(TOP)/libjdk/include -I $(TOP)/libif2k/include -Wall
+CXXFLAGS=$(CFLAGS)
+
+LDFLAGS+=-L$(ODIR) -lif 
+LDFLAGS +=-lpthread
+
+LIBIF_CFILES=$(notdir $(wildcard $(TOP)/libzip/src/*.c))
+
+LIBIF_CPPFILES=$(notdir $(wildcard $(TOP)/libif2k/src/*.cpp)) $(notdir $(wildcard $(TOP)/libjdk/src/*.cpp))
+
+LIBIF_OFILES=$(LIBIF_CFILES:.c=.o)
+LIBIF_OFILES+=$(LIBIF_CPPFILES:.cpp=.o)
+
+$(ODIR)/%.o : %.cpp
+	@echo making $@
+	$(CXX) $(CXXFLAGS) -c $< -o $@
+
+$(ODIR)/%.o : %.c
+	@echo making $@
+	$(CC) $(CFLAGS) -c $< -o $@
+
+
+all : $(ODIR) $(ODIR)/if2kd $(ODIR)/if2k_text_licensor
+
+$(ODIR) :
+	-mkdir $(ODIR) 2>/dev/null
+
+$(ODIR)/if2kd : $(ODIR)/if2kd.o libif.a
+	$(CXX) $(LDFLAGS) $(ODIR)/if2kd.o -o $(ODIR)/if2kd $(LDFLAGS)
+
+$(ODIR)/if2k_text_licensor : $(ODIR)/if2k_text_licensor.o libif.a
+	$(CXX) $(LDFLAGS) $(ODIR)/if2k_text_licensor.o -o $(ODIR)/if2k_text_licensor $(LDFLAGS)
+
+$(ODIR)/libif.a : $(ODIR)/libif.a( $(ODIR)/$(LIBIF_OFILES) )
+	$(RANLIB) $(ODIR)/libif.a
+
+clean :
+	-rm *.o $(ODIR)/*.a $(ODIR)/if2kd $(ODIR)/*.o $(ODIR)/if2k_text_licensor
+
+

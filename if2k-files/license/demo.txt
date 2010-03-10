@@ -1,0 +1,16 @@
+license_name=Demonstration IF-NOT
+license_email=
+license_clients=1
+license_valid=1
+serial=demo
+mode_ifonly=0
+mode_server=0
+mode_expert=0
+mode_demo=1
+loggerA_enable=0
+loggerB_enable=0
+threads=10
+bad_urls_default_enable=1
+bad_phrases_default_enable=1
+good_urls_default_enable=0
+allow_override=1

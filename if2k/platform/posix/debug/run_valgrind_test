@@ -1,0 +1,1 @@
+valgrind --suppressions=$HOME/supp.txt --leak-check=full --db-attach=yes ./if2kd --daemon=0 --log.detail=8 --log.type=2

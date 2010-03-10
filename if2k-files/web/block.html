@@ -1,0 +1,94 @@
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+ <link rel="stylesheet" href="style.css" type="text/css">
+ <title><? $blockpage.title ?></title>
+
+<script language='javascript'>
+<!--
+function init()
+{
+   w=document.body.clientWidth;
+   h=document.body.clientHeight;
+
+   var page_fits=true;
+
+   if( w<400 || h<400 )
+   {
+      page_fits=false;
+   }
+
+   if( page_fits )
+   {
+      document.getElementById('main').innerHTML=
+"<a href='<? $blockpage.image.link ?>'><img src='<? $blockpage.image.url ?>'></a>\
+</div>\
+<h1>\
+<? $blockpage.blockedmessage ?>\
+</h1>\
+<font size='-1' face='courier'>\
+<table border='0'>\
+<tr>\
+<td>URL:</td><td><? $url ?></td>\
+</tr>\
+<tr>\
+<td>Reason:</td><td><? $reason ?></td>\
+</tr>\
+<tr>\
+<td>Category:</td><td><? $category ?></td>\
+</tr>\
+<tr>\
+<td>Type:</td><td><? $matchtype ?></td>\
+</tr>\
+<tr>\
+<td>Matched:</td><td><? $match ?></td>\
+</tr>\
+</table>\
+</font>\
+";
+   }
+   else
+   {
+      document.getElementById('main').innerHTML=
+      "<p><a href='<? $blockpage.image.link ?>'>BLOCKED</a></p>";
+   }
+}
+// -->
+</script>
+</head>
+<body onload='init();' onResize='init()' bgcolor='#FFFFFF'>
+
+<center>
+<div id='main'>
+
+<div>
+<a href="<? $blockpage.image.link ?>"><img src="<? $blockpage.image.url ?>"></a>
+</div>
+<h1>
+<? $blockpage.blockedmessage ?>
+</h1>
+<font size="-1" face="courier">
+<table border="0">
+<tr>
+<td>URL:</td><td><? $url ?></td>
+</tr>
+<tr>
+<td>Reason:</td><td><? $reason ?></td>
+</tr>
+<tr>
+<td>Category:</td><td><? $category ?></td>
+</tr>
+<tr>
+<td>Type:</td><td><? $matchtype ?></td>
+</tr>
+<tr>
+<td>Matched:</td><td><? $match ?></td>
+</tr>
+</table>
+</font>
+
+</div>
+</center>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {overrideClicked = id; }; 
+            CLASS = If2kOverrideResponder; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {overrideCheckbox = NSButton; }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

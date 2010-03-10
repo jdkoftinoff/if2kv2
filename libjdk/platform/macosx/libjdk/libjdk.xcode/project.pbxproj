@@ -1,0 +1,3386 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 39;
+	objects = {
+		014CEA520018CE5811CA2923 = {
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "JDK_IS_MACOSX=1 JDK_HAS_THREADS=1";
+				GCC_WARN_EFFECTIVE_CPLUSPLUS_VIOLATIONS = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				ZERO_LINK = YES;
+			};
+			isa = PBXBuildStyle;
+			name = Development;
+		};
+		014CEA530018CE5811CA2923 = {
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = "JDK_IS_MACOSX=1 JDK_HAS_THREADS=1";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_EFFECTIVE_CPLUSPLUS_VIOLATIONS = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_SHADOW = YES;
+				ZERO_LINK = NO;
+			};
+			isa = PBXBuildStyle;
+			name = Deployment;
+		};
+//010
+//011
+//012
+//013
+//014
+//080
+//081
+//082
+//083
+//084
+		08FB7793FE84155DC02AAC07 = {
+			buildSettings = {
+			};
+			buildStyles = (
+				014CEA520018CE5811CA2923,
+				014CEA530018CE5811CA2923,
+			);
+			hasScannedForEncodings = 1;
+			isa = PBXProject;
+			mainGroup = 08FB7794FE84155DC02AAC07;
+			projectDirPath = "";
+			targets = (
+				D2AAC045055464E500DB518D,
+				BF324D0F073B1AEF00267D3F,
+			);
+		};
+		08FB7794FE84155DC02AAC07 = {
+			children = (
+				BF324D14073B1B1A00267D3F,
+				08FB7795FE84155DC02AAC07,
+				C6A0FF2B0290797F04C91782,
+				1AB674ADFE9D54B511CA2CBB,
+			);
+			isa = PBXGroup;
+			name = libjdk;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 = {
+			children = (
+				BFB5CA9D073EC78C00694D9A,
+				BFB5CA9C073EC77200694D9A,
+			);
+			isa = PBXGroup;
+			name = Source;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+//080
+//081
+//082
+//083
+//084
+//1A0
+//1A1
+//1A2
+//1A3
+//1A4
+		1AB674ADFE9D54B511CA2CBB = {
+			children = (
+				D2AAC046055464E500DB518D,
+				BF324D10073B1AEF00267D3F,
+			);
+			isa = PBXGroup;
+			name = Products;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+//1A0
+//1A1
+//1A2
+//1A3
+//1A4
+//BF0
+//BF1
+//BF2
+//BF3
+//BF4
+		BF324BAF073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = autoconf.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/autoconf.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BB0073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_archive.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_archive.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BB1073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_array.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_array.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BB2073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_atom.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_atom.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BB3073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_base64.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_base64.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BB4073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_bindir.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_bindir.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BB5073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_buf.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_buf.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BB6073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_cgi.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_cgi.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BB7073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_cgisettings.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_cgisettings.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BB8073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_crypt.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_crypt.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BB9073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_daemon.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_daemon.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BBA073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_dbm.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_dbm.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BBB073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_dll.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_dll.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BBC073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_dynbuf.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_dynbuf.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BBD073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_elastic_queue.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_elastic_queue.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BBE073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_error.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_error.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BBF073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_fast_url_lookup.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_fast_url_lookup.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BC0073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_fasttree.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_fasttree.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BC1073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_fork_server.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_fork_server.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BC2073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_heap.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_heap.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BC3073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_html_decode.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_html_decode.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BC4073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_html_template.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_html_template.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BC5073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_html.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_html.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BC6073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_http_admin.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_http_admin.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BC7073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_http_server_lua.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_http_server_lua.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BC8073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_http_server.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_http_server.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BC9073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_http.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_http.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BCA073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_httprequest.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_httprequest.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BCB073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_inet_server.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_inet_server.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BCC073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_ipv4.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_ipv4.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BCD073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_linesplit.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_linesplit.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BCE073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_list.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_list.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BCF073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_log.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_log.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BD0073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_lz.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_lz.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BD1073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_map.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_map.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BD2073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_mmap_buf.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_mmap_buf.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BD3073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_nameserver.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_nameserver.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BD4073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_objlog.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_objlog.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BD5073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_pair.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_pair.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BD6073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_platform_beos.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_platform_beos.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BD7073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_platform_cygwin.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_platform_cygwin.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BD8073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_platform_linux.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_platform_linux.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BD9073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_platform_linuxthreads.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_platform_linuxthreads.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BDA073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_platform_macosx.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_platform_macosx.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BDB073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_platform_unix.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_platform_unix.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BDC073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_platform_win32.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_platform_win32.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BDD073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_platform.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_platform.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BDE073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_pool.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_pool.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BDF073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_procmap.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_procmap.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BE0073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_questions.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_questions.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BE1073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_queue.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_queue.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BE2073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_remote_buf.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_remote_buf.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BE3073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_rs232.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_rs232.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BE4073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_scheme.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_scheme.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BE5073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_serial_number.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_serial_number.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BE6073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_serialsocket.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_serialsocket.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BE7073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_server_family.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_server_family.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BE8073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_server.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_server.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BEA073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_settings.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_settings.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BEB073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_shmem.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_shmem.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BEC073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_smtp_send.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_smtp_send.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BED073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_socket_beos.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_socket_beos.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BEE073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_socket_unix.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_socket_unix.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BEF073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_socket_win32.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_socket_win32.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BF0073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_socket.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_socket.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BF1073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_socketswitch.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_socketswitch.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BF2073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_socketutil.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_socketutil.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BF3073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_stream.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_stream.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BF5073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_string.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_string.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BF7073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_table.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_table.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BF8073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_test.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_test.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BF9073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_thread_server.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_thread_server.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BFA073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_thread.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_thread.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BFB073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_tree.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_tree.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BFC073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_url.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_url.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BFD073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_utf.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_utf.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BFE073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_util.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_util.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324BFF073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_valarray.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_valarray.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C00073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_valmap.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_valmap.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C01073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_win32svc.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_win32svc.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C02073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_win32wtl.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_win32wtl.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C03073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_winerror.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_winerror.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C04073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_winhook.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_winhook.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C05073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_winver.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_winver.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C06073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_world.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_world.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C07073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_xml.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdk_xml.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C09073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdkvecstring.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdkvecstring.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C0A073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdkwx_form.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdkwx_form.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C0B073B167300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdkwx_validator.h;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/include/jdkwx_validator.h;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C0C073B167300267D3F = {
+			fileRef = BF324BAF073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C0D073B167300267D3F = {
+			fileRef = BF324BB0073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C0E073B167300267D3F = {
+			fileRef = BF324BB1073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C0F073B167300267D3F = {
+			fileRef = BF324BB2073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C10073B167300267D3F = {
+			fileRef = BF324BB3073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C11073B167300267D3F = {
+			fileRef = BF324BB4073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C12073B167300267D3F = {
+			fileRef = BF324BB5073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C13073B167300267D3F = {
+			fileRef = BF324BB6073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C14073B167300267D3F = {
+			fileRef = BF324BB7073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C15073B167300267D3F = {
+			fileRef = BF324BB8073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C16073B167300267D3F = {
+			fileRef = BF324BB9073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C17073B167300267D3F = {
+			fileRef = BF324BBA073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C18073B167300267D3F = {
+			fileRef = BF324BBB073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C19073B167300267D3F = {
+			fileRef = BF324BBC073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C1A073B167300267D3F = {
+			fileRef = BF324BBD073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C1B073B167300267D3F = {
+			fileRef = BF324BBE073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C1C073B167300267D3F = {
+			fileRef = BF324BBF073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C1D073B167300267D3F = {
+			fileRef = BF324BC0073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C1E073B167300267D3F = {
+			fileRef = BF324BC1073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C1F073B167300267D3F = {
+			fileRef = BF324BC2073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C20073B167300267D3F = {
+			fileRef = BF324BC3073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C21073B167300267D3F = {
+			fileRef = BF324BC4073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C22073B167300267D3F = {
+			fileRef = BF324BC5073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C23073B167300267D3F = {
+			fileRef = BF324BC6073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C24073B167300267D3F = {
+			fileRef = BF324BC7073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C25073B167300267D3F = {
+			fileRef = BF324BC8073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C26073B167300267D3F = {
+			fileRef = BF324BC9073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C27073B167300267D3F = {
+			fileRef = BF324BCA073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C28073B167300267D3F = {
+			fileRef = BF324BCB073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C29073B167300267D3F = {
+			fileRef = BF324BCC073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C2A073B167300267D3F = {
+			fileRef = BF324BCD073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C2B073B167300267D3F = {
+			fileRef = BF324BCE073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C2C073B167300267D3F = {
+			fileRef = BF324BCF073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C2D073B167300267D3F = {
+			fileRef = BF324BD0073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C2E073B167300267D3F = {
+			fileRef = BF324BD1073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C2F073B167300267D3F = {
+			fileRef = BF324BD2073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C30073B167300267D3F = {
+			fileRef = BF324BD3073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C31073B167300267D3F = {
+			fileRef = BF324BD4073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C32073B167300267D3F = {
+			fileRef = BF324BD5073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C33073B167300267D3F = {
+			fileRef = BF324BD6073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C34073B167300267D3F = {
+			fileRef = BF324BD7073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C35073B167300267D3F = {
+			fileRef = BF324BD8073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C36073B167300267D3F = {
+			fileRef = BF324BD9073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C37073B167300267D3F = {
+			fileRef = BF324BDA073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C38073B167300267D3F = {
+			fileRef = BF324BDB073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C39073B167300267D3F = {
+			fileRef = BF324BDC073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C3A073B167300267D3F = {
+			fileRef = BF324BDD073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C3B073B167300267D3F = {
+			fileRef = BF324BDE073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C3C073B167300267D3F = {
+			fileRef = BF324BDF073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C3D073B167300267D3F = {
+			fileRef = BF324BE0073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C3E073B167300267D3F = {
+			fileRef = BF324BE1073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C3F073B167300267D3F = {
+			fileRef = BF324BE2073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C40073B167300267D3F = {
+			fileRef = BF324BE3073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C41073B167300267D3F = {
+			fileRef = BF324BE4073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C42073B167300267D3F = {
+			fileRef = BF324BE5073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C43073B167300267D3F = {
+			fileRef = BF324BE6073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C44073B167300267D3F = {
+			fileRef = BF324BE7073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C45073B167300267D3F = {
+			fileRef = BF324BE8073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C47073B167300267D3F = {
+			fileRef = BF324BEA073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C48073B167300267D3F = {
+			fileRef = BF324BEB073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C49073B167300267D3F = {
+			fileRef = BF324BEC073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C4A073B167300267D3F = {
+			fileRef = BF324BED073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C4B073B167300267D3F = {
+			fileRef = BF324BEE073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C4C073B167300267D3F = {
+			fileRef = BF324BEF073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C4D073B167300267D3F = {
+			fileRef = BF324BF0073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C4E073B167300267D3F = {
+			fileRef = BF324BF1073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C4F073B167300267D3F = {
+			fileRef = BF324BF2073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C50073B167300267D3F = {
+			fileRef = BF324BF3073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C52073B167300267D3F = {
+			fileRef = BF324BF5073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C54073B167300267D3F = {
+			fileRef = BF324BF7073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C55073B167300267D3F = {
+			fileRef = BF324BF8073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C56073B167300267D3F = {
+			fileRef = BF324BF9073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C57073B167300267D3F = {
+			fileRef = BF324BFA073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C58073B167300267D3F = {
+			fileRef = BF324BFB073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C59073B167300267D3F = {
+			fileRef = BF324BFC073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C5A073B167300267D3F = {
+			fileRef = BF324BFD073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C5B073B167300267D3F = {
+			fileRef = BF324BFE073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C5C073B167300267D3F = {
+			fileRef = BF324BFF073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C5D073B167300267D3F = {
+			fileRef = BF324C00073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C5E073B167300267D3F = {
+			fileRef = BF324C01073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C5F073B167300267D3F = {
+			fileRef = BF324C02073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C60073B167300267D3F = {
+			fileRef = BF324C03073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C61073B167300267D3F = {
+			fileRef = BF324C04073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C62073B167300267D3F = {
+			fileRef = BF324C05073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C63073B167300267D3F = {
+			fileRef = BF324C06073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C64073B167300267D3F = {
+			fileRef = BF324C07073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C66073B167300267D3F = {
+			fileRef = BF324C09073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C67073B167300267D3F = {
+			fileRef = BF324C0A073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C68073B167300267D3F = {
+			fileRef = BF324C0B073B167300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324C69073B16C200267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_array.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_array.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C6A073B16C200267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_base64.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_base64.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C6B073B16C200267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_bindir.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_bindir.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C6C073B16C200267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_buf.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_buf.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C6D073B16C200267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_cgi.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_cgi.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C6E073B16C200267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_cgisettings.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_cgisettings.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C6F073B16C200267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_daemon.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_daemon.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C70073B16C200267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_dbm.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_dbm.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C71073B16C200267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_dll.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_dll.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C72073B16C200267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_dynbuf_http.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_dynbuf_http.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C73073B16C200267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_dynbuf.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_dynbuf.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C74073B16C200267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_fast_url_lookup.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_fast_url_lookup.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C75073B16C200267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_fork_server.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_fork_server.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C76073B16C200267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_heap.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_heap.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C77073B16C200267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_html_decode.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_html_decode.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C78073B16C200267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_html_template.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_html_template.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C79073B16C200267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_html.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_html.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C7A073B16C200267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_http_server.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_http_server.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C7B073B16C200267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_http.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_http.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C7C073B16C200267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_httprequest.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_httprequest.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C7D073B16C200267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_linesplit.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_linesplit.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C7F073B16C200267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_log.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_log.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C80073B16C200267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_lz.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_lz.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C81073B16C200267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_map.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_map.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C82073B16C200267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_mmap_buf.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_mmap_buf.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C83073B16C200267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_nameserver.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_nameserver.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C84073B16C200267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_pair.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_pair.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C85073B16C300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_procmap.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_procmap.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C86073B16C300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_questions.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_questions.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C87073B16C300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_remote_buf.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_remote_buf.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C88073B16C300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_rs232.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_rs232.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C89073B16C300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_scheme.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_scheme.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C8A073B16C300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_serial_number.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_serial_number.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C8B073B16C300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_serialsocket.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_serialsocket.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C8C073B16C300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_server_family.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_server_family.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C8D073B16C300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_server.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_server.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C8E073B16C300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_settings.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_settings.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C8F073B16C300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_shmem.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_shmem.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C90073B16C300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_smtp_send.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_smtp_send.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C91073B16C300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_socket.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_socket.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C92073B16C300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_socketswitch.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_socketswitch.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C93073B16C300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_socketutil.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_socketutil.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C94073B16C300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_stream.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_stream.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C95073B16C300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_string.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_string.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C96073B16C300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_thread_mem.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_thread_mem.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C97073B16C300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_thread_mutex.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_thread_mutex.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C98073B16C300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_thread_pool.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_thread_pool.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C99073B16C300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_thread.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_thread.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C9A073B16C300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_url.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_url.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C9B073B16C300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_utf.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_utf.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C9C073B16C300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_util.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_util.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C9D073B16C300267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_win32svc.cpp;
+			path = /Users/jeffk/src/if/internetfilter/libjdk/src/jdk_win32svc.cpp;
+			refType = 0;
+			sourceTree = "<absolute>";
+		};
+		BF324C9F073B16C300267D3F = {
+			fileRef = BF324C69073B16C200267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CA0073B16C300267D3F = {
+			fileRef = BF324C6A073B16C200267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CA1073B16C300267D3F = {
+			fileRef = BF324C6B073B16C200267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CA2073B16C300267D3F = {
+			fileRef = BF324C6C073B16C200267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CA3073B16C300267D3F = {
+			fileRef = BF324C6D073B16C200267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CA4073B16C300267D3F = {
+			fileRef = BF324C6E073B16C200267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CA5073B16C300267D3F = {
+			fileRef = BF324C6F073B16C200267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CA6073B16C300267D3F = {
+			fileRef = BF324C70073B16C200267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CA7073B16C300267D3F = {
+			fileRef = BF324C71073B16C200267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CA8073B16C300267D3F = {
+			fileRef = BF324C72073B16C200267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CA9073B16C300267D3F = {
+			fileRef = BF324C73073B16C200267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CAA073B16C300267D3F = {
+			fileRef = BF324C74073B16C200267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CAB073B16C300267D3F = {
+			fileRef = BF324C75073B16C200267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CAC073B16C300267D3F = {
+			fileRef = BF324C76073B16C200267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CAD073B16C300267D3F = {
+			fileRef = BF324C77073B16C200267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CAE073B16C300267D3F = {
+			fileRef = BF324C78073B16C200267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CAF073B16C300267D3F = {
+			fileRef = BF324C79073B16C200267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CB0073B16C300267D3F = {
+			fileRef = BF324C7A073B16C200267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CB1073B16C300267D3F = {
+			fileRef = BF324C7B073B16C200267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CB2073B16C300267D3F = {
+			fileRef = BF324C7C073B16C200267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CB3073B16C300267D3F = {
+			fileRef = BF324C7D073B16C200267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CB5073B16C300267D3F = {
+			fileRef = BF324C7F073B16C200267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CB6073B16C300267D3F = {
+			fileRef = BF324C80073B16C200267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CB7073B16C300267D3F = {
+			fileRef = BF324C81073B16C200267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CB8073B16C300267D3F = {
+			fileRef = BF324C82073B16C200267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CB9073B16C300267D3F = {
+			fileRef = BF324C83073B16C200267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CBA073B16C300267D3F = {
+			fileRef = BF324C84073B16C200267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CBB073B16C300267D3F = {
+			fileRef = BF324C85073B16C300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CBC073B16C300267D3F = {
+			fileRef = BF324C86073B16C300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CBD073B16C300267D3F = {
+			fileRef = BF324C87073B16C300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CBE073B16C300267D3F = {
+			fileRef = BF324C88073B16C300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CBF073B16C300267D3F = {
+			fileRef = BF324C89073B16C300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CC0073B16C300267D3F = {
+			fileRef = BF324C8A073B16C300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CC1073B16C300267D3F = {
+			fileRef = BF324C8B073B16C300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CC2073B16C300267D3F = {
+			fileRef = BF324C8C073B16C300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CC3073B16C300267D3F = {
+			fileRef = BF324C8D073B16C300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CC4073B16C300267D3F = {
+			fileRef = BF324C8E073B16C300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CC5073B16C300267D3F = {
+			fileRef = BF324C8F073B16C300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CC6073B16C300267D3F = {
+			fileRef = BF324C90073B16C300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CC7073B16C300267D3F = {
+			fileRef = BF324C91073B16C300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CC8073B16C300267D3F = {
+			fileRef = BF324C92073B16C300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CC9073B16C300267D3F = {
+			fileRef = BF324C93073B16C300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CCA073B16C300267D3F = {
+			fileRef = BF324C94073B16C300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CCB073B16C300267D3F = {
+			fileRef = BF324C95073B16C300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CCC073B16C300267D3F = {
+			fileRef = BF324C96073B16C300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CCD073B16C300267D3F = {
+			fileRef = BF324C97073B16C300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CCE073B16C300267D3F = {
+			fileRef = BF324C98073B16C300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CCF073B16C300267D3F = {
+			fileRef = BF324C99073B16C300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CD0073B16C300267D3F = {
+			fileRef = BF324C9A073B16C300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CD1073B16C300267D3F = {
+			fileRef = BF324C9B073B16C300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CD2073B16C300267D3F = {
+			fileRef = BF324C9C073B16C300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324CD3073B16C300267D3F = {
+			fileRef = BF324C9D073B16C300267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324D0D073B1AEF00267D3F = {
+			buildActionMask = 2147483647;
+			files = (
+				BF324D16073B1B5000267D3F,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF324D0E073B1AEF00267D3F = {
+			buildActionMask = 2147483647;
+			files = (
+				BF324DC2073B3BC300267D3F,
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF324D0F073B1AEF00267D3F = {
+			buildPhases = (
+				BF324D0D073B1AEF00267D3F,
+				BF324D0E073B1AEF00267D3F,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = libjdk_testatom;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+			};
+			dependencies = (
+				BF324D13073B1AF500267D3F,
+			);
+			isa = PBXNativeTarget;
+			name = libjdk_testatom;
+			productName = libjdk_testatom;
+			productReference = BF324D10073B1AEF00267D3F;
+			productType = "com.apple.product-type.tool";
+		};
+		BF324D10073B1AEF00267D3F = {
+			explicitFileType = "compiled.mach-o.executable";
+			includeInIndex = 0;
+			isa = PBXFileReference;
+			path = libjdk_testatom;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BF324D12073B1AF500267D3F = {
+			containerPortal = 08FB7793FE84155DC02AAC07;
+			isa = PBXContainerItemProxy;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC045055464E500DB518D;
+			remoteInfo = libjdk;
+		};
+		BF324D13073B1AF500267D3F = {
+			isa = PBXTargetDependency;
+			target = D2AAC045055464E500DB518D;
+			targetProxy = BF324D12073B1AF500267D3F;
+		};
+		BF324D14073B1B1A00267D3F = {
+			children = (
+				BF324D15073B1B5000267D3F,
+			);
+			isa = PBXGroup;
+			name = tests;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		BF324D15073B1B5000267D3F = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = libjdk_testatom.cpp;
+			path = ../../../test/libjdk_testatom.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		BF324D16073B1B5000267D3F = {
+			fileRef = BF324D15073B1B5000267D3F;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BF324DC2073B3BC300267D3F = {
+			fileRef = D2AAC046055464E500DB518D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BFB5CA9C073EC77200694D9A = {
+			children = (
+				BFB5CAFC073EC87500694D9A,
+				BFB5CAE8073EC7EF00694D9A,
+				BFB5CAE9073EC7EF00694D9A,
+				BF324C69073B16C200267D3F,
+				BF324C6A073B16C200267D3F,
+				BF324C6B073B16C200267D3F,
+				BF324C6C073B16C200267D3F,
+				BF324C6D073B16C200267D3F,
+				BF324C6E073B16C200267D3F,
+				BF324C6F073B16C200267D3F,
+				BF324C70073B16C200267D3F,
+				BF324C71073B16C200267D3F,
+				BF324C72073B16C200267D3F,
+				BF324C73073B16C200267D3F,
+				BF324C74073B16C200267D3F,
+				BF324C75073B16C200267D3F,
+				BF324C76073B16C200267D3F,
+				BF324C77073B16C200267D3F,
+				BF324C78073B16C200267D3F,
+				BF324C79073B16C200267D3F,
+				BF324C7A073B16C200267D3F,
+				BF324C7B073B16C200267D3F,
+				BF324C7C073B16C200267D3F,
+				BF324C7D073B16C200267D3F,
+				BF324C7F073B16C200267D3F,
+				BF324C80073B16C200267D3F,
+				BF324C81073B16C200267D3F,
+				BF324C82073B16C200267D3F,
+				BF324C83073B16C200267D3F,
+				BF324C84073B16C200267D3F,
+				BF324C85073B16C300267D3F,
+				BF324C86073B16C300267D3F,
+				BF324C87073B16C300267D3F,
+				BF324C88073B16C300267D3F,
+				BF324C89073B16C300267D3F,
+				BF324C8A073B16C300267D3F,
+				BF324C8B073B16C300267D3F,
+				BF324C8C073B16C300267D3F,
+				BF324C8D073B16C300267D3F,
+				BF324C8E073B16C300267D3F,
+				BF324C8F073B16C300267D3F,
+				BF324C90073B16C300267D3F,
+				BF324C91073B16C300267D3F,
+				BF324C92073B16C300267D3F,
+				BF324C93073B16C300267D3F,
+				BF324C94073B16C300267D3F,
+				BF324C95073B16C300267D3F,
+				BF324C96073B16C300267D3F,
+				BF324C97073B16C300267D3F,
+				BF324C98073B16C300267D3F,
+				BF324C99073B16C300267D3F,
+				BF324C9A073B16C300267D3F,
+				BF324C9B073B16C300267D3F,
+				BF324C9C073B16C300267D3F,
+				BF324C9D073B16C300267D3F,
+				BF324BAF073B167300267D3F,
+				BF324BB0073B167300267D3F,
+				BF324BB1073B167300267D3F,
+				BF324BB2073B167300267D3F,
+				BF324BB3073B167300267D3F,
+				BF324BB4073B167300267D3F,
+				BF324BB5073B167300267D3F,
+				BF324BB6073B167300267D3F,
+				BF324BB7073B167300267D3F,
+				BF324BB8073B167300267D3F,
+				BF324BB9073B167300267D3F,
+				BF324BBA073B167300267D3F,
+				BF324BBB073B167300267D3F,
+				BF324BBC073B167300267D3F,
+				BF324BBD073B167300267D3F,
+				BF324BBE073B167300267D3F,
+				BF324BBF073B167300267D3F,
+				BF324BC0073B167300267D3F,
+				BF324BC1073B167300267D3F,
+				BF324BC2073B167300267D3F,
+				BF324BC3073B167300267D3F,
+				BF324BC4073B167300267D3F,
+				BF324BC5073B167300267D3F,
+				BF324BC6073B167300267D3F,
+				BF324BC7073B167300267D3F,
+				BF324BC8073B167300267D3F,
+				BF324BC9073B167300267D3F,
+				BF324BCB073B167300267D3F,
+				BF324BCA073B167300267D3F,
+				BF324BCC073B167300267D3F,
+				BF324BCD073B167300267D3F,
+				BF324BCE073B167300267D3F,
+				BF324BCF073B167300267D3F,
+				BF324BD0073B167300267D3F,
+				BF324BD1073B167300267D3F,
+				BF324BD2073B167300267D3F,
+				BF324BD3073B167300267D3F,
+				BF324BD4073B167300267D3F,
+				BF324BD5073B167300267D3F,
+				BF324BD6073B167300267D3F,
+				BF324BD7073B167300267D3F,
+				BF324BD8073B167300267D3F,
+				BF324BD9073B167300267D3F,
+				BF324BDA073B167300267D3F,
+				BF324BDB073B167300267D3F,
+				BF324BDC073B167300267D3F,
+				BF324BDD073B167300267D3F,
+				BF324BDE073B167300267D3F,
+				BF324BDF073B167300267D3F,
+				BF324BE0073B167300267D3F,
+				BF324BE1073B167300267D3F,
+				BF324BE2073B167300267D3F,
+				BF324BE3073B167300267D3F,
+				BF324BE4073B167300267D3F,
+				BF324BE5073B167300267D3F,
+				BF324BE6073B167300267D3F,
+				BF324BE7073B167300267D3F,
+				BF324BE8073B167300267D3F,
+				BF324BEA073B167300267D3F,
+				BF324BEB073B167300267D3F,
+				BF324BEC073B167300267D3F,
+				BF324BED073B167300267D3F,
+				BF324BEE073B167300267D3F,
+				BF324BEF073B167300267D3F,
+				BF324BF0073B167300267D3F,
+				BF324BF1073B167300267D3F,
+				BF324BF2073B167300267D3F,
+				BF324BF3073B167300267D3F,
+				BF324BF5073B167300267D3F,
+				BF324BF7073B167300267D3F,
+				BF324BF8073B167300267D3F,
+				BF324BF9073B167300267D3F,
+				BF324BFA073B167300267D3F,
+				BF324BFB073B167300267D3F,
+				BF324BFC073B167300267D3F,
+				BF324BFD073B167300267D3F,
+				BF324BFE073B167300267D3F,
+				BF324BFF073B167300267D3F,
+				BF324C00073B167300267D3F,
+				BF324C01073B167300267D3F,
+				BF324C02073B167300267D3F,
+				BF324C03073B167300267D3F,
+				BF324C04073B167300267D3F,
+				BF324C05073B167300267D3F,
+				BF324C06073B167300267D3F,
+				BF324C07073B167300267D3F,
+				BF324C09073B167300267D3F,
+				BF324C0A073B167300267D3F,
+				BF324C0B073B167300267D3F,
+			);
+			isa = PBXGroup;
+			name = jdk;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		BFB5CA9D073EC78C00694D9A = {
+			children = (
+				BFB5CAC0073EC7CF00694D9A,
+				BFB5CAC1073EC7CF00694D9A,
+				BFB5CAC2073EC7CF00694D9A,
+				BFB5CAC3073EC7CF00694D9A,
+				BFB5CAC4073EC7CF00694D9A,
+				BFB5CAC5073EC7CF00694D9A,
+				BFB5CAC6073EC7CF00694D9A,
+				BFB5CAC7073EC7CF00694D9A,
+				BFB5CAC8073EC7CF00694D9A,
+				BFB5CAC9073EC7CF00694D9A,
+				BFB5CACA073EC7CF00694D9A,
+				BFB5CACB073EC7CF00694D9A,
+				BFB5CACC073EC7CF00694D9A,
+				BFB5CACD073EC7CF00694D9A,
+				BFB5CACE073EC7CF00694D9A,
+				BFB5CACF073EC7CF00694D9A,
+				BFB5CAD0073EC7CF00694D9A,
+				BFB5CAD1073EC7CF00694D9A,
+				BFB5CAD2073EC7CF00694D9A,
+				BFB5CAD3073EC7CF00694D9A,
+				BFB5CA9E073EC7AC00694D9A,
+				BFB5CA9F073EC7AC00694D9A,
+				BFB5CAA0073EC7AC00694D9A,
+				BFB5CAA1073EC7AC00694D9A,
+				BFB5CAA2073EC7AC00694D9A,
+				BFB5CAA3073EC7AC00694D9A,
+				BFB5CAA4073EC7AC00694D9A,
+				BFB5CAA5073EC7AC00694D9A,
+				BFB5CAA6073EC7AC00694D9A,
+				BFB5CAA7073EC7AC00694D9A,
+				BFB5CAA8073EC7AC00694D9A,
+				BFB5CAA9073EC7AC00694D9A,
+				BFB5CAAA073EC7AC00694D9A,
+				BFB5CAAB073EC7AC00694D9A,
+				BFB5CAAC073EC7AC00694D9A,
+				BFB5CAAD073EC7AC00694D9A,
+				BFB5CAAE073EC7AC00694D9A,
+			);
+			isa = PBXGroup;
+			name = zip;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+		BFB5CA9E073EC7AC00694D9A = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = crc32.h;
+			path = ../../../../libzip/include/crc32.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFB5CA9F073EC7AC00694D9A = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = crypt.h;
+			path = ../../../../libzip/include/crypt.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFB5CAA0073EC7AC00694D9A = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = deflate.h;
+			path = ../../../../libzip/include/deflate.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFB5CAA1073EC7AC00694D9A = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = inffast.h;
+			path = ../../../../libzip/include/inffast.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFB5CAA2073EC7AC00694D9A = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = inffixed.h;
+			path = ../../../../libzip/include/inffixed.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFB5CAA3073EC7AC00694D9A = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = inflate.h;
+			path = ../../../../libzip/include/inflate.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFB5CAA4073EC7AC00694D9A = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = inftrees.h;
+			path = ../../../../libzip/include/inftrees.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFB5CAA5073EC7AC00694D9A = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = ioapi_mem.h;
+			path = ../../../../libzip/include/ioapi_mem.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFB5CAA6073EC7AC00694D9A = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = ioapi.h;
+			path = ../../../../libzip/include/ioapi.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFB5CAA7073EC7AC00694D9A = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = iowin32.h;
+			path = ../../../../libzip/include/iowin32.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFB5CAA8073EC7AC00694D9A = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = trees.h;
+			path = ../../../../libzip/include/trees.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFB5CAA9073EC7AC00694D9A = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = unzip.h;
+			path = ../../../../libzip/include/unzip.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFB5CAAA073EC7AC00694D9A = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = zconf.h;
+			path = ../../../../libzip/include/zconf.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFB5CAAB073EC7AC00694D9A = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = zconf.in.h;
+			path = ../../../../libzip/include/zconf.in.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFB5CAAC073EC7AC00694D9A = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = zip.h;
+			path = ../../../../libzip/include/zip.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFB5CAAD073EC7AC00694D9A = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = zlib.h;
+			path = ../../../../libzip/include/zlib.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFB5CAAE073EC7AC00694D9A = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = zutil.h;
+			path = ../../../../libzip/include/zutil.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFB5CAAF073EC7AC00694D9A = {
+			fileRef = BFB5CA9E073EC7AC00694D9A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BFB5CAB0073EC7AC00694D9A = {
+			fileRef = BFB5CA9F073EC7AC00694D9A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BFB5CAB1073EC7AC00694D9A = {
+			fileRef = BFB5CAA0073EC7AC00694D9A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BFB5CAB2073EC7AC00694D9A = {
+			fileRef = BFB5CAA1073EC7AC00694D9A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BFB5CAB3073EC7AC00694D9A = {
+			fileRef = BFB5CAA2073EC7AC00694D9A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BFB5CAB4073EC7AC00694D9A = {
+			fileRef = BFB5CAA3073EC7AC00694D9A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BFB5CAB5073EC7AC00694D9A = {
+			fileRef = BFB5CAA4073EC7AC00694D9A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BFB5CAB6073EC7AC00694D9A = {
+			fileRef = BFB5CAA5073EC7AC00694D9A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BFB5CAB7073EC7AC00694D9A = {
+			fileRef = BFB5CAA6073EC7AC00694D9A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BFB5CAB8073EC7AC00694D9A = {
+			fileRef = BFB5CAA7073EC7AC00694D9A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BFB5CAB9073EC7AC00694D9A = {
+			fileRef = BFB5CAA8073EC7AC00694D9A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BFB5CABA073EC7AC00694D9A = {
+			fileRef = BFB5CAA9073EC7AC00694D9A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BFB5CABB073EC7AC00694D9A = {
+			fileRef = BFB5CAAA073EC7AC00694D9A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BFB5CABC073EC7AC00694D9A = {
+			fileRef = BFB5CAAB073EC7AC00694D9A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BFB5CABD073EC7AC00694D9A = {
+			fileRef = BFB5CAAC073EC7AC00694D9A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BFB5CABE073EC7AC00694D9A = {
+			fileRef = BFB5CAAD073EC7AC00694D9A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BFB5CABF073EC7AC00694D9A = {
+			fileRef = BFB5CAAE073EC7AC00694D9A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BFB5CAC0073EC7CF00694D9A = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = adler32.c;
+			path = ../../../../libzip/src/adler32.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFB5CAC1073EC7CF00694D9A = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = compress.c;
+			path = ../../../../libzip/src/compress.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFB5CAC2073EC7CF00694D9A = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = crc32.c;
+			path = ../../../../libzip/src/crc32.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFB5CAC3073EC7CF00694D9A = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = deflate.c;
+			path = ../../../../libzip/src/deflate.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFB5CAC4073EC7CF00694D9A = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = gzio.c;
+			path = ../../../../libzip/src/gzio.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFB5CAC5073EC7CF00694D9A = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = infback.c;
+			path = ../../../../libzip/src/infback.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFB5CAC6073EC7CF00694D9A = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = inffast.c;
+			path = ../../../../libzip/src/inffast.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFB5CAC7073EC7CF00694D9A = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = inflate.c;
+			path = ../../../../libzip/src/inflate.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFB5CAC8073EC7CF00694D9A = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = inftrees.c;
+			path = ../../../../libzip/src/inftrees.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFB5CAC9073EC7CF00694D9A = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = ioapi_mem.c;
+			path = ../../../../libzip/src/ioapi_mem.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFB5CACA073EC7CF00694D9A = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = ioapi.c;
+			path = ../../../../libzip/src/ioapi.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFB5CACB073EC7CF00694D9A = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = iowin32.c;
+			path = ../../../../libzip/src/iowin32.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFB5CACC073EC7CF00694D9A = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = minigzip.c;
+			path = ../../../../libzip/src/minigzip.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFB5CACD073EC7CF00694D9A = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = miniunz.c;
+			path = ../../../../libzip/src/miniunz.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFB5CACE073EC7CF00694D9A = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = minizip.c;
+			path = ../../../../libzip/src/minizip.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFB5CACF073EC7CF00694D9A = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = trees.c;
+			path = ../../../../libzip/src/trees.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFB5CAD0073EC7CF00694D9A = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = uncompr.c;
+			path = ../../../../libzip/src/uncompr.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFB5CAD1073EC7CF00694D9A = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = unzip.c;
+			path = ../../../../libzip/src/unzip.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFB5CAD2073EC7CF00694D9A = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = zip.c;
+			path = ../../../../libzip/src/zip.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFB5CAD3073EC7CF00694D9A = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			name = zutil.c;
+			path = ../../../../libzip/src/zutil.c;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFB5CAD4073EC7CF00694D9A = {
+			fileRef = BFB5CAC0073EC7CF00694D9A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BFB5CAD5073EC7CF00694D9A = {
+			fileRef = BFB5CAC1073EC7CF00694D9A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BFB5CAD6073EC7CF00694D9A = {
+			fileRef = BFB5CAC2073EC7CF00694D9A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BFB5CAD7073EC7CF00694D9A = {
+			fileRef = BFB5CAC3073EC7CF00694D9A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BFB5CAD8073EC7CF00694D9A = {
+			fileRef = BFB5CAC4073EC7CF00694D9A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BFB5CAD9073EC7CF00694D9A = {
+			fileRef = BFB5CAC5073EC7CF00694D9A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BFB5CADA073EC7CF00694D9A = {
+			fileRef = BFB5CAC6073EC7CF00694D9A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BFB5CADB073EC7CF00694D9A = {
+			fileRef = BFB5CAC7073EC7CF00694D9A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BFB5CADC073EC7CF00694D9A = {
+			fileRef = BFB5CAC8073EC7CF00694D9A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BFB5CADD073EC7CF00694D9A = {
+			fileRef = BFB5CAC9073EC7CF00694D9A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BFB5CADE073EC7CF00694D9A = {
+			fileRef = BFB5CACA073EC7CF00694D9A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BFB5CADF073EC7CF00694D9A = {
+			fileRef = BFB5CACB073EC7CF00694D9A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BFB5CAE0073EC7CF00694D9A = {
+			fileRef = BFB5CACC073EC7CF00694D9A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BFB5CAE1073EC7CF00694D9A = {
+			fileRef = BFB5CACD073EC7CF00694D9A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BFB5CAE2073EC7CF00694D9A = {
+			fileRef = BFB5CACE073EC7CF00694D9A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BFB5CAE3073EC7CF00694D9A = {
+			fileRef = BFB5CACF073EC7CF00694D9A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BFB5CAE4073EC7CF00694D9A = {
+			fileRef = BFB5CAD0073EC7CF00694D9A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BFB5CAE5073EC7CF00694D9A = {
+			fileRef = BFB5CAD1073EC7CF00694D9A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BFB5CAE6073EC7CF00694D9A = {
+			fileRef = BFB5CAD2073EC7CF00694D9A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BFB5CAE7073EC7CF00694D9A = {
+			fileRef = BFB5CAD3073EC7CF00694D9A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BFB5CAE8073EC7EF00694D9A = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_buf_zip.cpp;
+			path = ../../../src/jdk_buf_zip.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFB5CAE9073EC7EF00694D9A = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = jdk_zipfile.cpp;
+			path = ../../../src/jdk_zipfile.cpp;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFB5CAEA073EC7EF00694D9A = {
+			fileRef = BFB5CAE8073EC7EF00694D9A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BFB5CAEB073EC7EF00694D9A = {
+			fileRef = BFB5CAE9073EC7EF00694D9A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		BFB5CAFC073EC87500694D9A = {
+			fileEncoding = 30;
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = jdk_zipfile.h;
+			path = ../../../include/jdk_zipfile.h;
+			refType = 2;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFB5CAFD073EC87500694D9A = {
+			fileRef = BFB5CAFC073EC87500694D9A;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+//BF0
+//BF1
+//BF2
+//BF3
+//BF4
+//C60
+//C61
+//C62
+//C63
+//C64
+		C6A0FF2B0290797F04C91782 = {
+			children = (
+			);
+			isa = PBXGroup;
+			name = Documentation;
+			refType = 4;
+			sourceTree = "<group>";
+		};
+//C60
+//C61
+//C62
+//C63
+//C64
+//D20
+//D21
+//D22
+//D23
+//D24
+		D289987405E68DCB004EDB86 = {
+			buildActionMask = 2147483647;
+			files = (
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC043055464E500DB518D = {
+			buildActionMask = 2147483647;
+			files = (
+				BF324C0C073B167300267D3F,
+				BF324C0D073B167300267D3F,
+				BF324C0E073B167300267D3F,
+				BF324C0F073B167300267D3F,
+				BF324C10073B167300267D3F,
+				BF324C11073B167300267D3F,
+				BF324C12073B167300267D3F,
+				BF324C13073B167300267D3F,
+				BF324C14073B167300267D3F,
+				BF324C15073B167300267D3F,
+				BF324C16073B167300267D3F,
+				BF324C17073B167300267D3F,
+				BF324C18073B167300267D3F,
+				BF324C19073B167300267D3F,
+				BF324C1A073B167300267D3F,
+				BF324C1B073B167300267D3F,
+				BF324C1C073B167300267D3F,
+				BF324C1D073B167300267D3F,
+				BF324C1E073B167300267D3F,
+				BF324C1F073B167300267D3F,
+				BF324C20073B167300267D3F,
+				BF324C21073B167300267D3F,
+				BF324C22073B167300267D3F,
+				BF324C23073B167300267D3F,
+				BF324C24073B167300267D3F,
+				BF324C25073B167300267D3F,
+				BF324C26073B167300267D3F,
+				BF324C27073B167300267D3F,
+				BF324C28073B167300267D3F,
+				BF324C29073B167300267D3F,
+				BF324C2A073B167300267D3F,
+				BF324C2B073B167300267D3F,
+				BF324C2C073B167300267D3F,
+				BF324C2D073B167300267D3F,
+				BF324C2E073B167300267D3F,
+				BF324C2F073B167300267D3F,
+				BF324C30073B167300267D3F,
+				BF324C31073B167300267D3F,
+				BF324C32073B167300267D3F,
+				BF324C33073B167300267D3F,
+				BF324C34073B167300267D3F,
+				BF324C35073B167300267D3F,
+				BF324C36073B167300267D3F,
+				BF324C37073B167300267D3F,
+				BF324C38073B167300267D3F,
+				BF324C39073B167300267D3F,
+				BF324C3A073B167300267D3F,
+				BF324C3B073B167300267D3F,
+				BF324C3C073B167300267D3F,
+				BF324C3D073B167300267D3F,
+				BF324C3E073B167300267D3F,
+				BF324C3F073B167300267D3F,
+				BF324C40073B167300267D3F,
+				BF324C41073B167300267D3F,
+				BF324C42073B167300267D3F,
+				BF324C43073B167300267D3F,
+				BF324C44073B167300267D3F,
+				BF324C45073B167300267D3F,
+				BF324C47073B167300267D3F,
+				BF324C48073B167300267D3F,
+				BF324C49073B167300267D3F,
+				BF324C4A073B167300267D3F,
+				BF324C4B073B167300267D3F,
+				BF324C4C073B167300267D3F,
+				BF324C4D073B167300267D3F,
+				BF324C4E073B167300267D3F,
+				BF324C4F073B167300267D3F,
+				BF324C50073B167300267D3F,
+				BF324C52073B167300267D3F,
+				BF324C54073B167300267D3F,
+				BF324C55073B167300267D3F,
+				BF324C56073B167300267D3F,
+				BF324C57073B167300267D3F,
+				BF324C58073B167300267D3F,
+				BF324C59073B167300267D3F,
+				BF324C5A073B167300267D3F,
+				BF324C5B073B167300267D3F,
+				BF324C5C073B167300267D3F,
+				BF324C5D073B167300267D3F,
+				BF324C5E073B167300267D3F,
+				BF324C5F073B167300267D3F,
+				BF324C60073B167300267D3F,
+				BF324C61073B167300267D3F,
+				BF324C62073B167300267D3F,
+				BF324C63073B167300267D3F,
+				BF324C64073B167300267D3F,
+				BF324C66073B167300267D3F,
+				BF324C67073B167300267D3F,
+				BF324C68073B167300267D3F,
+				BFB5CAAF073EC7AC00694D9A,
+				BFB5CAB0073EC7AC00694D9A,
+				BFB5CAB1073EC7AC00694D9A,
+				BFB5CAB2073EC7AC00694D9A,
+				BFB5CAB3073EC7AC00694D9A,
+				BFB5CAB4073EC7AC00694D9A,
+				BFB5CAB5073EC7AC00694D9A,
+				BFB5CAB6073EC7AC00694D9A,
+				BFB5CAB7073EC7AC00694D9A,
+				BFB5CAB8073EC7AC00694D9A,
+				BFB5CAB9073EC7AC00694D9A,
+				BFB5CABA073EC7AC00694D9A,
+				BFB5CABB073EC7AC00694D9A,
+				BFB5CABC073EC7AC00694D9A,
+				BFB5CABD073EC7AC00694D9A,
+				BFB5CABE073EC7AC00694D9A,
+				BFB5CABF073EC7AC00694D9A,
+				BFB5CAFD073EC87500694D9A,
+			);
+			isa = PBXHeadersBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC044055464E500DB518D = {
+			buildActionMask = 2147483647;
+			files = (
+				BF324C9F073B16C300267D3F,
+				BF324CA0073B16C300267D3F,
+				BF324CA1073B16C300267D3F,
+				BF324CA2073B16C300267D3F,
+				BF324CA3073B16C300267D3F,
+				BF324CA4073B16C300267D3F,
+				BF324CA5073B16C300267D3F,
+				BF324CA6073B16C300267D3F,
+				BF324CA7073B16C300267D3F,
+				BF324CA8073B16C300267D3F,
+				BF324CA9073B16C300267D3F,
+				BF324CAA073B16C300267D3F,
+				BF324CAB073B16C300267D3F,
+				BF324CAC073B16C300267D3F,
+				BF324CAD073B16C300267D3F,
+				BF324CAE073B16C300267D3F,
+				BF324CAF073B16C300267D3F,
+				BF324CB0073B16C300267D3F,
+				BF324CB1073B16C300267D3F,
+				BF324CB2073B16C300267D3F,
+				BF324CB3073B16C300267D3F,
+				BF324CB5073B16C300267D3F,
+				BF324CB6073B16C300267D3F,
+				BF324CB7073B16C300267D3F,
+				BF324CB8073B16C300267D3F,
+				BF324CB9073B16C300267D3F,
+				BF324CBA073B16C300267D3F,
+				BF324CBB073B16C300267D3F,
+				BF324CBC073B16C300267D3F,
+				BF324CBD073B16C300267D3F,
+				BF324CBE073B16C300267D3F,
+				BF324CBF073B16C300267D3F,
+				BF324CC0073B16C300267D3F,
+				BF324CC1073B16C300267D3F,
+				BF324CC2073B16C300267D3F,
+				BF324CC3073B16C300267D3F,
+				BF324CC4073B16C300267D3F,
+				BF324CC5073B16C300267D3F,
+				BF324CC6073B16C300267D3F,
+				BF324CC7073B16C300267D3F,
+				BF324CC8073B16C300267D3F,
+				BF324CC9073B16C300267D3F,
+				BF324CCA073B16C300267D3F,
+				BF324CCB073B16C300267D3F,
+				BF324CCC073B16C300267D3F,
+				BF324CCD073B16C300267D3F,
+				BF324CCE073B16C300267D3F,
+				BF324CCF073B16C300267D3F,
+				BF324CD0073B16C300267D3F,
+				BF324CD1073B16C300267D3F,
+				BF324CD2073B16C300267D3F,
+				BF324CD3073B16C300267D3F,
+				BFB5CAD4073EC7CF00694D9A,
+				BFB5CAD5073EC7CF00694D9A,
+				BFB5CAD6073EC7CF00694D9A,
+				BFB5CAD7073EC7CF00694D9A,
+				BFB5CAD8073EC7CF00694D9A,
+				BFB5CAD9073EC7CF00694D9A,
+				BFB5CADA073EC7CF00694D9A,
+				BFB5CADB073EC7CF00694D9A,
+				BFB5CADC073EC7CF00694D9A,
+				BFB5CADD073EC7CF00694D9A,
+				BFB5CADE073EC7CF00694D9A,
+				BFB5CADF073EC7CF00694D9A,
+				BFB5CAE0073EC7CF00694D9A,
+				BFB5CAE1073EC7CF00694D9A,
+				BFB5CAE2073EC7CF00694D9A,
+				BFB5CAE3073EC7CF00694D9A,
+				BFB5CAE4073EC7CF00694D9A,
+				BFB5CAE5073EC7CF00694D9A,
+				BFB5CAE6073EC7CF00694D9A,
+				BFB5CAE7073EC7CF00694D9A,
+				BFB5CAEA073EC7EF00694D9A,
+				BFB5CAEB073EC7EF00694D9A,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC045055464E500DB518D = {
+			buildPhases = (
+				D2AAC043055464E500DB518D,
+				D2AAC044055464E500DB518D,
+				D289987405E68DCB004EDB86,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_STYLE = STATIC;
+				PRODUCT_NAME = libjdk;
+			};
+			dependencies = (
+			);
+			isa = PBXNativeTarget;
+			name = libjdk;
+			productName = libjdk;
+			productReference = D2AAC046055464E500DB518D;
+			productType = "com.apple.product-type.library.static";
+		};
+		D2AAC046055464E500DB518D = {
+			explicitFileType = archive.ar;
+			includeInIndex = 0;
+			isa = PBXFileReference;
+			path = liblibjdk.a;
+			refType = 3;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+	};
+	rootObject = 08FB7793FE84155DC02AAC07;
+}

@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.mm */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		BF008E180D3091DE001CCF5D /* jdk_base64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF008E170D3091DE001CCF5D /* jdk_base64.cpp */; };
+		BF48C0A60C90B5D800E2559D /* if2k-icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = BF48C0A50C90B5D800E2559D /* if2k-icon.icns */; };
+		BF48C0D20C90B7A400E2559D /* If2kOverrideResponder.mm in Sources */ = {isa = PBXBuildFile; fileRef = BF48C0D00C90B7A400E2559D /* If2kOverrideResponder.mm */; };
+		BF48C1650C90C18D00E2559D /* jdk_buf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF48C1560C90C18D00E2559D /* jdk_buf.cpp */; };
+		BF48C1660C90C18D00E2559D /* jdk_cgisettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF48C1570C90C18D00E2559D /* jdk_cgisettings.cpp */; };
+		BF48C1670C90C18D00E2559D /* jdk_dynbuf_http.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF48C1580C90C18D00E2559D /* jdk_dynbuf_http.cpp */; };
+		BF48C1680C90C18D00E2559D /* jdk_dynbuf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF48C1590C90C18D00E2559D /* jdk_dynbuf.cpp */; };
+		BF48C1690C90C18D00E2559D /* jdk_http.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF48C15A0C90C18D00E2559D /* jdk_http.cpp */; };
+		BF48C16A0C90C18D00E2559D /* jdk_httprequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF48C15B0C90C18D00E2559D /* jdk_httprequest.cpp */; };
+		BF48C16B0C90C18D00E2559D /* jdk_linesplit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF48C15C0C90C18D00E2559D /* jdk_linesplit.cpp */; };
+		BF48C16C0C90C18D00E2559D /* jdk_log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF48C15D0C90C18D00E2559D /* jdk_log.cpp */; };
+		BF48C16D0C90C18D00E2559D /* jdk_map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF48C15E0C90C18D00E2559D /* jdk_map.cpp */; };
+		BF48C16E0C90C18D00E2559D /* jdk_settings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF48C15F0C90C18D00E2559D /* jdk_settings.cpp */; };
+		BF48C16F0C90C18D00E2559D /* jdk_socket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF48C1600C90C18D00E2559D /* jdk_socket.cpp */; };
+		BF48C1700C90C18D00E2559D /* jdk_socketutil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF48C1610C90C18D00E2559D /* jdk_socketutil.cpp */; };
+		BF48C1710C90C18D00E2559D /* jdk_string.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF48C1620C90C18D00E2559D /* jdk_string.cpp */; };
+		BF48C1720C90C18D00E2559D /* jdk_url.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF48C1630C90C18D00E2559D /* jdk_url.cpp */; };
+		BF48C1730C90C18D00E2559D /* jdk_util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF48C1640C90C18D00E2559D /* jdk_util.cpp */; };
+		BF48C1D10C90C5CF00E2559D /* jdk_cgi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF48C1D00C90C5CF00E2559D /* jdk_cgi.cpp */; };
+		BF48C1E00C90C71200E2559D /* jdk_thread_mem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF48C1DD0C90C71200E2559D /* jdk_thread_mem.cpp */; };
+		BF48C1E10C90C71200E2559D /* jdk_thread_mutex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF48C1DE0C90C71200E2559D /* jdk_thread_mutex.cpp */; };
+		BF48C1E20C90C71200E2559D /* jdk_thread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF48C1DF0C90C71200E2559D /* jdk_thread.cpp */; };
+		BFA445B30D8C881200DD2D58 /* jdk_sha1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFA445B20D8C881200DD2D58 /* jdk_sha1.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		29B97316FDCFA39411CA2CEA /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* If2k Override_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "If2k Override_Prefix.pch"; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* If2k Override.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "If2k Override.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF008E170D3091DE001CCF5D /* jdk_base64.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_base64.cpp; path = ../../../../libjdk/src/jdk_base64.cpp; sourceTree = SOURCE_ROOT; };
+		BF48C0A50C90B5D800E2559D /* if2k-icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = "if2k-icon.icns"; path = "../../../../if2k-files/misc/if2k-icon.icns"; sourceTree = SOURCE_ROOT; };
+		BF48C0D00C90B7A400E2559D /* If2kOverrideResponder.mm */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.objcpp; path = If2kOverrideResponder.mm; sourceTree = "<group>"; };
+		BF48C0D10C90B7A400E2559D /* If2kOverrideResponder.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = If2kOverrideResponder.h; sourceTree = "<group>"; };
+		BF48C0F60C90C10C00E2559D /* if2k_mini_client.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = if2k_mini_client.h; path = ../../../../libif2k/include/if2k_mini_client.h; sourceTree = SOURCE_ROOT; };
+		BF48C0F70C90C10C00E2559D /* if2k_mini_config.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = if2k_mini_config.h; path = ../../../../libif2k/include/if2k_mini_config.h; sourceTree = SOURCE_ROOT; };
+		BF48C0F80C90C14000E2559D /* jdk_archive.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_archive.h; path = ../../../../libjdk/include/jdk_archive.h; sourceTree = SOURCE_ROOT; };
+		BF48C0F90C90C14000E2559D /* jdk_array.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_array.h; path = ../../../../libjdk/include/jdk_array.h; sourceTree = SOURCE_ROOT; };
+		BF48C0FA0C90C14000E2559D /* jdk_atom.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_atom.h; path = ../../../../libjdk/include/jdk_atom.h; sourceTree = SOURCE_ROOT; };
+		BF48C0FB0C90C14000E2559D /* jdk_base64.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_base64.h; path = ../../../../libjdk/include/jdk_base64.h; sourceTree = SOURCE_ROOT; };
+		BF48C0FC0C90C14000E2559D /* jdk_bindir.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_bindir.h; path = ../../../../libjdk/include/jdk_bindir.h; sourceTree = SOURCE_ROOT; };
+		BF48C0FD0C90C14000E2559D /* jdk_buf.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_buf.h; path = ../../../../libjdk/include/jdk_buf.h; sourceTree = SOURCE_ROOT; };
+		BF48C0FE0C90C14000E2559D /* jdk_cgi.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_cgi.h; path = ../../../../libjdk/include/jdk_cgi.h; sourceTree = SOURCE_ROOT; };
+		BF48C0FF0C90C14000E2559D /* jdk_cgisettings.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_cgisettings.h; path = ../../../../libjdk/include/jdk_cgisettings.h; sourceTree = SOURCE_ROOT; };
+		BF48C1000C90C14000E2559D /* jdk_crypt.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_crypt.h; path = ../../../../libjdk/include/jdk_crypt.h; sourceTree = SOURCE_ROOT; };
+		BF48C1010C90C14000E2559D /* jdk_daemon.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_daemon.h; path = ../../../../libjdk/include/jdk_daemon.h; sourceTree = SOURCE_ROOT; };
+		BF48C1020C90C14000E2559D /* jdk_dbm.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_dbm.h; path = ../../../../libjdk/include/jdk_dbm.h; sourceTree = SOURCE_ROOT; };
+		BF48C1030C90C14000E2559D /* jdk_dll.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_dll.h; path = ../../../../libjdk/include/jdk_dll.h; sourceTree = SOURCE_ROOT; };
+		BF48C1040C90C14000E2559D /* jdk_dynbuf.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_dynbuf.h; path = ../../../../libjdk/include/jdk_dynbuf.h; sourceTree = SOURCE_ROOT; };
+		BF48C1050C90C14000E2559D /* jdk_elastic_queue.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_elastic_queue.h; path = ../../../../libjdk/include/jdk_elastic_queue.h; sourceTree = SOURCE_ROOT; };
+		BF48C1060C90C14000E2559D /* jdk_error.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_error.h; path = ../../../../libjdk/include/jdk_error.h; sourceTree = SOURCE_ROOT; };
+		BF48C1070C90C14000E2559D /* jdk_fast_url_lookup.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_fast_url_lookup.h; path = ../../../../libjdk/include/jdk_fast_url_lookup.h; sourceTree = SOURCE_ROOT; };
+		BF48C1080C90C14000E2559D /* jdk_fasttree.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_fasttree.h; path = ../../../../libjdk/include/jdk_fasttree.h; sourceTree = SOURCE_ROOT; };
+		BF48C1090C90C14000E2559D /* jdk_fork_server.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_fork_server.h; path = ../../../../libjdk/include/jdk_fork_server.h; sourceTree = SOURCE_ROOT; };
+		BF48C10A0C90C14000E2559D /* jdk_heap.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_heap.h; path = ../../../../libjdk/include/jdk_heap.h; sourceTree = SOURCE_ROOT; };
+		BF48C10B0C90C14000E2559D /* jdk_html_decode.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_html_decode.h; path = ../../../../libjdk/include/jdk_html_decode.h; sourceTree = SOURCE_ROOT; };
+		BF48C10C0C90C14000E2559D /* jdk_html_template.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_html_template.h; path = ../../../../libjdk/include/jdk_html_template.h; sourceTree = SOURCE_ROOT; };
+		BF48C10D0C90C14000E2559D /* jdk_html.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_html.h; path = ../../../../libjdk/include/jdk_html.h; sourceTree = SOURCE_ROOT; };
+		BF48C10E0C90C14000E2559D /* jdk_http_admin.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_http_admin.h; path = ../../../../libjdk/include/jdk_http_admin.h; sourceTree = SOURCE_ROOT; };
+		BF48C10F0C90C14000E2559D /* jdk_http_server_lua.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_http_server_lua.h; path = ../../../../libjdk/include/jdk_http_server_lua.h; sourceTree = SOURCE_ROOT; };
+		BF48C1100C90C14000E2559D /* jdk_http_server.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_http_server.h; path = ../../../../libjdk/include/jdk_http_server.h; sourceTree = SOURCE_ROOT; };
+		BF48C1110C90C14000E2559D /* jdk_http.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_http.h; path = ../../../../libjdk/include/jdk_http.h; sourceTree = SOURCE_ROOT; };
+		BF48C1120C90C14000E2559D /* jdk_httprequest.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_httprequest.h; path = ../../../../libjdk/include/jdk_httprequest.h; sourceTree = SOURCE_ROOT; };
+		BF48C1130C90C14000E2559D /* jdk_inet_server.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_inet_server.h; path = ../../../../libjdk/include/jdk_inet_server.h; sourceTree = SOURCE_ROOT; };
+		BF48C1140C90C14000E2559D /* jdk_ipv4.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_ipv4.h; path = ../../../../libjdk/include/jdk_ipv4.h; sourceTree = SOURCE_ROOT; };
+		BF48C1150C90C14000E2559D /* jdk_linesplit.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_linesplit.h; path = ../../../../libjdk/include/jdk_linesplit.h; sourceTree = SOURCE_ROOT; };
+		BF48C1160C90C14000E2559D /* jdk_list.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_list.h; path = ../../../../libjdk/include/jdk_list.h; sourceTree = SOURCE_ROOT; };
+		BF48C1170C90C14000E2559D /* jdk_log.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_log.h; path = ../../../../libjdk/include/jdk_log.h; sourceTree = SOURCE_ROOT; };
+		BF48C1180C90C14000E2559D /* jdk_lz.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_lz.h; path = ../../../../libjdk/include/jdk_lz.h; sourceTree = SOURCE_ROOT; };
+		BF48C1190C90C14000E2559D /* jdk_map.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_map.h; path = ../../../../libjdk/include/jdk_map.h; sourceTree = SOURCE_ROOT; };
+		BF48C11A0C90C14000E2559D /* jdk_mmap_buf.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_mmap_buf.h; path = ../../../../libjdk/include/jdk_mmap_buf.h; sourceTree = SOURCE_ROOT; };
+		BF48C11B0C90C14000E2559D /* jdk_nameserver.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_nameserver.h; path = ../../../../libjdk/include/jdk_nameserver.h; sourceTree = SOURCE_ROOT; };
+		BF48C11C0C90C14000E2559D /* jdk_nio.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_nio.h; path = ../../../../libjdk/include/jdk_nio.h; sourceTree = SOURCE_ROOT; };
+		BF48C11D0C90C14000E2559D /* jdk_objlog.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_objlog.h; path = ../../../../libjdk/include/jdk_objlog.h; sourceTree = SOURCE_ROOT; };
+		BF48C11E0C90C14000E2559D /* jdk_pair.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_pair.h; path = ../../../../libjdk/include/jdk_pair.h; sourceTree = SOURCE_ROOT; };
+		BF48C11F0C90C14000E2559D /* jdk_platform_beos.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_platform_beos.h; path = ../../../../libjdk/include/jdk_platform_beos.h; sourceTree = SOURCE_ROOT; };
+		BF48C1200C90C14000E2559D /* jdk_platform_cygwin.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_platform_cygwin.h; path = ../../../../libjdk/include/jdk_platform_cygwin.h; sourceTree = SOURCE_ROOT; };
+		BF48C1210C90C14000E2559D /* jdk_platform_linux.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_platform_linux.h; path = ../../../../libjdk/include/jdk_platform_linux.h; sourceTree = SOURCE_ROOT; };
+		BF48C1220C90C14000E2559D /* jdk_platform_linuxthreads.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_platform_linuxthreads.h; path = ../../../../libjdk/include/jdk_platform_linuxthreads.h; sourceTree = SOURCE_ROOT; };
+		BF48C1230C90C14000E2559D /* jdk_platform_macosx.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_platform_macosx.h; path = ../../../../libjdk/include/jdk_platform_macosx.h; sourceTree = SOURCE_ROOT; };
+		BF48C1240C90C14000E2559D /* jdk_platform_unix.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_platform_unix.h; path = ../../../../libjdk/include/jdk_platform_unix.h; sourceTree = SOURCE_ROOT; };
+		BF48C1250C90C14000E2559D /* jdk_platform_win32.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_platform_win32.h; path = ../../../../libjdk/include/jdk_platform_win32.h; sourceTree = SOURCE_ROOT; };
+		BF48C1260C90C14000E2559D /* jdk_platform.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_platform.h; path = ../../../../libjdk/include/jdk_platform.h; sourceTree = SOURCE_ROOT; };
+		BF48C1270C90C14000E2559D /* jdk_pool.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_pool.h; path = ../../../../libjdk/include/jdk_pool.h; sourceTree = SOURCE_ROOT; };
+		BF48C1280C90C14000E2559D /* jdk_procmap.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_procmap.h; path = ../../../../libjdk/include/jdk_procmap.h; sourceTree = SOURCE_ROOT; };
+		BF48C1290C90C14000E2559D /* jdk_questions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_questions.h; path = ../../../../libjdk/include/jdk_questions.h; sourceTree = SOURCE_ROOT; };
+		BF48C12A0C90C14000E2559D /* jdk_queue.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_queue.h; path = ../../../../libjdk/include/jdk_queue.h; sourceTree = SOURCE_ROOT; };
+		BF48C12B0C90C14000E2559D /* jdk_remote_buf.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_remote_buf.h; path = ../../../../libjdk/include/jdk_remote_buf.h; sourceTree = SOURCE_ROOT; };
+		BF48C12C0C90C14000E2559D /* jdk_rs232.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_rs232.h; path = ../../../../libjdk/include/jdk_rs232.h; sourceTree = SOURCE_ROOT; };
+		BF48C12D0C90C14000E2559D /* jdk_scheme.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_scheme.h; path = ../../../../libjdk/include/jdk_scheme.h; sourceTree = SOURCE_ROOT; };
+		BF48C12E0C90C14000E2559D /* jdk_serial_number.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_serial_number.h; path = ../../../../libjdk/include/jdk_serial_number.h; sourceTree = SOURCE_ROOT; };
+		BF48C12F0C90C14000E2559D /* jdk_serialsocket.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_serialsocket.h; path = ../../../../libjdk/include/jdk_serialsocket.h; sourceTree = SOURCE_ROOT; };
+		BF48C1300C90C14000E2559D /* jdk_server_family.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_server_family.h; path = ../../../../libjdk/include/jdk_server_family.h; sourceTree = SOURCE_ROOT; };
+		BF48C1310C90C14000E2559D /* jdk_server.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_server.h; path = ../../../../libjdk/include/jdk_server.h; sourceTree = SOURCE_ROOT; };
+		BF48C1320C90C14100E2559D /* jdk_settings_objc.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_settings_objc.h; path = ../../../../libjdk/include/jdk_settings_objc.h; sourceTree = SOURCE_ROOT; };
+		BF48C1330C90C14100E2559D /* jdk_settings.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_settings.h; path = ../../../../libjdk/include/jdk_settings.h; sourceTree = SOURCE_ROOT; };
+		BF48C1340C90C14100E2559D /* jdk_shmem.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_shmem.h; path = ../../../../libjdk/include/jdk_shmem.h; sourceTree = SOURCE_ROOT; };
+		BF48C1350C90C14100E2559D /* jdk_smtp_send.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_smtp_send.h; path = ../../../../libjdk/include/jdk_smtp_send.h; sourceTree = SOURCE_ROOT; };
+		BF48C1360C90C14100E2559D /* jdk_socket_beos.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_socket_beos.h; path = ../../../../libjdk/include/jdk_socket_beos.h; sourceTree = SOURCE_ROOT; };
+		BF48C1370C90C14100E2559D /* jdk_socket_unix.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_socket_unix.h; path = ../../../../libjdk/include/jdk_socket_unix.h; sourceTree = SOURCE_ROOT; };
+		BF48C1380C90C14100E2559D /* jdk_socket_win32.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_socket_win32.h; path = ../../../../libjdk/include/jdk_socket_win32.h; sourceTree = SOURCE_ROOT; };
+		BF48C1390C90C14100E2559D /* jdk_socket.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_socket.h; path = ../../../../libjdk/include/jdk_socket.h; sourceTree = SOURCE_ROOT; };
+		BF48C13A0C90C14100E2559D /* jdk_socketswitch.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_socketswitch.h; path = ../../../../libjdk/include/jdk_socketswitch.h; sourceTree = SOURCE_ROOT; };
+		BF48C13B0C90C14100E2559D /* jdk_socketutil.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_socketutil.h; path = ../../../../libjdk/include/jdk_socketutil.h; sourceTree = SOURCE_ROOT; };
+		BF48C13C0C90C14100E2559D /* jdk_stream.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_stream.h; path = ../../../../libjdk/include/jdk_stream.h; sourceTree = SOURCE_ROOT; };
+		BF48C13D0C90C14100E2559D /* jdk_string_objc.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_string_objc.h; path = ../../../../libjdk/include/jdk_string_objc.h; sourceTree = SOURCE_ROOT; };
+		BF48C13E0C90C14100E2559D /* jdk_string.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_string.h; path = ../../../../libjdk/include/jdk_string.h; sourceTree = SOURCE_ROOT; };
+		BF48C13F0C90C14100E2559D /* jdk_systemsettings_macosx.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_systemsettings_macosx.h; path = ../../../../libjdk/include/jdk_systemsettings_macosx.h; sourceTree = SOURCE_ROOT; };
+		BF48C1400C90C14100E2559D /* jdk_table.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_table.h; path = ../../../../libjdk/include/jdk_table.h; sourceTree = SOURCE_ROOT; };
+		BF48C1410C90C14100E2559D /* jdk_test.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_test.h; path = ../../../../libjdk/include/jdk_test.h; sourceTree = SOURCE_ROOT; };
+		BF48C1420C90C14100E2559D /* jdk_thread_server.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_thread_server.h; path = ../../../../libjdk/include/jdk_thread_server.h; sourceTree = SOURCE_ROOT; };
+		BF48C1430C90C14100E2559D /* jdk_thread.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_thread.h; path = ../../../../libjdk/include/jdk_thread.h; sourceTree = SOURCE_ROOT; };
+		BF48C1440C90C14100E2559D /* jdk_tree.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_tree.h; path = ../../../../libjdk/include/jdk_tree.h; sourceTree = SOURCE_ROOT; };
+		BF48C1450C90C14100E2559D /* jdk_url.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_url.h; path = ../../../../libjdk/include/jdk_url.h; sourceTree = SOURCE_ROOT; };
+		BF48C1460C90C14100E2559D /* jdk_utf.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_utf.h; path = ../../../../libjdk/include/jdk_utf.h; sourceTree = SOURCE_ROOT; };
+		BF48C1470C90C14100E2559D /* jdk_util.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_util.h; path = ../../../../libjdk/include/jdk_util.h; sourceTree = SOURCE_ROOT; };
+		BF48C1480C90C14100E2559D /* jdk_valarray.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_valarray.h; path = ../../../../libjdk/include/jdk_valarray.h; sourceTree = SOURCE_ROOT; };
+		BF48C1490C90C14100E2559D /* jdk_valmap.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_valmap.h; path = ../../../../libjdk/include/jdk_valmap.h; sourceTree = SOURCE_ROOT; };
+		BF48C14A0C90C14100E2559D /* jdk_win32svc.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_win32svc.h; path = ../../../../libjdk/include/jdk_win32svc.h; sourceTree = SOURCE_ROOT; };
+		BF48C14B0C90C14100E2559D /* jdk_win32wtl.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_win32wtl.h; path = ../../../../libjdk/include/jdk_win32wtl.h; sourceTree = SOURCE_ROOT; };
+		BF48C14C0C90C14100E2559D /* jdk_winerror.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_winerror.h; path = ../../../../libjdk/include/jdk_winerror.h; sourceTree = SOURCE_ROOT; };
+		BF48C14D0C90C14100E2559D /* jdk_winhook.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_winhook.h; path = ../../../../libjdk/include/jdk_winhook.h; sourceTree = SOURCE_ROOT; };
+		BF48C14E0C90C14100E2559D /* jdk_winver.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_winver.h; path = ../../../../libjdk/include/jdk_winver.h; sourceTree = SOURCE_ROOT; };
+		BF48C14F0C90C14100E2559D /* jdk_world.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_world.h; path = ../../../../libjdk/include/jdk_world.h; sourceTree = SOURCE_ROOT; };
+		BF48C1500C90C14100E2559D /* jdk_xml.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_xml.h; path = ../../../../libjdk/include/jdk_xml.h; sourceTree = SOURCE_ROOT; };
+		BF48C1510C90C14100E2559D /* jdk_zipfile.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_zipfile.h; path = ../../../../libjdk/include/jdk_zipfile.h; sourceTree = SOURCE_ROOT; };
+		BF48C1520C90C14100E2559D /* JDKAuthorization.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = JDKAuthorization.h; path = ../../../../libjdk/include/JDKAuthorization.h; sourceTree = SOURCE_ROOT; };
+		BF48C1530C90C14100E2559D /* jdkvecstring.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdkvecstring.h; path = ../../../../libjdk/include/jdkvecstring.h; sourceTree = SOURCE_ROOT; };
+		BF48C1540C90C14100E2559D /* jdkwx_form.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdkwx_form.h; path = ../../../../libjdk/include/jdkwx_form.h; sourceTree = SOURCE_ROOT; };
+		BF48C1550C90C14100E2559D /* jdkwx_validator.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdkwx_validator.h; path = ../../../../libjdk/include/jdkwx_validator.h; sourceTree = SOURCE_ROOT; };
+		BF48C1560C90C18D00E2559D /* jdk_buf.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_buf.cpp; path = ../../../../libjdk/src/jdk_buf.cpp; sourceTree = SOURCE_ROOT; };
+		BF48C1570C90C18D00E2559D /* jdk_cgisettings.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_cgisettings.cpp; path = ../../../../libjdk/src/jdk_cgisettings.cpp; sourceTree = SOURCE_ROOT; };
+		BF48C1580C90C18D00E2559D /* jdk_dynbuf_http.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_dynbuf_http.cpp; path = ../../../../libjdk/src/jdk_dynbuf_http.cpp; sourceTree = SOURCE_ROOT; };
+		BF48C1590C90C18D00E2559D /* jdk_dynbuf.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_dynbuf.cpp; path = ../../../../libjdk/src/jdk_dynbuf.cpp; sourceTree = SOURCE_ROOT; };
+		BF48C15A0C90C18D00E2559D /* jdk_http.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_http.cpp; path = ../../../../libjdk/src/jdk_http.cpp; sourceTree = SOURCE_ROOT; };
+		BF48C15B0C90C18D00E2559D /* jdk_httprequest.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_httprequest.cpp; path = ../../../../libjdk/src/jdk_httprequest.cpp; sourceTree = SOURCE_ROOT; };
+		BF48C15C0C90C18D00E2559D /* jdk_linesplit.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_linesplit.cpp; path = ../../../../libjdk/src/jdk_linesplit.cpp; sourceTree = SOURCE_ROOT; };
+		BF48C15D0C90C18D00E2559D /* jdk_log.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_log.cpp; path = ../../../../libjdk/src/jdk_log.cpp; sourceTree = SOURCE_ROOT; };
+		BF48C15E0C90C18D00E2559D /* jdk_map.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_map.cpp; path = ../../../../libjdk/src/jdk_map.cpp; sourceTree = SOURCE_ROOT; };
+		BF48C15F0C90C18D00E2559D /* jdk_settings.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_settings.cpp; path = ../../../../libjdk/src/jdk_settings.cpp; sourceTree = SOURCE_ROOT; };
+		BF48C1600C90C18D00E2559D /* jdk_socket.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_socket.cpp; path = ../../../../libjdk/src/jdk_socket.cpp; sourceTree = SOURCE_ROOT; };
+		BF48C1610C90C18D00E2559D /* jdk_socketutil.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_socketutil.cpp; path = ../../../../libjdk/src/jdk_socketutil.cpp; sourceTree = SOURCE_ROOT; };
+		BF48C1620C90C18D00E2559D /* jdk_string.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_string.cpp; path = ../../../../libjdk/src/jdk_string.cpp; sourceTree = SOURCE_ROOT; };
+		BF48C1630C90C18D00E2559D /* jdk_url.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_url.cpp; path = ../../../../libjdk/src/jdk_url.cpp; sourceTree = SOURCE_ROOT; };
+		BF48C1640C90C18D00E2559D /* jdk_util.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_util.cpp; path = ../../../../libjdk/src/jdk_util.cpp; sourceTree = SOURCE_ROOT; };
+		BF48C1D00C90C5CF00E2559D /* jdk_cgi.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_cgi.cpp; path = ../../../../libjdk/src/jdk_cgi.cpp; sourceTree = SOURCE_ROOT; };
+		BF48C1DD0C90C71200E2559D /* jdk_thread_mem.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_thread_mem.cpp; path = ../../../../libjdk/src/jdk_thread_mem.cpp; sourceTree = SOURCE_ROOT; };
+		BF48C1DE0C90C71200E2559D /* jdk_thread_mutex.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_thread_mutex.cpp; path = ../../../../libjdk/src/jdk_thread_mutex.cpp; sourceTree = SOURCE_ROOT; };
+		BF48C1DF0C90C71200E2559D /* jdk_thread.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_thread.cpp; path = ../../../../libjdk/src/jdk_thread.cpp; sourceTree = SOURCE_ROOT; };
+		BFA445B20D8C881200DD2D58 /* jdk_sha1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_sha1.cpp; path = ../../../../libjdk/src/jdk_sha1.cpp; sourceTree = SOURCE_ROOT; };
+		BFA445B40D8C882B00DD2D58 /* jdk_sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = jdk_sha1.h; path = ../../../../libjdk/include/jdk_sha1.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BF48C0D00C90B7A400E2559D /* If2kOverrideResponder.mm */,
+				BF48C0D10C90B7A400E2559D /* If2kOverrideResponder.h */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* If2k Override.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* If2k Override */ = {
+			isa = PBXGroup;
+			children = (
+				BF48C0F50C90C0DF00E2559D /* lib */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = "If2k Override";
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* If2k Override_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.mm */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BF48C0A50C90B5D800E2559D /* if2k-icon.icns */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF48C0F50C90C0DF00E2559D /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				BFA445B40D8C882B00DD2D58 /* jdk_sha1.h */,
+				BFA445B20D8C881200DD2D58 /* jdk_sha1.cpp */,
+				BF008E170D3091DE001CCF5D /* jdk_base64.cpp */,
+				BF48C1DD0C90C71200E2559D /* jdk_thread_mem.cpp */,
+				BF48C1DE0C90C71200E2559D /* jdk_thread_mutex.cpp */,
+				BF48C1DF0C90C71200E2559D /* jdk_thread.cpp */,
+				BF48C1D00C90C5CF00E2559D /* jdk_cgi.cpp */,
+				BF48C1560C90C18D00E2559D /* jdk_buf.cpp */,
+				BF48C1570C90C18D00E2559D /* jdk_cgisettings.cpp */,
+				BF48C1580C90C18D00E2559D /* jdk_dynbuf_http.cpp */,
+				BF48C1590C90C18D00E2559D /* jdk_dynbuf.cpp */,
+				BF48C15A0C90C18D00E2559D /* jdk_http.cpp */,
+				BF48C15B0C90C18D00E2559D /* jdk_httprequest.cpp */,
+				BF48C15C0C90C18D00E2559D /* jdk_linesplit.cpp */,
+				BF48C15D0C90C18D00E2559D /* jdk_log.cpp */,
+				BF48C15E0C90C18D00E2559D /* jdk_map.cpp */,
+				BF48C15F0C90C18D00E2559D /* jdk_settings.cpp */,
+				BF48C1600C90C18D00E2559D /* jdk_socket.cpp */,
+				BF48C1610C90C18D00E2559D /* jdk_socketutil.cpp */,
+				BF48C1620C90C18D00E2559D /* jdk_string.cpp */,
+				BF48C1630C90C18D00E2559D /* jdk_url.cpp */,
+				BF48C1640C90C18D00E2559D /* jdk_util.cpp */,
+				BF48C0F80C90C14000E2559D /* jdk_archive.h */,
+				BF48C0F90C90C14000E2559D /* jdk_array.h */,
+				BF48C0FA0C90C14000E2559D /* jdk_atom.h */,
+				BF48C0FB0C90C14000E2559D /* jdk_base64.h */,
+				BF48C0FC0C90C14000E2559D /* jdk_bindir.h */,
+				BF48C0FD0C90C14000E2559D /* jdk_buf.h */,
+				BF48C0FE0C90C14000E2559D /* jdk_cgi.h */,
+				BF48C0FF0C90C14000E2559D /* jdk_cgisettings.h */,
+				BF48C1000C90C14000E2559D /* jdk_crypt.h */,
+				BF48C1010C90C14000E2559D /* jdk_daemon.h */,
+				BF48C1020C90C14000E2559D /* jdk_dbm.h */,
+				BF48C1030C90C14000E2559D /* jdk_dll.h */,
+				BF48C1040C90C14000E2559D /* jdk_dynbuf.h */,
+				BF48C1050C90C14000E2559D /* jdk_elastic_queue.h */,
+				BF48C1060C90C14000E2559D /* jdk_error.h */,
+				BF48C1070C90C14000E2559D /* jdk_fast_url_lookup.h */,
+				BF48C1080C90C14000E2559D /* jdk_fasttree.h */,
+				BF48C1090C90C14000E2559D /* jdk_fork_server.h */,
+				BF48C10A0C90C14000E2559D /* jdk_heap.h */,
+				BF48C10B0C90C14000E2559D /* jdk_html_decode.h */,
+				BF48C10C0C90C14000E2559D /* jdk_html_template.h */,
+				BF48C10D0C90C14000E2559D /* jdk_html.h */,
+				BF48C10E0C90C14000E2559D /* jdk_http_admin.h */,
+				BF48C10F0C90C14000E2559D /* jdk_http_server_lua.h */,
+				BF48C1100C90C14000E2559D /* jdk_http_server.h */,
+				BF48C1110C90C14000E2559D /* jdk_http.h */,
+				BF48C1120C90C14000E2559D /* jdk_httprequest.h */,
+				BF48C1130C90C14000E2559D /* jdk_inet_server.h */,
+				BF48C1140C90C14000E2559D /* jdk_ipv4.h */,
+				BF48C1150C90C14000E2559D /* jdk_linesplit.h */,
+				BF48C1160C90C14000E2559D /* jdk_list.h */,
+				BF48C1170C90C14000E2559D /* jdk_log.h */,
+				BF48C1180C90C14000E2559D /* jdk_lz.h */,
+				BF48C1190C90C14000E2559D /* jdk_map.h */,
+				BF48C11A0C90C14000E2559D /* jdk_mmap_buf.h */,
+				BF48C11B0C90C14000E2559D /* jdk_nameserver.h */,
+				BF48C11C0C90C14000E2559D /* jdk_nio.h */,
+				BF48C11D0C90C14000E2559D /* jdk_objlog.h */,
+				BF48C11E0C90C14000E2559D /* jdk_pair.h */,
+				BF48C11F0C90C14000E2559D /* jdk_platform_beos.h */,
+				BF48C1200C90C14000E2559D /* jdk_platform_cygwin.h */,
+				BF48C1210C90C14000E2559D /* jdk_platform_linux.h */,
+				BF48C1220C90C14000E2559D /* jdk_platform_linuxthreads.h */,
+				BF48C1230C90C14000E2559D /* jdk_platform_macosx.h */,
+				BF48C1240C90C14000E2559D /* jdk_platform_unix.h */,
+				BF48C1250C90C14000E2559D /* jdk_platform_win32.h */,
+				BF48C1260C90C14000E2559D /* jdk_platform.h */,
+				BF48C1270C90C14000E2559D /* jdk_pool.h */,
+				BF48C1280C90C14000E2559D /* jdk_procmap.h */,
+				BF48C1290C90C14000E2559D /* jdk_questions.h */,
+				BF48C12A0C90C14000E2559D /* jdk_queue.h */,
+				BF48C12B0C90C14000E2559D /* jdk_remote_buf.h */,
+				BF48C12C0C90C14000E2559D /* jdk_rs232.h */,
+				BF48C12D0C90C14000E2559D /* jdk_scheme.h */,
+				BF48C12E0C90C14000E2559D /* jdk_serial_number.h */,
+				BF48C12F0C90C14000E2559D /* jdk_serialsocket.h */,
+				BF48C1300C90C14000E2559D /* jdk_server_family.h */,
+				BF48C1310C90C14000E2559D /* jdk_server.h */,
+				BF48C1320C90C14100E2559D /* jdk_settings_objc.h */,
+				BF48C1330C90C14100E2559D /* jdk_settings.h */,
+				BF48C1340C90C14100E2559D /* jdk_shmem.h */,
+				BF48C1350C90C14100E2559D /* jdk_smtp_send.h */,
+				BF48C1360C90C14100E2559D /* jdk_socket_beos.h */,
+				BF48C1370C90C14100E2559D /* jdk_socket_unix.h */,
+				BF48C1380C90C14100E2559D /* jdk_socket_win32.h */,
+				BF48C1390C90C14100E2559D /* jdk_socket.h */,
+				BF48C13A0C90C14100E2559D /* jdk_socketswitch.h */,
+				BF48C13B0C90C14100E2559D /* jdk_socketutil.h */,
+				BF48C13C0C90C14100E2559D /* jdk_stream.h */,
+				BF48C13D0C90C14100E2559D /* jdk_string_objc.h */,
+				BF48C13E0C90C14100E2559D /* jdk_string.h */,
+				BF48C13F0C90C14100E2559D /* jdk_systemsettings_macosx.h */,
+				BF48C1400C90C14100E2559D /* jdk_table.h */,
+				BF48C1410C90C14100E2559D /* jdk_test.h */,
+				BF48C1420C90C14100E2559D /* jdk_thread_server.h */,
+				BF48C1430C90C14100E2559D /* jdk_thread.h */,
+				BF48C1440C90C14100E2559D /* jdk_tree.h */,
+				BF48C1450C90C14100E2559D /* jdk_url.h */,
+				BF48C1460C90C14100E2559D /* jdk_utf.h */,
+				BF48C1470C90C14100E2559D /* jdk_util.h */,
+				BF48C1480C90C14100E2559D /* jdk_valarray.h */,
+				BF48C1490C90C14100E2559D /* jdk_valmap.h */,
+				BF48C14A0C90C14100E2559D /* jdk_win32svc.h */,
+				BF48C14B0C90C14100E2559D /* jdk_win32wtl.h */,
+				BF48C14C0C90C14100E2559D /* jdk_winerror.h */,
+				BF48C14D0C90C14100E2559D /* jdk_winhook.h */,
+				BF48C14E0C90C14100E2559D /* jdk_winver.h */,
+				BF48C14F0C90C14100E2559D /* jdk_world.h */,
+				BF48C1500C90C14100E2559D /* jdk_xml.h */,
+				BF48C1510C90C14100E2559D /* jdk_zipfile.h */,
+				BF48C1520C90C14100E2559D /* JDKAuthorization.h */,
+				BF48C1530C90C14100E2559D /* jdkvecstring.h */,
+				BF48C1540C90C14100E2559D /* jdkwx_form.h */,
+				BF48C1550C90C14100E2559D /* jdkwx_validator.h */,
+				BF48C0F60C90C10C00E2559D /* if2k_mini_client.h */,
+				BF48C0F70C90C10C00E2559D /* if2k_mini_config.h */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* If2k Override */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "If2k Override" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "If2k Override";
+			productInstallPath = "$(HOME)/Applications";
+			productName = "If2k Override";
+			productReference = 8D1107320486CEB800E47090 /* If2k Override.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "If2k Override" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* If2k Override */;
+			projectDirPath = "";
+			projectRoot = ../../../..;
+			targets = (
+				8D1107260486CEB800E47090 /* If2k Override */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				BF48C0A60C90B5D800E2559D /* if2k-icon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.mm in Sources */,
+				BF48C0D20C90B7A400E2559D /* If2kOverrideResponder.mm in Sources */,
+				BF48C1650C90C18D00E2559D /* jdk_buf.cpp in Sources */,
+				BF48C1660C90C18D00E2559D /* jdk_cgisettings.cpp in Sources */,
+				BF48C1670C90C18D00E2559D /* jdk_dynbuf_http.cpp in Sources */,
+				BF48C1680C90C18D00E2559D /* jdk_dynbuf.cpp in Sources */,
+				BF48C1690C90C18D00E2559D /* jdk_http.cpp in Sources */,
+				BF48C16A0C90C18D00E2559D /* jdk_httprequest.cpp in Sources */,
+				BF48C16B0C90C18D00E2559D /* jdk_linesplit.cpp in Sources */,
+				BF48C16C0C90C18D00E2559D /* jdk_log.cpp in Sources */,
+				BF48C16D0C90C18D00E2559D /* jdk_map.cpp in Sources */,
+				BF48C16E0C90C18D00E2559D /* jdk_settings.cpp in Sources */,
+				BF48C16F0C90C18D00E2559D /* jdk_socket.cpp in Sources */,
+				BF48C1700C90C18D00E2559D /* jdk_socketutil.cpp in Sources */,
+				BF48C1710C90C18D00E2559D /* jdk_string.cpp in Sources */,
+				BF48C1720C90C18D00E2559D /* jdk_url.cpp in Sources */,
+				BF48C1730C90C18D00E2559D /* jdk_util.cpp in Sources */,
+				BF48C1D10C90C5CF00E2559D /* jdk_cgi.cpp in Sources */,
+				BF48C1E00C90C71200E2559D /* jdk_thread_mem.cpp in Sources */,
+				BF48C1E10C90C71200E2559D /* jdk_thread_mutex.cpp in Sources */,
+				BF48C1E20C90C71200E2559D /* jdk_thread.cpp in Sources */,
+				BF008E180D3091DE001CCF5D /* jdk_base64.cpp in Sources */,
+				BFA445B30D8C881200DD2D58 /* jdk_sha1.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29B97319FDCFA39411CA2CEA /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "If2k Override";
+				SYMROOT = ../build;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "If2k Override";
+				SYMROOT = ../build;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"JDK_IS_MACOSX=1",
+					"$(GCC_PREPROCESSOR_DEFINITIONS_QUOTED_FOR_PROJECT_1)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS_QUOTED_FOR_PROJECT_1 = "IF2K_MINI_VERSION=\"2.2.4\"";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"JDK_IS_MACOSX=1",
+					"$(GCC_PREPROCESSOR_DEFINITIONS_QUOTED_FOR_PROJECT_1)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS_QUOTED_FOR_PROJECT_1 = "IF2K_MINI_VERSION=\"2.2.4\"";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "If2k Override" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "If2k Override" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

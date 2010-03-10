@@ -1,0 +1,25 @@
+#! /bin/sh
+
+DEST="/Library/If2k"
+DESTBIN="$DEST/bin"
+KEXT="$DESTBIN/if2kext.kext"
+OLDKEXT="$DESTBIN/if2ktigerext.kext"
+
+if [ -x "$DESTBIN/if2kd" ]
+then
+  "$DESTBIN/if2kd" --stop=1 >/dev/null 2>&1 
+fi
+
+killall -9 if2kd >/dev/null 2>&1
+
+if [ -d "$KEXT" ]
+then
+  kextunload "$KEXT" >/dev/null 2>&1
+fi
+
+rm -r -f "$DEST"
+rm -r -f "$KEXT"
+rm -r -f "$OLDKEXT"
+
+
+

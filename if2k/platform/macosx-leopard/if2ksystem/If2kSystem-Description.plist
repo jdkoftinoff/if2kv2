@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IFPkgDescriptionDeleteWarning</key>
+	<string></string>
+	<key>IFPkgDescriptionDescription</key>
+	<string>The Internet Filter System for Mac OS-X 10.4 and 10.5, V2.2.2
+
+www.internetfilter.com
+</string>
+	<key>IFPkgDescriptionTitle</key>
+	<string>The Internet Filter IF-2K</string>
+	<key>IFPkgDescriptionVersion</key>
+	<string>2.2.2</string>
+</dict>
+</plist>

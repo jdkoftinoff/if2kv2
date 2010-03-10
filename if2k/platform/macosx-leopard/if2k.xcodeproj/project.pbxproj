@@ -1,0 +1,2533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		BF2E3F350B0E68BF00E20D92 /* all */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BF2E3F5A0B0E68DF00E20D92 /* Build configuration list for PBXAggregateTarget "all" */;
+			buildPhases = (
+			);
+			dependencies = (
+				BF2E3F450B0E68C500E20D92 /* PBXTargetDependency */,
+				BF2E3F470B0E68C500E20D92 /* PBXTargetDependency */,
+				BF2E3F490B0E68C500E20D92 /* PBXTargetDependency */,
+				BF2E3F3B0B0E68C500E20D92 /* PBXTargetDependency */,
+				BF2E3F3D0B0E68C500E20D92 /* PBXTargetDependency */,
+				BF2E3F3F0B0E68C500E20D92 /* PBXTargetDependency */,
+				BF2E3F390B0E68C500E20D92 /* PBXTargetDependency */,
+				BF2E3F370B0E68C500E20D92 /* PBXTargetDependency */,
+			);
+			name = all;
+			productName = all;
+		};
+		BF3B09EA0B0D4C93009144BC /* if2k.dmg */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BF3B09EE0B0D4CA4009144BC /* Build configuration list for PBXAggregateTarget "if2k.dmg" */;
+			buildPhases = (
+				BFFCF5AB0B0E4DE700634821 /* CopyFiles */,
+				BF3B09E90B0D4C93009144BC /* Build DMG */,
+			);
+			dependencies = (
+				BFFCF5A80B0E4DC400634821 /* PBXTargetDependency */,
+				BF4B21F10CD96C7E009C50FC /* PBXTargetDependency */,
+				BF0D22080E41628800F413C6 /* PBXTargetDependency */,
+			);
+			name = if2k.dmg;
+			productName = if2k.dmg;
+		};
+		BFFAEB870B0FA26400E83D76 /* if2ksystem-prep */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BFFAEB920B0FA2C700E83D76 /* Build configuration list for PBXAggregateTarget "if2ksystem-prep" */;
+			buildPhases = (
+				BFFAEB860B0FA26400E83D76 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "if2ksystem-prep";
+			productName = "if2ksystem-prep";
+		};
+		BFFCF5980B0E4D8900634821 /* if2ksystem */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BFFCF5B20B0E4E1A00634821 /* Build configuration list for PBXAggregateTarget "if2ksystem" */;
+			buildPhases = (
+				BFFCF5970B0E4D8900634821 /* Copy Files - bin */,
+				BFFCF60A0B0E4ECA00634821 /* Copy Files - db */,
+				BFFCFA3C0B0E5C0900634821 /* Copy Files - web */,
+				BFFCFA3E0B0E5C3800634821 /* Copy Files - kext */,
+				BFFAEAE70B0F951200E83D76 /* Copy Files - LaunchDaemons */,
+				BFFAEB030B0F96C800E83D76 /* Run Script - Fix perms */,
+				BFFAEB4E0B0F9D2500E83D76 /* Run Script - Make pkg */,
+			);
+			dependencies = (
+				BF35179A0B0E6D0100B0EE81 /* PBXTargetDependency */,
+				BF35179C0B0E6D0100B0EE81 /* PBXTargetDependency */,
+				BFFAEB8D0B0FA29400E83D76 /* PBXTargetDependency */,
+				BF0CA95D0B9B50CF00EE8DC8 /* PBXTargetDependency */,
+			);
+			name = if2ksystem;
+			productName = if2ksystem;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		BF0D22020E41621700F413C6 /* If2k-Remover.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = BF0D21FF0E4161F300F413C6 /* If2k-Remover.app */; };
+		BF2E3A250B0E624A00E20D92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFCF3A40B0E4BED00634821 /* Foundation.framework */; };
+		BF2E3A260B0E624F00E20D92 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFCF3A50B0E4BED00634821 /* Security.framework */; };
+		BF2E3AB40B0E63DA00E20D92 /* jdk_array.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF2720B0E4B2A00634821 /* jdk_array.cpp */; };
+		BF2E3AB50B0E63DA00E20D92 /* jdk_base64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF2730B0E4B2A00634821 /* jdk_base64.cpp */; };
+		BF2E3AB60B0E63DA00E20D92 /* jdk_bindir.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF2740B0E4B2A00634821 /* jdk_bindir.cpp */; };
+		BF2E3AB70B0E63DA00E20D92 /* jdk_buf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF2750B0E4B2A00634821 /* jdk_buf.cpp */; };
+		BF2E3AB80B0E63DA00E20D92 /* jdk_buf_zip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF2760B0E4B2A00634821 /* jdk_buf_zip.cpp */; };
+		BF2E3AB90B0E63DA00E20D92 /* jdk_cgi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF2770B0E4B2A00634821 /* jdk_cgi.cpp */; };
+		BF2E3ABA0B0E63DA00E20D92 /* jdk_cgisettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF2780B0E4B2A00634821 /* jdk_cgisettings.cpp */; };
+		BF2E3ABB0B0E63DA00E20D92 /* jdk_daemon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF2790B0E4B2A00634821 /* jdk_daemon.cpp */; };
+		BF2E3ABC0B0E63DA00E20D92 /* jdk_dbm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF27A0B0E4B2A00634821 /* jdk_dbm.cpp */; };
+		BF2E3ABD0B0E63DA00E20D92 /* jdk_dll.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF27B0B0E4B2A00634821 /* jdk_dll.cpp */; };
+		BF2E3ABE0B0E63DA00E20D92 /* jdk_dynbuf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF27C0B0E4B2A00634821 /* jdk_dynbuf.cpp */; };
+		BF2E3ABF0B0E63DA00E20D92 /* jdk_dynbuf_http.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF27D0B0E4B2A00634821 /* jdk_dynbuf_http.cpp */; };
+		BF2E3AC00B0E63DA00E20D92 /* jdk_fast_url_lookup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF27E0B0E4B2A00634821 /* jdk_fast_url_lookup.cpp */; };
+		BF2E3AC10B0E63DA00E20D92 /* jdk_fork_server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF27F0B0E4B2A00634821 /* jdk_fork_server.cpp */; };
+		BF2E3AC20B0E63DA00E20D92 /* jdk_heap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF2800B0E4B2A00634821 /* jdk_heap.cpp */; };
+		BF2E3AC30B0E63DA00E20D92 /* jdk_html.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF2810B0E4B2A00634821 /* jdk_html.cpp */; };
+		BF2E3AC40B0E63DA00E20D92 /* jdk_html_decode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF2820B0E4B2A00634821 /* jdk_html_decode.cpp */; };
+		BF2E3AC50B0E63DA00E20D92 /* jdk_html_template.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF2830B0E4B2A00634821 /* jdk_html_template.cpp */; };
+		BF2E3AC60B0E63DA00E20D92 /* jdk_http.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF2840B0E4B2A00634821 /* jdk_http.cpp */; };
+		BF2E3AC70B0E63DA00E20D92 /* jdk_http_server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF2850B0E4B2A00634821 /* jdk_http_server.cpp */; };
+		BF2E3AC80B0E63DA00E20D92 /* jdk_httprequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF2860B0E4B2A00634821 /* jdk_httprequest.cpp */; };
+		BF2E3AC90B0E63DA00E20D92 /* jdk_linesplit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF2870B0E4B2A00634821 /* jdk_linesplit.cpp */; };
+		BF2E3ACA0B0E63DA00E20D92 /* jdk_log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF2880B0E4B2A00634821 /* jdk_log.cpp */; };
+		BF2E3ACB0B0E63DA00E20D92 /* jdk_log_osx.mm in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF2890B0E4B2A00634821 /* jdk_log_osx.mm */; };
+		BF2E3ACC0B0E63DA00E20D92 /* jdk_lz.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF28A0B0E4B2A00634821 /* jdk_lz.cpp */; };
+		BF2E3ACD0B0E63DA00E20D92 /* jdk_map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF28B0B0E4B2A00634821 /* jdk_map.cpp */; };
+		BF2E3ACE0B0E63DA00E20D92 /* jdk_mmap_buf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF28C0B0E4B2A00634821 /* jdk_mmap_buf.cpp */; };
+		BF2E3ACF0B0E63DA00E20D92 /* jdk_nameserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF28D0B0E4B2A00634821 /* jdk_nameserver.cpp */; };
+		BF2E3AD00B0E63DA00E20D92 /* jdk_pair.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF28E0B0E4B2A00634821 /* jdk_pair.cpp */; };
+		BF2E3AD10B0E63DA00E20D92 /* jdk_procmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF28F0B0E4B2A00634821 /* jdk_procmap.cpp */; };
+		BF2E3AD20B0E63DA00E20D92 /* jdk_questions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF2900B0E4B2A00634821 /* jdk_questions.cpp */; };
+		BF2E3AD30B0E63DA00E20D92 /* jdk_remote_buf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF2910B0E4B2A00634821 /* jdk_remote_buf.cpp */; };
+		BF2E3AD40B0E63DA00E20D92 /* jdk_rs232.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF2920B0E4B2A00634821 /* jdk_rs232.cpp */; };
+		BF2E3AD50B0E63DA00E20D92 /* jdk_scheme.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF2930B0E4B2A00634821 /* jdk_scheme.cpp */; };
+		BF2E3AD60B0E63DA00E20D92 /* jdk_serial_number.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF2940B0E4B2A00634821 /* jdk_serial_number.cpp */; };
+		BF2E3AD70B0E63DA00E20D92 /* jdk_serialsocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF2950B0E4B2A00634821 /* jdk_serialsocket.cpp */; };
+		BF2E3AD80B0E63DA00E20D92 /* jdk_server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF2960B0E4B2A00634821 /* jdk_server.cpp */; };
+		BF2E3AD90B0E63DA00E20D92 /* jdk_server_family.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF2970B0E4B2A00634821 /* jdk_server_family.cpp */; };
+		BF2E3ADA0B0E63DA00E20D92 /* jdk_settings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF2980B0E4B2A00634821 /* jdk_settings.cpp */; };
+		BF2E3ADB0B0E63DA00E20D92 /* jdk_shmem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF2990B0E4B2A00634821 /* jdk_shmem.cpp */; };
+		BF2E3ADC0B0E63DA00E20D92 /* jdk_smtp_send.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF29A0B0E4B2A00634821 /* jdk_smtp_send.cpp */; };
+		BF2E3ADD0B0E63DA00E20D92 /* jdk_socket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF29B0B0E4B2A00634821 /* jdk_socket.cpp */; };
+		BF2E3ADE0B0E63DA00E20D92 /* jdk_socketswitch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF29C0B0E4B2A00634821 /* jdk_socketswitch.cpp */; };
+		BF2E3ADF0B0E63DA00E20D92 /* jdk_socketutil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF29D0B0E4B2A00634821 /* jdk_socketutil.cpp */; };
+		BF2E3AE00B0E63DA00E20D92 /* jdk_stream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF29E0B0E4B2A00634821 /* jdk_stream.cpp */; };
+		BF2E3AE10B0E63DA00E20D92 /* jdk_string.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF29F0B0E4B2A00634821 /* jdk_string.cpp */; };
+		BF2E3AE20B0E63DA00E20D92 /* jdk_thread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF2A00B0E4B2A00634821 /* jdk_thread.cpp */; };
+		BF2E3AE30B0E63DA00E20D92 /* jdk_thread_mem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF2A10B0E4B2A00634821 /* jdk_thread_mem.cpp */; };
+		BF2E3AE40B0E63DA00E20D92 /* jdk_thread_mutex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF2A20B0E4B2B00634821 /* jdk_thread_mutex.cpp */; };
+		BF2E3AE50B0E63DA00E20D92 /* jdk_thread_pool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF2A30B0E4B2B00634821 /* jdk_thread_pool.cpp */; };
+		BF2E3AE60B0E63DA00E20D92 /* jdk_url.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF2A40B0E4B2B00634821 /* jdk_url.cpp */; };
+		BF2E3AE70B0E63DA00E20D92 /* jdk_utf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF2A50B0E4B2B00634821 /* jdk_utf.cpp */; };
+		BF2E3AE80B0E63DA00E20D92 /* jdk_util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF2A60B0E4B2B00634821 /* jdk_util.cpp */; };
+		BF2E3AE90B0E63DA00E20D92 /* jdk_win32svc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF2A70B0E4B2B00634821 /* jdk_win32svc.cpp */; };
+		BF2E3AEA0B0E63DA00E20D92 /* jdk_zipfile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF2A80B0E4B2B00634821 /* jdk_zipfile.cpp */; };
+		BF2E3AEB0B0E63DA00E20D92 /* JDKAuthorization.mm in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF2A90B0E4B2B00634821 /* JDKAuthorization.mm */; };
+		BF2E3AF10B0E640400E20D92 /* if2k_mini_http_proxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF35D0B0E4B9900634821 /* if2k_mini_http_proxy.cpp */; };
+		BF2E3AF20B0E640400E20D92 /* if2k_mini_kernel_defaults.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF35E0B0E4B9900634821 /* if2k_mini_kernel_defaults.cpp */; };
+		BF2E3AF30B0E640400E20D92 /* if2k_mini_kernel_v2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF35F0B0E4B9900634821 /* if2k_mini_kernel_v2.cpp */; };
+		BF2E3AF40B0E640400E20D92 /* if2k_mini_log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF3600B0E4B9900634821 /* if2k_mini_log.cpp */; };
+		BF2E3AF50B0E640400E20D92 /* if2k_mini_nntp_proxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF3610B0E4B9900634821 /* if2k_mini_nntp_proxy.cpp */; };
+		BF2E3AF60B0E640400E20D92 /* if2k_mini_server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF3620B0E4B9900634821 /* if2k_mini_server.cpp */; };
+		BF2E3AF70B0E640400E20D92 /* if2k_mini_tunnel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF3630B0E4B9900634821 /* if2k_mini_tunnel.cpp */; };
+		BF2E3AF80B0E640400E20D92 /* if2k_pattern_expander.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF3640B0E4B9900634821 /* if2k_pattern_expander.cpp */; };
+		BF2E3AF90B0E640400E20D92 /* if2kkernel_internal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF3650B0E4B9900634821 /* if2kkernel_internal.cpp */; };
+		BF2E3B080B0E644100E20D92 /* adler32.c in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF38B0B0E4BC600634821 /* adler32.c */; };
+		BF2E3B090B0E644100E20D92 /* compress.c in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF38C0B0E4BC600634821 /* compress.c */; };
+		BF2E3B0A0B0E644100E20D92 /* crc32.c in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF38D0B0E4BC600634821 /* crc32.c */; };
+		BF2E3B0B0B0E644100E20D92 /* deflate.c in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF38E0B0E4BC600634821 /* deflate.c */; };
+		BF2E3B0C0B0E644100E20D92 /* gzio.c in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF38F0B0E4BC600634821 /* gzio.c */; };
+		BF2E3B0D0B0E644100E20D92 /* infback.c in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF3900B0E4BC600634821 /* infback.c */; };
+		BF2E3B0E0B0E644100E20D92 /* inffast.c in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF3910B0E4BC600634821 /* inffast.c */; };
+		BF2E3B0F0B0E644100E20D92 /* inflate.c in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF3920B0E4BC600634821 /* inflate.c */; };
+		BF2E3B100B0E644100E20D92 /* inftrees.c in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF3930B0E4BC600634821 /* inftrees.c */; };
+		BF2E3B110B0E644100E20D92 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF3940B0E4BC600634821 /* ioapi.c */; };
+		BF2E3B120B0E644100E20D92 /* ioapi_mem.c in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF3950B0E4BC600634821 /* ioapi_mem.c */; };
+		BF2E3B130B0E644100E20D92 /* iowin32.c in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF3960B0E4BC600634821 /* iowin32.c */; };
+		BF2E3B140B0E644100E20D92 /* minigzip.c in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF3970B0E4BC600634821 /* minigzip.c */; };
+		BF2E3B150B0E644100E20D92 /* miniunz.c in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF3980B0E4BC600634821 /* miniunz.c */; };
+		BF2E3B160B0E644100E20D92 /* minizip.c in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF3990B0E4BC600634821 /* minizip.c */; };
+		BF2E3B170B0E644100E20D92 /* trees.c in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF39A0B0E4BC600634821 /* trees.c */; };
+		BF2E3B180B0E644100E20D92 /* uncompr.c in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF39B0B0E4BC600634821 /* uncompr.c */; };
+		BF2E3B190B0E644100E20D92 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF39C0B0E4BC600634821 /* unzip.c */; };
+		BF2E3B1A0B0E644100E20D92 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF39D0B0E4BC600634821 /* zip.c */; };
+		BF2E3B1B0B0E644100E20D92 /* zutil.c in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF39E0B0E4BC600634821 /* zutil.c */; };
+		BF2E3B1C0B0E646D00E20D92 /* libjdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF2E3AB30B0E63CF00E20D92 /* libjdk.a */; };
+		BF2E3B1D0B0E646D00E20D92 /* libif2k.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF2E3AF00B0E63E700E20D92 /* libif2k.a */; };
+		BF2E3B1E0B0E646D00E20D92 /* libzip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF2E3AFE0B0E641400E20D92 /* libzip.a */; };
+		BF2E3B1F0B0E648600E20D92 /* libjdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF2E3AB30B0E63CF00E20D92 /* libjdk.a */; };
+		BF2E3B200B0E648600E20D92 /* libif2k.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF2E3AF00B0E63E700E20D92 /* libif2k.a */; };
+		BF2E3B210B0E648600E20D92 /* libzip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF2E3AFE0B0E641400E20D92 /* libzip.a */; };
+		BF2E3B220B0E649F00E20D92 /* libjdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF2E3AB30B0E63CF00E20D92 /* libjdk.a */; };
+		BF2E3B230B0E649F00E20D92 /* libif2k.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF2E3AF00B0E63E700E20D92 /* libif2k.a */; };
+		BF2E3B240B0E649F00E20D92 /* libzip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF2E3AFE0B0E641400E20D92 /* libzip.a */; };
+		BF4B21F80CD96CEA009C50FC /* If2k Override.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = BF4B21ED0CD96C53009C50FC /* If2k Override.app */; };
+		BF7693300D0FF1FC009DAA2E /* 01postbadurl.txt in Copy Files - db */ = {isa = PBXBuildFile; fileRef = BF7693280D0FF1D2009DAA2E /* 01postbadurl.txt */; };
+		BF7693310D0FF1FC009DAA2E /* 02postbadurl.txt in Copy Files - db */ = {isa = PBXBuildFile; fileRef = BF7693290D0FF1D2009DAA2E /* 02postbadurl.txt */; };
+		BF7693320D0FF1FC009DAA2E /* 03postbadurl.txt in Copy Files - db */ = {isa = PBXBuildFile; fileRef = BF76932A0D0FF1D2009DAA2E /* 03postbadurl.txt */; };
+		BF7693330D0FF1FC009DAA2E /* 04postbadurl.txt in Copy Files - db */ = {isa = PBXBuildFile; fileRef = BF76932B0D0FF1D2009DAA2E /* 04postbadurl.txt */; };
+		BF7693340D0FF1FC009DAA2E /* 05postbadurl.txt in Copy Files - db */ = {isa = PBXBuildFile; fileRef = BF76932C0D0FF1D2009DAA2E /* 05postbadurl.txt */; };
+		BF7693350D0FF1FC009DAA2E /* 06postbadurl.txt in Copy Files - db */ = {isa = PBXBuildFile; fileRef = BF76932D0D0FF1D2009DAA2E /* 06postbadurl.txt */; };
+		BF7693360D0FF1FC009DAA2E /* 07postbadurl.txt in Copy Files - db */ = {isa = PBXBuildFile; fileRef = BF76932E0D0FF1D2009DAA2E /* 07postbadurl.txt */; };
+		BF7693370D0FF1FC009DAA2E /* 08postbadurl.txt in Copy Files - db */ = {isa = PBXBuildFile; fileRef = BF76932F0D0FF1D2009DAA2E /* 08postbadurl.txt */; };
+		BF8F22B50D8C840A00786496 /* jdk_sha1.h in Headers */ = {isa = PBXBuildFile; fileRef = BF8F22B40D8C840A00786496 /* jdk_sha1.h */; };
+		BF8F22B70D8C841D00786496 /* jdk_sha1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF8F22B60D8C841D00786496 /* jdk_sha1.cpp */; };
+		BFBA97F60B0E73C40046C24C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFBA97F50B0E73C40046C24C /* Info.plist */; };
+		BFD8CC020B9B4FC700D01D9A /* if2kext.kext in Copy Files - kext */ = {isa = PBXBuildFile; fileRef = BFD8CC010B9B4FAF00D01D9A /* if2kext.kext */; };
+		BFFAEAF30B0F95EA00E83D76 /* com.internetfilter.if2kd.plist in Copy Files - LaunchDaemons */ = {isa = PBXBuildFile; fileRef = BFFAEAE20B0F94C900E83D76 /* com.internetfilter.if2kd.plist */; };
+		BFFAEBEE0B0FAC8900E83D76 /* If2k Settings.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = BFFCF2400B0E489300634821 /* If2k Settings.app */; };
+		BFFCF25F0B0E4A4C00634821 /* If2kSettingsGui.mm in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF25E0B0E4A4C00634821 /* If2kSettingsGui.mm */; };
+		BFFCF2610B0E4A5F00634821 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF2600B0E4A5F00634821 /* main.m */; };
+		BFFCF2690B0E4A7A00634821 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BFFCF2630B0E4A7A00634821 /* InfoPlist.strings */; };
+		BFFCF26A0B0E4A7A00634821 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = BFFCF2650B0E4A7A00634821 /* MainMenu.nib */; };
+		BFFCF26B0B0E4A7A00634821 /* version.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFFCF2680B0E4A7A00634821 /* version.plist */; };
+		BFFCF26D0B0E4ADC00634821 /* if2k-icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = BFFCF26C0B0E4ADC00634821 /* if2k-icon.icns */; };
+		BFFCF3A60B0E4BED00634821 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFCF3A20B0E4BED00634821 /* AppKit.framework */; };
+		BFFCF3A70B0E4BED00634821 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFCF3A30B0E4BED00634821 /* Cocoa.framework */; };
+		BFFCF3A80B0E4BED00634821 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFCF3A40B0E4BED00634821 /* Foundation.framework */; };
+		BFFCF3A90B0E4BED00634821 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFCF3A50B0E4BED00634821 /* Security.framework */; };
+		BFFCF5250B0E4C6500634821 /* if2kd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF3760B0E4BAD00634821 /* if2kd.cpp */; };
+		BFFCF5350B0E4C8100634821 /* SecurityFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFCF5340B0E4C8100634821 /* SecurityFoundation.framework */; };
+		BFFCF5360B0E4C8100634821 /* SecurityFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFCF5340B0E4C8100634821 /* SecurityFoundation.framework */; };
+		BFFCF53A0B0E4C9000634821 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFCF5390B0E4C9000634821 /* CoreFoundation.framework */; };
+		BFFCF53B0B0E4C9000634821 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFCF5390B0E4C9000634821 /* CoreFoundation.framework */; };
+		BFFCF58D0B0E4D0D00634821 /* if2k_precompile_all.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFFCF3730B0E4BAD00634821 /* if2k_precompile_all.cpp */; };
+		BFFCF5910B0E4D2800634821 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFCF5390B0E4C9000634821 /* CoreFoundation.framework */; };
+		BFFCF5AD0B0E4DFC00634821 /* ReadMe.webarchive in CopyFiles */ = {isa = PBXBuildFile; fileRef = BF3B09F10B0D4D50009144BC /* ReadMe.webarchive */; };
+		BFFCF5B80B0E4E3400634821 /* if2kd in Copy Files - bin */ = {isa = PBXBuildFile; fileRef = BFFCF5090B0E4C3000634821 /* if2kd */; };
+		BFFCF5B90B0E4E3400634821 /* if2k_precompile_all in Copy Files - bin */ = {isa = PBXBuildFile; fileRef = BFFCF5670B0E4CD200634821 /* if2k_precompile_all */; };
+		BFFCF5EC0B0E4E6A00634821 /* 01badphr.txt in Copy Files - db */ = {isa = PBXBuildFile; fileRef = BFFCF5CE0B0E4E6A00634821 /* 01badphr.txt */; };
+		BFFCF5EE0B0E4E6A00634821 /* 01badurl.txt in Copy Files - db */ = {isa = PBXBuildFile; fileRef = BFFCF5D00B0E4E6A00634821 /* 01badurl.txt */; };
+		BFFCF5F00B0E4E6A00634821 /* 01goodurl.txt in Copy Files - db */ = {isa = PBXBuildFile; fileRef = BFFCF5D20B0E4E6A00634821 /* 01goodurl.txt */; };
+		BFFCF5F20B0E4E6A00634821 /* 02badphr.txt in Copy Files - db */ = {isa = PBXBuildFile; fileRef = BFFCF5D40B0E4E6A00634821 /* 02badphr.txt */; };
+		BFFCF5F40B0E4E6A00634821 /* 02badurl.txt in Copy Files - db */ = {isa = PBXBuildFile; fileRef = BFFCF5D60B0E4E6A00634821 /* 02badurl.txt */; };
+		BFFCF5F60B0E4E6A00634821 /* 03badphr.txt in Copy Files - db */ = {isa = PBXBuildFile; fileRef = BFFCF5D80B0E4E6A00634821 /* 03badphr.txt */; };
+		BFFCF5F80B0E4E6A00634821 /* 03badurl.txt in Copy Files - db */ = {isa = PBXBuildFile; fileRef = BFFCF5DA0B0E4E6A00634821 /* 03badurl.txt */; };
+		BFFCF5FA0B0E4E6A00634821 /* 04badphr.txt in Copy Files - db */ = {isa = PBXBuildFile; fileRef = BFFCF5DC0B0E4E6A00634821 /* 04badphr.txt */; };
+		BFFCF5FC0B0E4E6A00634821 /* 04badurl.txt in Copy Files - db */ = {isa = PBXBuildFile; fileRef = BFFCF5DE0B0E4E6A00634821 /* 04badurl.txt */; };
+		BFFCF5FF0B0E4E6A00634821 /* 05badurl.txt in Copy Files - db */ = {isa = PBXBuildFile; fileRef = BFFCF5E10B0E4E6A00634821 /* 05badurl.txt */; };
+		BFFCF6020B0E4E6A00634821 /* 06badurl.txt in Copy Files - db */ = {isa = PBXBuildFile; fileRef = BFFCF5E40B0E4E6A00634821 /* 06badurl.txt */; };
+		BFFCF6050B0E4E6A00634821 /* 07badurl.txt in Copy Files - db */ = {isa = PBXBuildFile; fileRef = BFFCF5E70B0E4E6A00634821 /* 07badurl.txt */; };
+		BFFCF6080B0E4E6A00634821 /* 08badurl.txt in Copy Files - db */ = {isa = PBXBuildFile; fileRef = BFFCF5EA0B0E4E6A00634821 /* 08badurl.txt */; };
+		BFFCFA510B0E5C8700634821 /* barbwire.jpg in Copy Files - web */ = {isa = PBXBuildFile; fileRef = BFFCFA430B0E5C8700634821 /* barbwire.jpg */; };
+		BFFCFA520B0E5C8700634821 /* block.html in Copy Files - web */ = {isa = PBXBuildFile; fileRef = BFFCFA440B0E5C8700634821 /* block.html */; };
+		BFFCFA530B0E5C8700634821 /* blocked.jpg in Copy Files - web */ = {isa = PBXBuildFile; fileRef = BFFCFA450B0E5C8700634821 /* blocked.jpg */; };
+		BFFCFA540B0E5C8700634821 /* blocked1.jpg in Copy Files - web */ = {isa = PBXBuildFile; fileRef = BFFCFA460B0E5C8700634821 /* blocked1.jpg */; };
+		BFFCFA550B0E5C8700634821 /* connectionerror.html in Copy Files - web */ = {isa = PBXBuildFile; fileRef = BFFCFA470B0E5C8700634821 /* connectionerror.html */; };
+		BFFCFA560B0E5C8700634821 /* error404.html in Copy Files - web */ = {isa = PBXBuildFile; fileRef = BFFCFA480B0E5C8700634821 /* error404.html */; };
+		BFFCFA570B0E5C8700634821 /* imageblock.gif in Copy Files - web */ = {isa = PBXBuildFile; fileRef = BFFCFA490B0E5C8700634821 /* imageblock.gif */; };
+		BFFCFA580B0E5C8700634821 /* imageblock.jpg in Copy Files - web */ = {isa = PBXBuildFile; fileRef = BFFCFA4A0B0E5C8700634821 /* imageblock.jpg */; };
+		BFFCFA590B0E5C8700634821 /* imageblock.png in Copy Files - web */ = {isa = PBXBuildFile; fileRef = BFFCFA4B0B0E5C8700634821 /* imageblock.png */; };
+		BFFCFA5A0B0E5C8700634821 /* index.html in Copy Files - web */ = {isa = PBXBuildFile; fileRef = BFFCFA4C0B0E5C8700634821 /* index.html */; };
+		BFFCFA5B0B0E5C8700634821 /* login.html in Copy Files - web */ = {isa = PBXBuildFile; fileRef = BFFCFA4D0B0E5C8700634821 /* login.html */; };
+		BFFCFA5C0B0E5C8700634821 /* logo.gif in Copy Files - web */ = {isa = PBXBuildFile; fileRef = BFFCFA4E0B0E5C8700634821 /* logo.gif */; };
+		BFFCFA5D0B0E5C8700634821 /* logout.html in Copy Files - web */ = {isa = PBXBuildFile; fileRef = BFFCFA4F0B0E5C8700634821 /* logout.html */; };
+		BFFCFA5E0B0E5C8700634821 /* override.html in Copy Files - web */ = {isa = PBXBuildFile; fileRef = BFFCFA500B0E5C8700634821 /* override.html */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF0CA95C0B9B50CF00EE8DC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFD8CBF60B9B4FAF00D01D9A /* if2kext.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 32A4FEB80562C75700D090E7;
+			remoteInfo = if2kext;
+		};
+		BF0D21FE0E4161F300F413C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF0D21F60E4161F300F413C6 /* If2k-Remover.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D1107320486CEB800E47090;
+			remoteInfo = "If2k-Remover";
+		};
+		BF0D22000E4161F300F413C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF0D21F60E4161F300F413C6 /* If2k-Remover.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BF71A2030E0725720069F424;
+			remoteInfo = if2k_remove_tool;
+		};
+		BF0D22070E41628800F413C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF0D21F60E4161F300F413C6 /* If2k-Remover.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D1107260486CEB800E47090;
+			remoteInfo = "If2k-Remover";
+		};
+		BF2E3B2C0B0E64D400E20D92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF83A6780B0D45CA00CB2796 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF2E3AB20B0E63CF00E20D92;
+			remoteInfo = jdk;
+		};
+		BF2E3B2E0B0E64D400E20D92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF83A6780B0D45CA00CB2796 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF2E3AEF0B0E63E700E20D92;
+			remoteInfo = if2k;
+		};
+		BF2E3B300B0E64D400E20D92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF83A6780B0D45CA00CB2796 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF2E3AFD0B0E641400E20D92;
+			remoteInfo = zip;
+		};
+		BF2E3B340B0E64E100E20D92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF83A6780B0D45CA00CB2796 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF2E3AB20B0E63CF00E20D92;
+			remoteInfo = jdk;
+		};
+		BF2E3B360B0E64E100E20D92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF83A6780B0D45CA00CB2796 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF2E3AEF0B0E63E700E20D92;
+			remoteInfo = if2k;
+		};
+		BF2E3B380B0E64E100E20D92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF83A6780B0D45CA00CB2796 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF2E3AFD0B0E641400E20D92;
+			remoteInfo = zip;
+		};
+		BF2E3B3C0B0E64F100E20D92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF83A6780B0D45CA00CB2796 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF2E3AB20B0E63CF00E20D92;
+			remoteInfo = jdk;
+		};
+		BF2E3B3E0B0E64F100E20D92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF83A6780B0D45CA00CB2796 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF2E3AEF0B0E63E700E20D92;
+			remoteInfo = if2k;
+		};
+		BF2E3B400B0E64F100E20D92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF83A6780B0D45CA00CB2796 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF2E3AFD0B0E641400E20D92;
+			remoteInfo = zip;
+		};
+		BF2E3F360B0E68C500E20D92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF83A6780B0D45CA00CB2796 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF3B09EA0B0D4C93009144BC;
+			remoteInfo = if2k.dmg;
+		};
+		BF2E3F380B0E68C500E20D92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF83A6780B0D45CA00CB2796 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFFCF23F0B0E489300634821;
+			remoteInfo = "If2k Settings";
+		};
+		BF2E3F3A0B0E68C500E20D92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF83A6780B0D45CA00CB2796 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFFCF5080B0E4C3000634821;
+			remoteInfo = if2kd;
+		};
+		BF2E3F3C0B0E68C500E20D92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF83A6780B0D45CA00CB2796 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFFCF5660B0E4CD200634821;
+			remoteInfo = if2k_precompile_all;
+		};
+		BF2E3F3E0B0E68C500E20D92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF83A6780B0D45CA00CB2796 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFFCF5980B0E4D8900634821;
+			remoteInfo = if2ksystem;
+		};
+		BF2E3F440B0E68C500E20D92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF83A6780B0D45CA00CB2796 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF2E3AB20B0E63CF00E20D92;
+			remoteInfo = jdk;
+		};
+		BF2E3F460B0E68C500E20D92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF83A6780B0D45CA00CB2796 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF2E3AEF0B0E63E700E20D92;
+			remoteInfo = if2k;
+		};
+		BF2E3F480B0E68C500E20D92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF83A6780B0D45CA00CB2796 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF2E3AFD0B0E641400E20D92;
+			remoteInfo = zip;
+		};
+		BF3517990B0E6D0100B0EE81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF83A6780B0D45CA00CB2796 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFFCF5080B0E4C3000634821;
+			remoteInfo = if2kd;
+		};
+		BF35179B0B0E6D0100B0EE81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF83A6780B0D45CA00CB2796 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFFCF5660B0E4CD200634821;
+			remoteInfo = if2k_precompile_all;
+		};
+		BF4B21EC0CD96C53009C50FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF4B21E20CD96C53009C50FC /* If2k Override.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D1107320486CEB800E47090;
+			remoteInfo = "If2k Override";
+		};
+		BF4B21F00CD96C7E009C50FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF4B21E20CD96C53009C50FC /* If2k Override.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D1107260486CEB800E47090;
+			remoteInfo = "If2k Override";
+		};
+		BFD8CC000B9B4FAF00D01D9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFD8CBF60B9B4FAF00D01D9A /* if2kext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 32A4FEC40562C75800D090E7;
+			remoteInfo = if2kext;
+		};
+		BFFAEB8C0B0FA29400E83D76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF83A6780B0D45CA00CB2796 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFFAEB870B0FA26400E83D76;
+			remoteInfo = "if2ksystem-prep";
+		};
+		BFFAEBC40B0FAA4500E83D76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF83A6780B0D45CA00CB2796 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFFCF5980B0E4D8900634821;
+			remoteInfo = if2ksystem;
+		};
+		BFFCF5A70B0E4DC400634821 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF83A6780B0D45CA00CB2796 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFFCF23F0B0E489300634821;
+			remoteInfo = "If2k Settings";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BFFAEAE70B0F951200E83D76 /* Copy Files - LaunchDaemons */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = root/Library/LaunchDaemons;
+			dstSubfolderSpec = 16;
+			files = (
+				BFFAEAF30B0F95EA00E83D76 /* com.internetfilter.if2kd.plist in Copy Files - LaunchDaemons */,
+			);
+			name = "Copy Files - LaunchDaemons";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFFCF5970B0E4D8900634821 /* Copy Files - bin */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = root/Library/If2k/bin;
+			dstSubfolderSpec = 16;
+			files = (
+				BFFCF5B80B0E4E3400634821 /* if2kd in Copy Files - bin */,
+				BFFCF5B90B0E4E3400634821 /* if2k_precompile_all in Copy Files - bin */,
+			);
+			name = "Copy Files - bin";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFFCF5AB0B0E4DE700634821 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = dmg;
+			dstSubfolderSpec = 16;
+			files = (
+				BF0D22020E41621700F413C6 /* If2k-Remover.app in CopyFiles */,
+				BF4B21F80CD96CEA009C50FC /* If2k Override.app in CopyFiles */,
+				BFFAEBEE0B0FAC8900E83D76 /* If2k Settings.app in CopyFiles */,
+				BFFCF5AD0B0E4DFC00634821 /* ReadMe.webarchive in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFFCF60A0B0E4ECA00634821 /* Copy Files - db */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = root/Library/If2k/predb;
+			dstSubfolderSpec = 16;
+			files = (
+				BF7693300D0FF1FC009DAA2E /* 01postbadurl.txt in Copy Files - db */,
+				BF7693310D0FF1FC009DAA2E /* 02postbadurl.txt in Copy Files - db */,
+				BF7693320D0FF1FC009DAA2E /* 03postbadurl.txt in Copy Files - db */,
+				BF7693330D0FF1FC009DAA2E /* 04postbadurl.txt in Copy Files - db */,
+				BF7693340D0FF1FC009DAA2E /* 05postbadurl.txt in Copy Files - db */,
+				BF7693350D0FF1FC009DAA2E /* 06postbadurl.txt in Copy Files - db */,
+				BF7693360D0FF1FC009DAA2E /* 07postbadurl.txt in Copy Files - db */,
+				BF7693370D0FF1FC009DAA2E /* 08postbadurl.txt in Copy Files - db */,
+				BFFCF5EC0B0E4E6A00634821 /* 01badphr.txt in Copy Files - db */,
+				BFFCF5EE0B0E4E6A00634821 /* 01badurl.txt in Copy Files - db */,
+				BFFCF5F00B0E4E6A00634821 /* 01goodurl.txt in Copy Files - db */,
+				BFFCF5F20B0E4E6A00634821 /* 02badphr.txt in Copy Files - db */,
+				BFFCF5F40B0E4E6A00634821 /* 02badurl.txt in Copy Files - db */,
+				BFFCF5F60B0E4E6A00634821 /* 03badphr.txt in Copy Files - db */,
+				BFFCF5F80B0E4E6A00634821 /* 03badurl.txt in Copy Files - db */,
+				BFFCF5FA0B0E4E6A00634821 /* 04badphr.txt in Copy Files - db */,
+				BFFCF5FC0B0E4E6A00634821 /* 04badurl.txt in Copy Files - db */,
+				BFFCF5FF0B0E4E6A00634821 /* 05badurl.txt in Copy Files - db */,
+				BFFCF6020B0E4E6A00634821 /* 06badurl.txt in Copy Files - db */,
+				BFFCF6050B0E4E6A00634821 /* 07badurl.txt in Copy Files - db */,
+				BFFCF6080B0E4E6A00634821 /* 08badurl.txt in Copy Files - db */,
+			);
+			name = "Copy Files - db";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFFCFA3C0B0E5C0900634821 /* Copy Files - web */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = root/Library/If2k/web;
+			dstSubfolderSpec = 16;
+			files = (
+				BFFCFA510B0E5C8700634821 /* barbwire.jpg in Copy Files - web */,
+				BFFCFA520B0E5C8700634821 /* block.html in Copy Files - web */,
+				BFFCFA530B0E5C8700634821 /* blocked.jpg in Copy Files - web */,
+				BFFCFA540B0E5C8700634821 /* blocked1.jpg in Copy Files - web */,
+				BFFCFA550B0E5C8700634821 /* connectionerror.html in Copy Files - web */,
+				BFFCFA560B0E5C8700634821 /* error404.html in Copy Files - web */,
+				BFFCFA570B0E5C8700634821 /* imageblock.gif in Copy Files - web */,
+				BFFCFA580B0E5C8700634821 /* imageblock.jpg in Copy Files - web */,
+				BFFCFA590B0E5C8700634821 /* imageblock.png in Copy Files - web */,
+				BFFCFA5A0B0E5C8700634821 /* index.html in Copy Files - web */,
+				BFFCFA5B0B0E5C8700634821 /* login.html in Copy Files - web */,
+				BFFCFA5C0B0E5C8700634821 /* logo.gif in Copy Files - web */,
+				BFFCFA5D0B0E5C8700634821 /* logout.html in Copy Files - web */,
+				BFFCFA5E0B0E5C8700634821 /* override.html in Copy Files - web */,
+			);
+			name = "Copy Files - web";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFFCFA3E0B0E5C3800634821 /* Copy Files - kext */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = root/System/Library/Extensions;
+			dstSubfolderSpec = 16;
+			files = (
+				BFD8CC020B9B4FC700D01D9A /* if2kext.kext in Copy Files - kext */,
+			);
+			name = "Copy Files - kext";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BF0D21F60E4161F300F413C6 /* If2k-Remover.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "If2k-Remover.xcodeproj"; path = "If2k-Remover/If2k-Remover.xcodeproj"; sourceTree = "<group>"; };
+		BF2E39620B0E5DFD00E20D92 /* postflight */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.script.sh; name = postflight; path = if2ksystem/Resources/postflight; sourceTree = SOURCE_ROOT; };
+		BF2E39630B0E5DFD00E20D92 /* preflight */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.script.sh; name = preflight; path = if2ksystem/Resources/preflight; sourceTree = SOURCE_ROOT; };
+		BF2E3AB30B0E63CF00E20D92 /* libjdk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libjdk.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF2E3AF00B0E63E700E20D92 /* libif2k.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libif2k.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF2E3AFE0B0E641400E20D92 /* libzip.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libzip.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF3B09F10B0D4D50009144BC /* ReadMe.webarchive */ = {isa = PBXFileReference; lastKnownFileType = text; name = ReadMe.webarchive; path = docs/ReadMe.webarchive; sourceTree = SOURCE_ROOT; };
+		BF450A0A0B9A14AE00CF38D5 /* if2kuninstall.sh */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.script.sh; name = if2kuninstall.sh; path = if2kuninstall/if2kuninstall.sh; sourceTree = "<group>"; };
+		BF4B21E10CD96C22009C50FC /* If2k.dmg */ = {isa = PBXFileReference; lastKnownFileType = file; name = If2k.dmg; path = build/Release/If2k.dmg; sourceTree = SOURCE_ROOT; };
+		BF4B21E20CD96C53009C50FC /* If2k Override.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "If2k Override.xcodeproj"; path = "if2koverride/If2k Override.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		BF7693280D0FF1D2009DAA2E /* 01postbadurl.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 01postbadurl.txt; path = "../../../if2k-files/db/01postbadurl.txt"; sourceTree = SOURCE_ROOT; };
+		BF7693290D0FF1D2009DAA2E /* 02postbadurl.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 02postbadurl.txt; path = "../../../if2k-files/db/02postbadurl.txt"; sourceTree = SOURCE_ROOT; };
+		BF76932A0D0FF1D2009DAA2E /* 03postbadurl.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 03postbadurl.txt; path = "../../../if2k-files/db/03postbadurl.txt"; sourceTree = SOURCE_ROOT; };
+		BF76932B0D0FF1D2009DAA2E /* 04postbadurl.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 04postbadurl.txt; path = "../../../if2k-files/db/04postbadurl.txt"; sourceTree = SOURCE_ROOT; };
+		BF76932C0D0FF1D2009DAA2E /* 05postbadurl.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 05postbadurl.txt; path = "../../../if2k-files/db/05postbadurl.txt"; sourceTree = SOURCE_ROOT; };
+		BF76932D0D0FF1D2009DAA2E /* 06postbadurl.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 06postbadurl.txt; path = "../../../if2k-files/db/06postbadurl.txt"; sourceTree = SOURCE_ROOT; };
+		BF76932E0D0FF1D2009DAA2E /* 07postbadurl.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 07postbadurl.txt; path = "../../../if2k-files/db/07postbadurl.txt"; sourceTree = SOURCE_ROOT; };
+		BF76932F0D0FF1D2009DAA2E /* 08postbadurl.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 08postbadurl.txt; path = "../../../if2k-files/db/08postbadurl.txt"; sourceTree = SOURCE_ROOT; };
+		BF8F22B40D8C840A00786496 /* jdk_sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = jdk_sha1.h; path = ../../../libjdk/include/jdk_sha1.h; sourceTree = SOURCE_ROOT; };
+		BF8F22B60D8C841D00786496 /* jdk_sha1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_sha1.cpp; path = ../../../libjdk/src/jdk_sha1.cpp; sourceTree = SOURCE_ROOT; };
+		BFBA97F50B0E73C40046C24C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; name = Info.plist; path = if2ksettings/Info.plist; sourceTree = SOURCE_ROOT; };
+		BFD8CBF60B9B4FAF00D01D9A /* if2kext.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = if2kext.xcodeproj; path = if2kext/if2kext.xcodeproj; sourceTree = "<group>"; };
+		BFFAEAE20B0F94C900E83D76 /* com.internetfilter.if2kd.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; name = com.internetfilter.if2kd.plist; path = if2ksystem/com.internetfilter.if2kd.plist; sourceTree = SOURCE_ROOT; };
+		BFFAEAF50B0F962300E83D76 /* if2kuninstall.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = if2kuninstall.c; path = if2kuninstall/if2kuninstall.c; sourceTree = SOURCE_ROOT; };
+		BFFAEB650B0F9F3B00E83D76 /* If2kSystem-Description.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; name = "If2kSystem-Description.plist"; path = "if2ksystem/If2kSystem-Description.plist"; sourceTree = SOURCE_ROOT; };
+		BFFAEB660B0F9F3B00E83D76 /* If2kSystem-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; name = "If2kSystem-Info.plist"; path = "if2ksystem/If2kSystem-Info.plist"; sourceTree = SOURCE_ROOT; };
+		BFFCF2400B0E489300634821 /* If2k Settings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "If2k Settings.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFFCF25D0B0E4A4C00634821 /* If2kSettingsGui.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = If2kSettingsGui.h; path = if2ksettings/If2kSettingsGui.h; sourceTree = SOURCE_ROOT; };
+		BFFCF25E0B0E4A4C00634821 /* If2kSettingsGui.mm */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.objcpp; name = If2kSettingsGui.mm; path = if2ksettings/If2kSettingsGui.mm; sourceTree = SOURCE_ROOT; };
+		BFFCF2600B0E4A5F00634821 /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = main.m; path = if2ksettings/main.m; sourceTree = SOURCE_ROOT; };
+		BFFCF2640B0E4A7A00634821 /* English */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = English; path = InfoPlist.strings; sourceTree = "<group>"; };
+		BFFCF2660B0E4A7A00634821 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = MainMenu.nib; sourceTree = "<group>"; };
+		BFFCF2670B0E4A7A00634821 /* If2k Settings_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = "If2k Settings_Prefix.pch"; path = "if2ksettings/If2k Settings_Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		BFFCF2680B0E4A7A00634821 /* version.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; name = version.plist; path = if2ksettings/version.plist; sourceTree = "<group>"; };
+		BFFCF26C0B0E4ADC00634821 /* if2k-icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = "if2k-icon.icns"; path = "../../../if2k-files/misc/if2k-icon.icns"; sourceTree = SOURCE_ROOT; };
+		BFFCF2720B0E4B2A00634821 /* jdk_array.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_array.cpp; path = ../../../libjdk/src/jdk_array.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF2730B0E4B2A00634821 /* jdk_base64.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_base64.cpp; path = ../../../libjdk/src/jdk_base64.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF2740B0E4B2A00634821 /* jdk_bindir.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_bindir.cpp; path = ../../../libjdk/src/jdk_bindir.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF2750B0E4B2A00634821 /* jdk_buf.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_buf.cpp; path = ../../../libjdk/src/jdk_buf.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF2760B0E4B2A00634821 /* jdk_buf_zip.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_buf_zip.cpp; path = ../../../libjdk/src/jdk_buf_zip.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF2770B0E4B2A00634821 /* jdk_cgi.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_cgi.cpp; path = ../../../libjdk/src/jdk_cgi.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF2780B0E4B2A00634821 /* jdk_cgisettings.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_cgisettings.cpp; path = ../../../libjdk/src/jdk_cgisettings.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF2790B0E4B2A00634821 /* jdk_daemon.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_daemon.cpp; path = ../../../libjdk/src/jdk_daemon.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF27A0B0E4B2A00634821 /* jdk_dbm.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_dbm.cpp; path = ../../../libjdk/src/jdk_dbm.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF27B0B0E4B2A00634821 /* jdk_dll.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_dll.cpp; path = ../../../libjdk/src/jdk_dll.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF27C0B0E4B2A00634821 /* jdk_dynbuf.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_dynbuf.cpp; path = ../../../libjdk/src/jdk_dynbuf.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF27D0B0E4B2A00634821 /* jdk_dynbuf_http.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_dynbuf_http.cpp; path = ../../../libjdk/src/jdk_dynbuf_http.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF27E0B0E4B2A00634821 /* jdk_fast_url_lookup.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_fast_url_lookup.cpp; path = ../../../libjdk/src/jdk_fast_url_lookup.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF27F0B0E4B2A00634821 /* jdk_fork_server.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_fork_server.cpp; path = ../../../libjdk/src/jdk_fork_server.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF2800B0E4B2A00634821 /* jdk_heap.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_heap.cpp; path = ../../../libjdk/src/jdk_heap.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF2810B0E4B2A00634821 /* jdk_html.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_html.cpp; path = ../../../libjdk/src/jdk_html.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF2820B0E4B2A00634821 /* jdk_html_decode.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_html_decode.cpp; path = ../../../libjdk/src/jdk_html_decode.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF2830B0E4B2A00634821 /* jdk_html_template.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_html_template.cpp; path = ../../../libjdk/src/jdk_html_template.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF2840B0E4B2A00634821 /* jdk_http.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_http.cpp; path = ../../../libjdk/src/jdk_http.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF2850B0E4B2A00634821 /* jdk_http_server.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_http_server.cpp; path = ../../../libjdk/src/jdk_http_server.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF2860B0E4B2A00634821 /* jdk_httprequest.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_httprequest.cpp; path = ../../../libjdk/src/jdk_httprequest.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF2870B0E4B2A00634821 /* jdk_linesplit.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_linesplit.cpp; path = ../../../libjdk/src/jdk_linesplit.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF2880B0E4B2A00634821 /* jdk_log.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_log.cpp; path = ../../../libjdk/src/jdk_log.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF2890B0E4B2A00634821 /* jdk_log_osx.mm */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.objcpp; name = jdk_log_osx.mm; path = ../../../libjdk/src/jdk_log_osx.mm; sourceTree = SOURCE_ROOT; };
+		BFFCF28A0B0E4B2A00634821 /* jdk_lz.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_lz.cpp; path = ../../../libjdk/src/jdk_lz.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF28B0B0E4B2A00634821 /* jdk_map.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_map.cpp; path = ../../../libjdk/src/jdk_map.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF28C0B0E4B2A00634821 /* jdk_mmap_buf.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_mmap_buf.cpp; path = ../../../libjdk/src/jdk_mmap_buf.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF28D0B0E4B2A00634821 /* jdk_nameserver.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_nameserver.cpp; path = ../../../libjdk/src/jdk_nameserver.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF28E0B0E4B2A00634821 /* jdk_pair.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_pair.cpp; path = ../../../libjdk/src/jdk_pair.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF28F0B0E4B2A00634821 /* jdk_procmap.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_procmap.cpp; path = ../../../libjdk/src/jdk_procmap.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF2900B0E4B2A00634821 /* jdk_questions.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_questions.cpp; path = ../../../libjdk/src/jdk_questions.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF2910B0E4B2A00634821 /* jdk_remote_buf.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_remote_buf.cpp; path = ../../../libjdk/src/jdk_remote_buf.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF2920B0E4B2A00634821 /* jdk_rs232.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_rs232.cpp; path = ../../../libjdk/src/jdk_rs232.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF2930B0E4B2A00634821 /* jdk_scheme.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_scheme.cpp; path = ../../../libjdk/src/jdk_scheme.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF2940B0E4B2A00634821 /* jdk_serial_number.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_serial_number.cpp; path = ../../../libjdk/src/jdk_serial_number.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF2950B0E4B2A00634821 /* jdk_serialsocket.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_serialsocket.cpp; path = ../../../libjdk/src/jdk_serialsocket.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF2960B0E4B2A00634821 /* jdk_server.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_server.cpp; path = ../../../libjdk/src/jdk_server.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF2970B0E4B2A00634821 /* jdk_server_family.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_server_family.cpp; path = ../../../libjdk/src/jdk_server_family.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF2980B0E4B2A00634821 /* jdk_settings.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_settings.cpp; path = ../../../libjdk/src/jdk_settings.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF2990B0E4B2A00634821 /* jdk_shmem.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_shmem.cpp; path = ../../../libjdk/src/jdk_shmem.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF29A0B0E4B2A00634821 /* jdk_smtp_send.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_smtp_send.cpp; path = ../../../libjdk/src/jdk_smtp_send.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF29B0B0E4B2A00634821 /* jdk_socket.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_socket.cpp; path = ../../../libjdk/src/jdk_socket.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF29C0B0E4B2A00634821 /* jdk_socketswitch.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_socketswitch.cpp; path = ../../../libjdk/src/jdk_socketswitch.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF29D0B0E4B2A00634821 /* jdk_socketutil.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_socketutil.cpp; path = ../../../libjdk/src/jdk_socketutil.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF29E0B0E4B2A00634821 /* jdk_stream.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_stream.cpp; path = ../../../libjdk/src/jdk_stream.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF29F0B0E4B2A00634821 /* jdk_string.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_string.cpp; path = ../../../libjdk/src/jdk_string.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF2A00B0E4B2A00634821 /* jdk_thread.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_thread.cpp; path = ../../../libjdk/src/jdk_thread.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF2A10B0E4B2A00634821 /* jdk_thread_mem.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_thread_mem.cpp; path = ../../../libjdk/src/jdk_thread_mem.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF2A20B0E4B2B00634821 /* jdk_thread_mutex.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_thread_mutex.cpp; path = ../../../libjdk/src/jdk_thread_mutex.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF2A30B0E4B2B00634821 /* jdk_thread_pool.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_thread_pool.cpp; path = ../../../libjdk/src/jdk_thread_pool.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF2A40B0E4B2B00634821 /* jdk_url.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_url.cpp; path = ../../../libjdk/src/jdk_url.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF2A50B0E4B2B00634821 /* jdk_utf.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_utf.cpp; path = ../../../libjdk/src/jdk_utf.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF2A60B0E4B2B00634821 /* jdk_util.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_util.cpp; path = ../../../libjdk/src/jdk_util.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF2A70B0E4B2B00634821 /* jdk_win32svc.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_win32svc.cpp; path = ../../../libjdk/src/jdk_win32svc.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF2A80B0E4B2B00634821 /* jdk_zipfile.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = jdk_zipfile.cpp; path = ../../../libjdk/src/jdk_zipfile.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF2A90B0E4B2B00634821 /* JDKAuthorization.mm */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.objcpp; name = JDKAuthorization.mm; path = ../../../libjdk/src/JDKAuthorization.mm; sourceTree = SOURCE_ROOT; };
+		BFFCF2E30B0E4B4900634821 /* autoconf.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = autoconf.h; path = ../../../libjdk/include/autoconf.h; sourceTree = SOURCE_ROOT; };
+		BFFCF2E40B0E4B4900634821 /* jdk_archive.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_archive.h; path = ../../../libjdk/include/jdk_archive.h; sourceTree = SOURCE_ROOT; };
+		BFFCF2E50B0E4B4900634821 /* jdk_array.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_array.h; path = ../../../libjdk/include/jdk_array.h; sourceTree = SOURCE_ROOT; };
+		BFFCF2E60B0E4B4900634821 /* jdk_atom.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_atom.h; path = ../../../libjdk/include/jdk_atom.h; sourceTree = SOURCE_ROOT; };
+		BFFCF2E70B0E4B4900634821 /* jdk_base64.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_base64.h; path = ../../../libjdk/include/jdk_base64.h; sourceTree = SOURCE_ROOT; };
+		BFFCF2E80B0E4B4900634821 /* jdk_bindir.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_bindir.h; path = ../../../libjdk/include/jdk_bindir.h; sourceTree = SOURCE_ROOT; };
+		BFFCF2E90B0E4B4900634821 /* jdk_buf.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_buf.h; path = ../../../libjdk/include/jdk_buf.h; sourceTree = SOURCE_ROOT; };
+		BFFCF2EA0B0E4B4900634821 /* jdk_cgi.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_cgi.h; path = ../../../libjdk/include/jdk_cgi.h; sourceTree = SOURCE_ROOT; };
+		BFFCF2EB0B0E4B4900634821 /* jdk_cgisettings.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_cgisettings.h; path = ../../../libjdk/include/jdk_cgisettings.h; sourceTree = SOURCE_ROOT; };
+		BFFCF2EC0B0E4B4900634821 /* jdk_crypt.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_crypt.h; path = ../../../libjdk/include/jdk_crypt.h; sourceTree = SOURCE_ROOT; };
+		BFFCF2ED0B0E4B4900634821 /* jdk_daemon.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_daemon.h; path = ../../../libjdk/include/jdk_daemon.h; sourceTree = SOURCE_ROOT; };
+		BFFCF2EE0B0E4B4900634821 /* jdk_dbm.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_dbm.h; path = ../../../libjdk/include/jdk_dbm.h; sourceTree = SOURCE_ROOT; };
+		BFFCF2EF0B0E4B4900634821 /* jdk_dll.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_dll.h; path = ../../../libjdk/include/jdk_dll.h; sourceTree = SOURCE_ROOT; };
+		BFFCF2F00B0E4B4900634821 /* jdk_dynbuf.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_dynbuf.h; path = ../../../libjdk/include/jdk_dynbuf.h; sourceTree = SOURCE_ROOT; };
+		BFFCF2F10B0E4B4900634821 /* jdk_elastic_queue.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_elastic_queue.h; path = ../../../libjdk/include/jdk_elastic_queue.h; sourceTree = SOURCE_ROOT; };
+		BFFCF2F20B0E4B4900634821 /* jdk_error.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_error.h; path = ../../../libjdk/include/jdk_error.h; sourceTree = SOURCE_ROOT; };
+		BFFCF2F30B0E4B4900634821 /* jdk_fast_url_lookup.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_fast_url_lookup.h; path = ../../../libjdk/include/jdk_fast_url_lookup.h; sourceTree = SOURCE_ROOT; };
+		BFFCF2F40B0E4B4900634821 /* jdk_fasttree.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_fasttree.h; path = ../../../libjdk/include/jdk_fasttree.h; sourceTree = SOURCE_ROOT; };
+		BFFCF2F50B0E4B4900634821 /* jdk_fork_server.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_fork_server.h; path = ../../../libjdk/include/jdk_fork_server.h; sourceTree = SOURCE_ROOT; };
+		BFFCF2F60B0E4B4900634821 /* jdk_heap.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_heap.h; path = ../../../libjdk/include/jdk_heap.h; sourceTree = SOURCE_ROOT; };
+		BFFCF2F70B0E4B4900634821 /* jdk_html.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_html.h; path = ../../../libjdk/include/jdk_html.h; sourceTree = SOURCE_ROOT; };
+		BFFCF2F80B0E4B4900634821 /* jdk_html_decode.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_html_decode.h; path = ../../../libjdk/include/jdk_html_decode.h; sourceTree = SOURCE_ROOT; };
+		BFFCF2F90B0E4B4900634821 /* jdk_html_template.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_html_template.h; path = ../../../libjdk/include/jdk_html_template.h; sourceTree = SOURCE_ROOT; };
+		BFFCF2FA0B0E4B4900634821 /* jdk_http.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_http.h; path = ../../../libjdk/include/jdk_http.h; sourceTree = SOURCE_ROOT; };
+		BFFCF2FB0B0E4B4900634821 /* jdk_http_admin.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_http_admin.h; path = ../../../libjdk/include/jdk_http_admin.h; sourceTree = SOURCE_ROOT; };
+		BFFCF2FC0B0E4B4900634821 /* jdk_http_server.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_http_server.h; path = ../../../libjdk/include/jdk_http_server.h; sourceTree = SOURCE_ROOT; };
+		BFFCF2FD0B0E4B4900634821 /* jdk_http_server_lua.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_http_server_lua.h; path = ../../../libjdk/include/jdk_http_server_lua.h; sourceTree = SOURCE_ROOT; };
+		BFFCF2FE0B0E4B4900634821 /* jdk_httprequest.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_httprequest.h; path = ../../../libjdk/include/jdk_httprequest.h; sourceTree = SOURCE_ROOT; };
+		BFFCF2FF0B0E4B4900634821 /* jdk_inet_server.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_inet_server.h; path = ../../../libjdk/include/jdk_inet_server.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3000B0E4B4900634821 /* jdk_ipv4.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_ipv4.h; path = ../../../libjdk/include/jdk_ipv4.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3010B0E4B4900634821 /* jdk_linesplit.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_linesplit.h; path = ../../../libjdk/include/jdk_linesplit.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3020B0E4B4900634821 /* jdk_list.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_list.h; path = ../../../libjdk/include/jdk_list.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3030B0E4B4900634821 /* jdk_log.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_log.h; path = ../../../libjdk/include/jdk_log.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3040B0E4B4900634821 /* jdk_lz.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_lz.h; path = ../../../libjdk/include/jdk_lz.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3050B0E4B4900634821 /* jdk_map.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_map.h; path = ../../../libjdk/include/jdk_map.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3060B0E4B4900634821 /* jdk_mmap_buf.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_mmap_buf.h; path = ../../../libjdk/include/jdk_mmap_buf.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3070B0E4B4900634821 /* jdk_nameserver.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_nameserver.h; path = ../../../libjdk/include/jdk_nameserver.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3080B0E4B4900634821 /* jdk_nio.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_nio.h; path = ../../../libjdk/include/jdk_nio.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3090B0E4B4900634821 /* jdk_objlog.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_objlog.h; path = ../../../libjdk/include/jdk_objlog.h; sourceTree = SOURCE_ROOT; };
+		BFFCF30A0B0E4B4900634821 /* jdk_pair.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_pair.h; path = ../../../libjdk/include/jdk_pair.h; sourceTree = SOURCE_ROOT; };
+		BFFCF30B0B0E4B4900634821 /* jdk_platform.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_platform.h; path = ../../../libjdk/include/jdk_platform.h; sourceTree = SOURCE_ROOT; };
+		BFFCF30C0B0E4B4900634821 /* jdk_platform_beos.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_platform_beos.h; path = ../../../libjdk/include/jdk_platform_beos.h; sourceTree = SOURCE_ROOT; };
+		BFFCF30D0B0E4B4900634821 /* jdk_platform_cygwin.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_platform_cygwin.h; path = ../../../libjdk/include/jdk_platform_cygwin.h; sourceTree = SOURCE_ROOT; };
+		BFFCF30E0B0E4B4900634821 /* jdk_platform_linux.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_platform_linux.h; path = ../../../libjdk/include/jdk_platform_linux.h; sourceTree = SOURCE_ROOT; };
+		BFFCF30F0B0E4B4900634821 /* jdk_platform_linuxthreads.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_platform_linuxthreads.h; path = ../../../libjdk/include/jdk_platform_linuxthreads.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3100B0E4B4900634821 /* jdk_platform_macosx.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_platform_macosx.h; path = ../../../libjdk/include/jdk_platform_macosx.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3110B0E4B4900634821 /* jdk_platform_unix.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_platform_unix.h; path = ../../../libjdk/include/jdk_platform_unix.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3120B0E4B4900634821 /* jdk_platform_win32.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_platform_win32.h; path = ../../../libjdk/include/jdk_platform_win32.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3130B0E4B4900634821 /* jdk_pool.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_pool.h; path = ../../../libjdk/include/jdk_pool.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3140B0E4B4900634821 /* jdk_procmap.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_procmap.h; path = ../../../libjdk/include/jdk_procmap.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3150B0E4B4900634821 /* jdk_questions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_questions.h; path = ../../../libjdk/include/jdk_questions.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3160B0E4B4900634821 /* jdk_queue.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_queue.h; path = ../../../libjdk/include/jdk_queue.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3170B0E4B4900634821 /* jdk_remote_buf.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_remote_buf.h; path = ../../../libjdk/include/jdk_remote_buf.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3180B0E4B4900634821 /* jdk_rs232.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_rs232.h; path = ../../../libjdk/include/jdk_rs232.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3190B0E4B4900634821 /* jdk_scheme.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_scheme.h; path = ../../../libjdk/include/jdk_scheme.h; sourceTree = SOURCE_ROOT; };
+		BFFCF31A0B0E4B4900634821 /* jdk_serial_number.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_serial_number.h; path = ../../../libjdk/include/jdk_serial_number.h; sourceTree = SOURCE_ROOT; };
+		BFFCF31B0B0E4B4900634821 /* jdk_serialsocket.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_serialsocket.h; path = ../../../libjdk/include/jdk_serialsocket.h; sourceTree = SOURCE_ROOT; };
+		BFFCF31C0B0E4B4900634821 /* jdk_server.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_server.h; path = ../../../libjdk/include/jdk_server.h; sourceTree = SOURCE_ROOT; };
+		BFFCF31D0B0E4B4900634821 /* jdk_server_family.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_server_family.h; path = ../../../libjdk/include/jdk_server_family.h; sourceTree = SOURCE_ROOT; };
+		BFFCF31E0B0E4B4900634821 /* jdk_settings.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_settings.h; path = ../../../libjdk/include/jdk_settings.h; sourceTree = SOURCE_ROOT; };
+		BFFCF31F0B0E4B4900634821 /* jdk_settings_objc.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_settings_objc.h; path = ../../../libjdk/include/jdk_settings_objc.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3200B0E4B4900634821 /* jdk_shmem.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_shmem.h; path = ../../../libjdk/include/jdk_shmem.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3210B0E4B4900634821 /* jdk_smtp_send.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_smtp_send.h; path = ../../../libjdk/include/jdk_smtp_send.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3220B0E4B4900634821 /* jdk_socket.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_socket.h; path = ../../../libjdk/include/jdk_socket.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3230B0E4B4900634821 /* jdk_socket_beos.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_socket_beos.h; path = ../../../libjdk/include/jdk_socket_beos.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3240B0E4B4900634821 /* jdk_socket_unix.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_socket_unix.h; path = ../../../libjdk/include/jdk_socket_unix.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3250B0E4B4900634821 /* jdk_socket_win32.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_socket_win32.h; path = ../../../libjdk/include/jdk_socket_win32.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3260B0E4B4900634821 /* jdk_socketswitch.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_socketswitch.h; path = ../../../libjdk/include/jdk_socketswitch.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3270B0E4B4900634821 /* jdk_socketutil.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_socketutil.h; path = ../../../libjdk/include/jdk_socketutil.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3280B0E4B4900634821 /* jdk_stream.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_stream.h; path = ../../../libjdk/include/jdk_stream.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3290B0E4B4900634821 /* jdk_string.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_string.h; path = ../../../libjdk/include/jdk_string.h; sourceTree = SOURCE_ROOT; };
+		BFFCF32A0B0E4B4900634821 /* jdk_string_objc.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_string_objc.h; path = ../../../libjdk/include/jdk_string_objc.h; sourceTree = SOURCE_ROOT; };
+		BFFCF32B0B0E4B4900634821 /* jdk_systemsettings_macosx.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_systemsettings_macosx.h; path = ../../../libjdk/include/jdk_systemsettings_macosx.h; sourceTree = SOURCE_ROOT; };
+		BFFCF32C0B0E4B4900634821 /* jdk_table.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_table.h; path = ../../../libjdk/include/jdk_table.h; sourceTree = SOURCE_ROOT; };
+		BFFCF32D0B0E4B4900634821 /* jdk_test.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_test.h; path = ../../../libjdk/include/jdk_test.h; sourceTree = SOURCE_ROOT; };
+		BFFCF32E0B0E4B4900634821 /* jdk_thread.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_thread.h; path = ../../../libjdk/include/jdk_thread.h; sourceTree = SOURCE_ROOT; };
+		BFFCF32F0B0E4B4900634821 /* jdk_thread_server.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_thread_server.h; path = ../../../libjdk/include/jdk_thread_server.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3300B0E4B4900634821 /* jdk_tree.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_tree.h; path = ../../../libjdk/include/jdk_tree.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3310B0E4B4900634821 /* jdk_url.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_url.h; path = ../../../libjdk/include/jdk_url.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3320B0E4B4900634821 /* jdk_utf.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_utf.h; path = ../../../libjdk/include/jdk_utf.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3330B0E4B4900634821 /* jdk_util.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_util.h; path = ../../../libjdk/include/jdk_util.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3340B0E4B4900634821 /* jdk_valarray.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_valarray.h; path = ../../../libjdk/include/jdk_valarray.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3350B0E4B4900634821 /* jdk_valmap.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_valmap.h; path = ../../../libjdk/include/jdk_valmap.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3360B0E4B4900634821 /* jdk_win32svc.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_win32svc.h; path = ../../../libjdk/include/jdk_win32svc.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3370B0E4B4900634821 /* jdk_win32wtl.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_win32wtl.h; path = ../../../libjdk/include/jdk_win32wtl.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3380B0E4B4900634821 /* jdk_winerror.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_winerror.h; path = ../../../libjdk/include/jdk_winerror.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3390B0E4B4900634821 /* jdk_winhook.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_winhook.h; path = ../../../libjdk/include/jdk_winhook.h; sourceTree = SOURCE_ROOT; };
+		BFFCF33A0B0E4B4900634821 /* jdk_winver.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_winver.h; path = ../../../libjdk/include/jdk_winver.h; sourceTree = SOURCE_ROOT; };
+		BFFCF33B0B0E4B4900634821 /* jdk_world.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_world.h; path = ../../../libjdk/include/jdk_world.h; sourceTree = SOURCE_ROOT; };
+		BFFCF33C0B0E4B4900634821 /* jdk_xml.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_xml.h; path = ../../../libjdk/include/jdk_xml.h; sourceTree = SOURCE_ROOT; };
+		BFFCF33D0B0E4B4900634821 /* jdk_zipfile.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdk_zipfile.h; path = ../../../libjdk/include/jdk_zipfile.h; sourceTree = SOURCE_ROOT; };
+		BFFCF33E0B0E4B4900634821 /* JDKAuthorization.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = JDKAuthorization.h; path = ../../../libjdk/include/JDKAuthorization.h; sourceTree = SOURCE_ROOT; };
+		BFFCF33F0B0E4B4900634821 /* jdkvecstring.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdkvecstring.h; path = ../../../libjdk/include/jdkvecstring.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3400B0E4B4900634821 /* jdkwx_form.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdkwx_form.h; path = ../../../libjdk/include/jdkwx_form.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3410B0E4B4900634821 /* jdkwx_validator.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = jdkwx_validator.h; path = ../../../libjdk/include/jdkwx_validator.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3430B0E4B7500634821 /* libjdk_compress.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = libjdk_compress.cpp; path = ../../../libjdk/tool/libjdk_compress.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF3440B0E4B7500634821 /* libjdk_decompress.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = libjdk_decompress.cpp; path = ../../../libjdk/tool/libjdk_decompress.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF3450B0E4B7500634821 /* libjdk_fasttree_example.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = libjdk_fasttree_example.cpp; path = ../../../libjdk/tool/libjdk_fasttree_example.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF3460B0E4B7500634821 /* libjdk_html_decode.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = libjdk_html_decode.cpp; path = ../../../libjdk/tool/libjdk_html_decode.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF3470B0E4B7500634821 /* libjdk_list_zip.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = libjdk_list_zip.cpp; path = ../../../libjdk/tool/libjdk_list_zip.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF3480B0E4B7500634821 /* libjdk_make_serial_number.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = libjdk_make_serial_number.cpp; path = ../../../libjdk/tool/libjdk_make_serial_number.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF3490B0E4B7500634821 /* libjdk_makebin.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = libjdk_makebin.cpp; path = ../../../libjdk/tool/libjdk_makebin.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF34A0B0E4B7500634821 /* libjdk_tcp2rs232.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = libjdk_tcp2rs232.cpp; path = ../../../libjdk/tool/libjdk_tcp2rs232.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF34B0B0E4B7500634821 /* libjdk_test_serial_number.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = libjdk_test_serial_number.cpp; path = ../../../libjdk/tool/libjdk_test_serial_number.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF34C0B0E4B7500634821 /* libjdk_uncompress.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = libjdk_uncompress.cpp; path = ../../../libjdk/tool/libjdk_uncompress.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF34E0B0E4B9900634821 /* if2k_mini_client.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = if2k_mini_client.h; path = ../../../libif2k/include/if2k_mini_client.h; sourceTree = SOURCE_ROOT; };
+		BFFCF34F0B0E4B9900634821 /* if2k_mini_compile.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = if2k_mini_compile.h; path = ../../../libif2k/include/if2k_mini_compile.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3500B0E4B9900634821 /* if2k_mini_config.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = if2k_mini_config.h; path = ../../../libif2k/include/if2k_mini_config.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3510B0E4B9900634821 /* if2k_mini_http_proxy.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = if2k_mini_http_proxy.h; path = ../../../libif2k/include/if2k_mini_http_proxy.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3520B0E4B9900634821 /* if2k_mini_kernel.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = if2k_mini_kernel.h; path = ../../../libif2k/include/if2k_mini_kernel.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3530B0E4B9900634821 /* if2k_mini_kernel_v2.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = if2k_mini_kernel_v2.h; path = ../../../libif2k/include/if2k_mini_kernel_v2.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3540B0E4B9900634821 /* if2k_mini_log.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = if2k_mini_log.h; path = ../../../libif2k/include/if2k_mini_log.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3550B0E4B9900634821 /* if2k_mini_nntp_proxy.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = if2k_mini_nntp_proxy.h; path = ../../../libif2k/include/if2k_mini_nntp_proxy.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3560B0E4B9900634821 /* if2k_mini_scanner.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = if2k_mini_scanner.h; path = ../../../libif2k/include/if2k_mini_scanner.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3570B0E4B9900634821 /* if2k_mini_server.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = if2k_mini_server.h; path = ../../../libif2k/include/if2k_mini_server.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3580B0E4B9900634821 /* if2k_mini_tree.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = if2k_mini_tree.h; path = ../../../libif2k/include/if2k_mini_tree.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3590B0E4B9900634821 /* if2k_mini_tunnel.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = if2k_mini_tunnel.h; path = ../../../libif2k/include/if2k_mini_tunnel.h; sourceTree = SOURCE_ROOT; };
+		BFFCF35A0B0E4B9900634821 /* if2k_pattern_expander.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = if2k_pattern_expander.h; path = ../../../libif2k/include/if2k_pattern_expander.h; sourceTree = SOURCE_ROOT; };
+		BFFCF35B0B0E4B9900634821 /* if2kkernel_internal.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = if2kkernel_internal.h; path = ../../../libif2k/include/if2kkernel_internal.h; sourceTree = SOURCE_ROOT; };
+		BFFCF35D0B0E4B9900634821 /* if2k_mini_http_proxy.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = if2k_mini_http_proxy.cpp; path = ../../../libif2k/src/if2k_mini_http_proxy.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF35E0B0E4B9900634821 /* if2k_mini_kernel_defaults.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = if2k_mini_kernel_defaults.cpp; path = ../../../libif2k/src/if2k_mini_kernel_defaults.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF35F0B0E4B9900634821 /* if2k_mini_kernel_v2.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = if2k_mini_kernel_v2.cpp; path = ../../../libif2k/src/if2k_mini_kernel_v2.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF3600B0E4B9900634821 /* if2k_mini_log.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = if2k_mini_log.cpp; path = ../../../libif2k/src/if2k_mini_log.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF3610B0E4B9900634821 /* if2k_mini_nntp_proxy.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = if2k_mini_nntp_proxy.cpp; path = ../../../libif2k/src/if2k_mini_nntp_proxy.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF3620B0E4B9900634821 /* if2k_mini_server.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = if2k_mini_server.cpp; path = ../../../libif2k/src/if2k_mini_server.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF3630B0E4B9900634821 /* if2k_mini_tunnel.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = if2k_mini_tunnel.cpp; path = ../../../libif2k/src/if2k_mini_tunnel.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF3640B0E4B9900634821 /* if2k_pattern_expander.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = if2k_pattern_expander.cpp; path = ../../../libif2k/src/if2k_pattern_expander.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF3650B0E4B9900634821 /* if2kkernel_internal.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = if2kkernel_internal.cpp; path = ../../../libif2k/src/if2kkernel_internal.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF3700B0E4BAD00634821 /* if2k_create_demo_license.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = if2k_create_demo_license.cpp; path = ../../../libif2k/tool/if2k_create_demo_license.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF3710B0E4BAD00634821 /* if2k_mini_compile_list.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = if2k_mini_compile_list.cpp; path = ../../../libif2k/tool/if2k_mini_compile_list.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF3720B0E4BAD00634821 /* if2k_mini_unmerge.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = if2k_mini_unmerge.cpp; path = ../../../libif2k/tool/if2k_mini_unmerge.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF3730B0E4BAD00634821 /* if2k_precompile_all.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = if2k_precompile_all.cpp; path = ../../../libif2k/tool/if2k_precompile_all.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF3740B0E4BAD00634821 /* if2k_set_db.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = if2k_set_db.cpp; path = ../../../libif2k/tool/if2k_set_db.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF3750B0E4BAD00634821 /* if2k_text_licensor.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = if2k_text_licensor.cpp; path = ../../../libif2k/tool/if2k_text_licensor.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF3760B0E4BAD00634821 /* if2kd.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = if2kd.cpp; path = ../../../libif2k/tool/if2kd.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF3770B0E4BAD00634821 /* if2kd.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = if2kd.h; path = ../../../libif2k/tool/if2kd.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3790B0E4BC600634821 /* crc32.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = crc32.h; path = ../../../libzip/include/crc32.h; sourceTree = SOURCE_ROOT; };
+		BFFCF37A0B0E4BC600634821 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = ../../../libzip/include/crypt.h; sourceTree = SOURCE_ROOT; };
+		BFFCF37B0B0E4BC600634821 /* deflate.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = deflate.h; path = ../../../libzip/include/deflate.h; sourceTree = SOURCE_ROOT; };
+		BFFCF37C0B0E4BC600634821 /* inffast.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = inffast.h; path = ../../../libzip/include/inffast.h; sourceTree = SOURCE_ROOT; };
+		BFFCF37D0B0E4BC600634821 /* inffixed.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = inffixed.h; path = ../../../libzip/include/inffixed.h; sourceTree = SOURCE_ROOT; };
+		BFFCF37E0B0E4BC600634821 /* inflate.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = inflate.h; path = ../../../libzip/include/inflate.h; sourceTree = SOURCE_ROOT; };
+		BFFCF37F0B0E4BC600634821 /* inftrees.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = inftrees.h; path = ../../../libzip/include/inftrees.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3800B0E4BC600634821 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = ../../../libzip/include/ioapi.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3810B0E4BC600634821 /* ioapi_mem.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ioapi_mem.h; path = ../../../libzip/include/ioapi_mem.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3820B0E4BC600634821 /* iowin32.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = iowin32.h; path = ../../../libzip/include/iowin32.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3830B0E4BC600634821 /* trees.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = trees.h; path = ../../../libzip/include/trees.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3840B0E4BC600634821 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = ../../../libzip/include/unzip.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3850B0E4BC600634821 /* zconf.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = zconf.h; path = ../../../libzip/include/zconf.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3860B0E4BC600634821 /* zconf.in.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = zconf.in.h; path = ../../../libzip/include/zconf.in.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3870B0E4BC600634821 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = zip.h; path = ../../../libzip/include/zip.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3880B0E4BC600634821 /* zlib.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = zlib.h; path = ../../../libzip/include/zlib.h; sourceTree = SOURCE_ROOT; };
+		BFFCF3890B0E4BC600634821 /* zutil.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = zutil.h; path = ../../../libzip/include/zutil.h; sourceTree = SOURCE_ROOT; };
+		BFFCF38B0B0E4BC600634821 /* adler32.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = adler32.c; path = ../../../libzip/src/adler32.c; sourceTree = SOURCE_ROOT; };
+		BFFCF38C0B0E4BC600634821 /* compress.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = compress.c; path = ../../../libzip/src/compress.c; sourceTree = SOURCE_ROOT; };
+		BFFCF38D0B0E4BC600634821 /* crc32.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = crc32.c; path = ../../../libzip/src/crc32.c; sourceTree = SOURCE_ROOT; };
+		BFFCF38E0B0E4BC600634821 /* deflate.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = deflate.c; path = ../../../libzip/src/deflate.c; sourceTree = SOURCE_ROOT; };
+		BFFCF38F0B0E4BC600634821 /* gzio.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = gzio.c; path = ../../../libzip/src/gzio.c; sourceTree = SOURCE_ROOT; };
+		BFFCF3900B0E4BC600634821 /* infback.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = infback.c; path = ../../../libzip/src/infback.c; sourceTree = SOURCE_ROOT; };
+		BFFCF3910B0E4BC600634821 /* inffast.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = inffast.c; path = ../../../libzip/src/inffast.c; sourceTree = SOURCE_ROOT; };
+		BFFCF3920B0E4BC600634821 /* inflate.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = inflate.c; path = ../../../libzip/src/inflate.c; sourceTree = SOURCE_ROOT; };
+		BFFCF3930B0E4BC600634821 /* inftrees.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = inftrees.c; path = ../../../libzip/src/inftrees.c; sourceTree = SOURCE_ROOT; };
+		BFFCF3940B0E4BC600634821 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ioapi.c; path = ../../../libzip/src/ioapi.c; sourceTree = SOURCE_ROOT; };
+		BFFCF3950B0E4BC600634821 /* ioapi_mem.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ioapi_mem.c; path = ../../../libzip/src/ioapi_mem.c; sourceTree = SOURCE_ROOT; };
+		BFFCF3960B0E4BC600634821 /* iowin32.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = iowin32.c; path = ../../../libzip/src/iowin32.c; sourceTree = SOURCE_ROOT; };
+		BFFCF3970B0E4BC600634821 /* minigzip.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = minigzip.c; path = ../../../libzip/src/minigzip.c; sourceTree = SOURCE_ROOT; };
+		BFFCF3980B0E4BC600634821 /* miniunz.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = miniunz.c; path = ../../../libzip/src/miniunz.c; sourceTree = SOURCE_ROOT; };
+		BFFCF3990B0E4BC600634821 /* minizip.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = minizip.c; path = ../../../libzip/src/minizip.c; sourceTree = SOURCE_ROOT; };
+		BFFCF39A0B0E4BC600634821 /* trees.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = trees.c; path = ../../../libzip/src/trees.c; sourceTree = SOURCE_ROOT; };
+		BFFCF39B0B0E4BC600634821 /* uncompr.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = uncompr.c; path = ../../../libzip/src/uncompr.c; sourceTree = SOURCE_ROOT; };
+		BFFCF39C0B0E4BC600634821 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = unzip.c; path = ../../../libzip/src/unzip.c; sourceTree = SOURCE_ROOT; };
+		BFFCF39D0B0E4BC600634821 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = zip.c; path = ../../../libzip/src/zip.c; sourceTree = SOURCE_ROOT; };
+		BFFCF39E0B0E4BC600634821 /* zutil.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = zutil.c; path = ../../../libzip/src/zutil.c; sourceTree = SOURCE_ROOT; };
+		BFFCF3A00B0E4BC600634821 /* libzip_tool_miniunzip.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = libzip_tool_miniunzip.cpp; path = ../../../libzip/tool/libzip_tool_miniunzip.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF3A10B0E4BC600634821 /* libzip_tool_minizip.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = libzip_tool_minizip.cpp; path = ../../../libzip/tool/libzip_tool_minizip.cpp; sourceTree = SOURCE_ROOT; };
+		BFFCF3A20B0E4BED00634821 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		BFFCF3A30B0E4BED00634821 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		BFFCF3A40B0E4BED00634821 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		BFFCF3A50B0E4BED00634821 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = /System/Library/Frameworks/Security.framework; sourceTree = "<absolute>"; };
+		BFFCF5090B0E4C3000634821 /* if2kd */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = if2kd; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFFCF5340B0E4C8100634821 /* SecurityFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SecurityFoundation.framework; path = /System/Library/Frameworks/SecurityFoundation.framework; sourceTree = "<absolute>"; };
+		BFFCF5390B0E4C9000634821 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
+		BFFCF5670B0E4CD200634821 /* if2k_precompile_all */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = if2k_precompile_all; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFFCF5CE0B0E4E6A00634821 /* 01badphr.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = 01badphr.txt; path = "../../../if2k-files/db/01badphr.txt"; sourceTree = SOURCE_ROOT; };
+		BFFCF5D00B0E4E6A00634821 /* 01badurl.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = 01badurl.txt; path = "../../../if2k-files/db/01badurl.txt"; sourceTree = SOURCE_ROOT; };
+		BFFCF5D20B0E4E6A00634821 /* 01goodurl.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = 01goodurl.txt; path = "../../../if2k-files/db/01goodurl.txt"; sourceTree = SOURCE_ROOT; };
+		BFFCF5D40B0E4E6A00634821 /* 02badphr.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = 02badphr.txt; path = "../../../if2k-files/db/02badphr.txt"; sourceTree = SOURCE_ROOT; };
+		BFFCF5D60B0E4E6A00634821 /* 02badurl.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = 02badurl.txt; path = "../../../if2k-files/db/02badurl.txt"; sourceTree = SOURCE_ROOT; };
+		BFFCF5D80B0E4E6A00634821 /* 03badphr.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = 03badphr.txt; path = "../../../if2k-files/db/03badphr.txt"; sourceTree = SOURCE_ROOT; };
+		BFFCF5DA0B0E4E6A00634821 /* 03badurl.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = 03badurl.txt; path = "../../../if2k-files/db/03badurl.txt"; sourceTree = SOURCE_ROOT; };
+		BFFCF5DC0B0E4E6A00634821 /* 04badphr.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = 04badphr.txt; path = "../../../if2k-files/db/04badphr.txt"; sourceTree = SOURCE_ROOT; };
+		BFFCF5DE0B0E4E6A00634821 /* 04badurl.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = 04badurl.txt; path = "../../../if2k-files/db/04badurl.txt"; sourceTree = SOURCE_ROOT; };
+		BFFCF5E10B0E4E6A00634821 /* 05badurl.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = 05badurl.txt; path = "../../../if2k-files/db/05badurl.txt"; sourceTree = SOURCE_ROOT; };
+		BFFCF5E40B0E4E6A00634821 /* 06badurl.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = 06badurl.txt; path = "../../../if2k-files/db/06badurl.txt"; sourceTree = SOURCE_ROOT; };
+		BFFCF5E70B0E4E6A00634821 /* 07badurl.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = 07badurl.txt; path = "../../../if2k-files/db/07badurl.txt"; sourceTree = SOURCE_ROOT; };
+		BFFCF5EA0B0E4E6A00634821 /* 08badurl.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = 08badurl.txt; path = "../../../if2k-files/db/08badurl.txt"; sourceTree = SOURCE_ROOT; };
+		BFFCFA430B0E5C8700634821 /* barbwire.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = barbwire.jpg; path = "../../../if2k-files/web/barbwire.jpg"; sourceTree = SOURCE_ROOT; };
+		BFFCFA440B0E5C8700634821 /* block.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html; name = block.html; path = "../../../if2k-files/web/block.html"; sourceTree = SOURCE_ROOT; };
+		BFFCFA450B0E5C8700634821 /* blocked.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = blocked.jpg; path = "../../../if2k-files/web/blocked.jpg"; sourceTree = SOURCE_ROOT; };
+		BFFCFA460B0E5C8700634821 /* blocked1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = blocked1.jpg; path = "../../../if2k-files/web/blocked1.jpg"; sourceTree = SOURCE_ROOT; };
+		BFFCFA470B0E5C8700634821 /* connectionerror.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html; name = connectionerror.html; path = "../../../if2k-files/web/connectionerror.html"; sourceTree = SOURCE_ROOT; };
+		BFFCFA480B0E5C8700634821 /* error404.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html; name = error404.html; path = "../../../if2k-files/web/error404.html"; sourceTree = SOURCE_ROOT; };
+		BFFCFA490B0E5C8700634821 /* imageblock.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = imageblock.gif; path = "../../../if2k-files/web/imageblock.gif"; sourceTree = SOURCE_ROOT; };
+		BFFCFA4A0B0E5C8700634821 /* imageblock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = imageblock.jpg; path = "../../../if2k-files/web/imageblock.jpg"; sourceTree = SOURCE_ROOT; };
+		BFFCFA4B0B0E5C8700634821 /* imageblock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = imageblock.png; path = "../../../if2k-files/web/imageblock.png"; sourceTree = SOURCE_ROOT; };
+		BFFCFA4C0B0E5C8700634821 /* index.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html; name = index.html; path = "../../../if2k-files/web/index.html"; sourceTree = SOURCE_ROOT; };
+		BFFCFA4D0B0E5C8700634821 /* login.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html; name = login.html; path = "../../../if2k-files/web/login.html"; sourceTree = SOURCE_ROOT; };
+		BFFCFA4E0B0E5C8700634821 /* logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = logo.gif; path = "../../../if2k-files/web/logo.gif"; sourceTree = SOURCE_ROOT; };
+		BFFCFA4F0B0E5C8700634821 /* logout.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html; name = logout.html; path = "../../../if2k-files/web/logout.html"; sourceTree = SOURCE_ROOT; };
+		BFFCFA500B0E5C8700634821 /* override.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html; name = override.html; path = "../../../if2k-files/web/override.html"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF2E3AB10B0E63CF00E20D92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF2E3AEE0B0E63E700E20D92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF2E3AFC0B0E641400E20D92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFFCF23E0B0E489300634821 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF2E3B1D0B0E646D00E20D92 /* libif2k.a in Frameworks */,
+				BF2E3B1C0B0E646D00E20D92 /* libjdk.a in Frameworks */,
+				BF2E3B1E0B0E646D00E20D92 /* libzip.a in Frameworks */,
+				BFFCF3A60B0E4BED00634821 /* AppKit.framework in Frameworks */,
+				BFFCF3A70B0E4BED00634821 /* Cocoa.framework in Frameworks */,
+				BFFCF3A80B0E4BED00634821 /* Foundation.framework in Frameworks */,
+				BFFCF3A90B0E4BED00634821 /* Security.framework in Frameworks */,
+				BFFCF5350B0E4C8100634821 /* SecurityFoundation.framework in Frameworks */,
+				BFFCF53A0B0E4C9000634821 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFFCF5070B0E4C3000634821 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF2E3B200B0E648600E20D92 /* libif2k.a in Frameworks */,
+				BF2E3B1F0B0E648600E20D92 /* libjdk.a in Frameworks */,
+				BF2E3B210B0E648600E20D92 /* libzip.a in Frameworks */,
+				BFFCF5360B0E4C8100634821 /* SecurityFoundation.framework in Frameworks */,
+				BFFCF53B0B0E4C9000634821 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFFCF5650B0E4CD200634821 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF2E3B230B0E649F00E20D92 /* libif2k.a in Frameworks */,
+				BF2E3B220B0E649F00E20D92 /* libjdk.a in Frameworks */,
+				BF2E3B240B0E649F00E20D92 /* libzip.a in Frameworks */,
+				BF2E3A260B0E624F00E20D92 /* Security.framework in Frameworks */,
+				BF2E3A250B0E624A00E20D92 /* Foundation.framework in Frameworks */,
+				BFFCF5910B0E4D2800634821 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF0D21F70E4161F300F413C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF0D21FF0E4161F300F413C6 /* If2k-Remover.app */,
+				BF0D22010E4161F300F413C6 /* if2k_remove_tool */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF3B09ED0B0D4CA4009144BC /* Docs */ = {
+			isa = PBXGroup;
+			children = (
+				BF3B09F10B0D4D50009144BC /* ReadMe.webarchive */,
+			);
+			name = Docs;
+			sourceTree = "<group>";
+		};
+		BF450A140B9A187E00CF38D5 /* Gui Uninstall */ = {
+			isa = PBXGroup;
+			children = (
+				BF450A0A0B9A14AE00CF38D5 /* if2kuninstall.sh */,
+			);
+			name = "Gui Uninstall";
+			sourceTree = "<group>";
+		};
+		BF4B21E90CD96C53009C50FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF4B21ED0CD96C53009C50FC /* If2k Override.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF83A6760B0D45C900CB2796 = {
+			isa = PBXGroup;
+			children = (
+				BF0D21F60E4161F300F413C6 /* If2k-Remover.xcodeproj */,
+				BF4B21E20CD96C53009C50FC /* If2k Override.xcodeproj */,
+				BFD8CBF60B9B4FAF00D01D9A /* if2kext.xcodeproj */,
+				BF450A140B9A187E00CF38D5 /* Gui Uninstall */,
+				BFFAEAF40B0F960500E83D76 /* if2kuninstall */,
+				BFFCFA5F0B0E5CA400634821 /* if2ksystem */,
+				BFFCFA420B0E5C6600634821 /* web */,
+				BFFCF5BA0B0E4E3900634821 /* db */,
+				BFFCF2530B0E49B900634821 /* lib */,
+				BFFCF2470B0E48CB00634821 /* If2kSettings */,
+				BF3B09ED0B0D4CA4009144BC /* Docs */,
+				BFFCF25B0B0E4A0000634821 /* Frameworks */,
+				BFFCF2410B0E489300634821 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BFD8CBF70B9B4FAF00D01D9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFD8CC010B9B4FAF00D01D9A /* if2kext.kext */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFFAEAF40B0F960500E83D76 /* if2kuninstall */ = {
+			isa = PBXGroup;
+			children = (
+				BFFAEAF50B0F962300E83D76 /* if2kuninstall.c */,
+			);
+			name = if2kuninstall;
+			sourceTree = "<group>";
+		};
+		BFFCF2410B0E489300634821 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF4B21E10CD96C22009C50FC /* If2k.dmg */,
+				BFFCF2400B0E489300634821 /* If2k Settings.app */,
+				BFFCF5090B0E4C3000634821 /* if2kd */,
+				BFFCF5670B0E4CD200634821 /* if2k_precompile_all */,
+				BF2E3AB30B0E63CF00E20D92 /* libjdk.a */,
+				BF2E3AF00B0E63E700E20D92 /* libif2k.a */,
+				BF2E3AFE0B0E641400E20D92 /* libzip.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFFCF2470B0E48CB00634821 /* If2kSettings */ = {
+			isa = PBXGroup;
+			children = (
+				BFFCF2560B0E49DD00634821 /* Resources */,
+				BFFCF2550B0E49D700634821 /* Other Sources */,
+				BFFCF2540B0E49CE00634821 /* Classes */,
+			);
+			name = If2kSettings;
+			sourceTree = "<group>";
+		};
+		BFFCF2530B0E49B900634821 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				BFFCF2700B0E4B0E00634821 /* libzip */,
+				BFFCF26F0B0E4B0800634821 /* libjdk */,
+				BFFCF26E0B0E4B0100634821 /* libif2k */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		BFFCF2540B0E49CE00634821 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BFFCF25D0B0E4A4C00634821 /* If2kSettingsGui.h */,
+				BFFCF25E0B0E4A4C00634821 /* If2kSettingsGui.mm */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		BFFCF2550B0E49D700634821 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BFFCF2670B0E4A7A00634821 /* If2k Settings_Prefix.pch */,
+				BFFCF2600B0E4A5F00634821 /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		BFFCF2560B0E49DD00634821 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BFBA97F50B0E73C40046C24C /* Info.plist */,
+				BFFCF26C0B0E4ADC00634821 /* if2k-icon.icns */,
+				BFFCF2680B0E4A7A00634821 /* version.plist */,
+				BFFCF2620B0E4A7A00634821 /* English.lproj */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BFFCF25B0B0E4A0000634821 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFFCF5390B0E4C9000634821 /* CoreFoundation.framework */,
+				BFFCF5340B0E4C8100634821 /* SecurityFoundation.framework */,
+				BFFCF3A20B0E4BED00634821 /* AppKit.framework */,
+				BFFCF3A30B0E4BED00634821 /* Cocoa.framework */,
+				BFFCF3A40B0E4BED00634821 /* Foundation.framework */,
+				BFFCF3A50B0E4BED00634821 /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BFFCF2620B0E4A7A00634821 /* English.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				BFFCF2630B0E4A7A00634821 /* InfoPlist.strings */,
+				BFFCF2650B0E4A7A00634821 /* MainMenu.nib */,
+			);
+			name = English.lproj;
+			path = if2ksettings/English.lproj;
+			sourceTree = "<group>";
+		};
+		BFFCF26E0B0E4B0100634821 /* libif2k */ = {
+			isa = PBXGroup;
+			children = (
+				BFFCF36F0B0E4BAD00634821 /* tool */,
+				BFFCF34D0B0E4B9900634821 /* include */,
+				BFFCF35C0B0E4B9900634821 /* src */,
+			);
+			name = libif2k;
+			sourceTree = "<group>";
+		};
+		BFFCF26F0B0E4B0800634821 /* libjdk */ = {
+			isa = PBXGroup;
+			children = (
+				BFFCF3420B0E4B7500634821 /* tool */,
+				BFFCF2E20B0E4B4900634821 /* include */,
+				BFFCF2710B0E4B2A00634821 /* src */,
+			);
+			name = libjdk;
+			sourceTree = "<group>";
+		};
+		BFFCF2700B0E4B0E00634821 /* libzip */ = {
+			isa = PBXGroup;
+			children = (
+				BFFCF3780B0E4BC600634821 /* include */,
+				BFFCF38A0B0E4BC600634821 /* src */,
+				BFFCF39F0B0E4BC600634821 /* tool */,
+			);
+			name = libzip;
+			sourceTree = "<group>";
+		};
+		BFFCF2710B0E4B2A00634821 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				BF8F22B60D8C841D00786496 /* jdk_sha1.cpp */,
+				BFFCF2720B0E4B2A00634821 /* jdk_array.cpp */,
+				BFFCF2730B0E4B2A00634821 /* jdk_base64.cpp */,
+				BFFCF2740B0E4B2A00634821 /* jdk_bindir.cpp */,
+				BFFCF2750B0E4B2A00634821 /* jdk_buf.cpp */,
+				BFFCF2760B0E4B2A00634821 /* jdk_buf_zip.cpp */,
+				BFFCF2770B0E4B2A00634821 /* jdk_cgi.cpp */,
+				BFFCF2780B0E4B2A00634821 /* jdk_cgisettings.cpp */,
+				BFFCF2790B0E4B2A00634821 /* jdk_daemon.cpp */,
+				BFFCF27A0B0E4B2A00634821 /* jdk_dbm.cpp */,
+				BFFCF27B0B0E4B2A00634821 /* jdk_dll.cpp */,
+				BFFCF27C0B0E4B2A00634821 /* jdk_dynbuf.cpp */,
+				BFFCF27D0B0E4B2A00634821 /* jdk_dynbuf_http.cpp */,
+				BFFCF27E0B0E4B2A00634821 /* jdk_fast_url_lookup.cpp */,
+				BFFCF27F0B0E4B2A00634821 /* jdk_fork_server.cpp */,
+				BFFCF2800B0E4B2A00634821 /* jdk_heap.cpp */,
+				BFFCF2810B0E4B2A00634821 /* jdk_html.cpp */,
+				BFFCF2820B0E4B2A00634821 /* jdk_html_decode.cpp */,
+				BFFCF2830B0E4B2A00634821 /* jdk_html_template.cpp */,
+				BFFCF2840B0E4B2A00634821 /* jdk_http.cpp */,
+				BFFCF2850B0E4B2A00634821 /* jdk_http_server.cpp */,
+				BFFCF2860B0E4B2A00634821 /* jdk_httprequest.cpp */,
+				BFFCF2870B0E4B2A00634821 /* jdk_linesplit.cpp */,
+				BFFCF2880B0E4B2A00634821 /* jdk_log.cpp */,
+				BFFCF2890B0E4B2A00634821 /* jdk_log_osx.mm */,
+				BFFCF28A0B0E4B2A00634821 /* jdk_lz.cpp */,
+				BFFCF28B0B0E4B2A00634821 /* jdk_map.cpp */,
+				BFFCF28C0B0E4B2A00634821 /* jdk_mmap_buf.cpp */,
+				BFFCF28D0B0E4B2A00634821 /* jdk_nameserver.cpp */,
+				BFFCF28E0B0E4B2A00634821 /* jdk_pair.cpp */,
+				BFFCF28F0B0E4B2A00634821 /* jdk_procmap.cpp */,
+				BFFCF2900B0E4B2A00634821 /* jdk_questions.cpp */,
+				BFFCF2910B0E4B2A00634821 /* jdk_remote_buf.cpp */,
+				BFFCF2920B0E4B2A00634821 /* jdk_rs232.cpp */,
+				BFFCF2930B0E4B2A00634821 /* jdk_scheme.cpp */,
+				BFFCF2940B0E4B2A00634821 /* jdk_serial_number.cpp */,
+				BFFCF2950B0E4B2A00634821 /* jdk_serialsocket.cpp */,
+				BFFCF2960B0E4B2A00634821 /* jdk_server.cpp */,
+				BFFCF2970B0E4B2A00634821 /* jdk_server_family.cpp */,
+				BFFCF2980B0E4B2A00634821 /* jdk_settings.cpp */,
+				BFFCF2990B0E4B2A00634821 /* jdk_shmem.cpp */,
+				BFFCF29A0B0E4B2A00634821 /* jdk_smtp_send.cpp */,
+				BFFCF29B0B0E4B2A00634821 /* jdk_socket.cpp */,
+				BFFCF29C0B0E4B2A00634821 /* jdk_socketswitch.cpp */,
+				BFFCF29D0B0E4B2A00634821 /* jdk_socketutil.cpp */,
+				BFFCF29E0B0E4B2A00634821 /* jdk_stream.cpp */,
+				BFFCF29F0B0E4B2A00634821 /* jdk_string.cpp */,
+				BFFCF2A00B0E4B2A00634821 /* jdk_thread.cpp */,
+				BFFCF2A10B0E4B2A00634821 /* jdk_thread_mem.cpp */,
+				BFFCF2A20B0E4B2B00634821 /* jdk_thread_mutex.cpp */,
+				BFFCF2A30B0E4B2B00634821 /* jdk_thread_pool.cpp */,
+				BFFCF2A40B0E4B2B00634821 /* jdk_url.cpp */,
+				BFFCF2A50B0E4B2B00634821 /* jdk_utf.cpp */,
+				BFFCF2A60B0E4B2B00634821 /* jdk_util.cpp */,
+				BFFCF2A70B0E4B2B00634821 /* jdk_win32svc.cpp */,
+				BFFCF2A80B0E4B2B00634821 /* jdk_zipfile.cpp */,
+				BFFCF2A90B0E4B2B00634821 /* JDKAuthorization.mm */,
+			);
+			name = src;
+			path = ../../../libjdk/src;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFFCF2E20B0E4B4900634821 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				BF8F22B40D8C840A00786496 /* jdk_sha1.h */,
+				BFFCF2E30B0E4B4900634821 /* autoconf.h */,
+				BFFCF2E40B0E4B4900634821 /* jdk_archive.h */,
+				BFFCF2E50B0E4B4900634821 /* jdk_array.h */,
+				BFFCF2E60B0E4B4900634821 /* jdk_atom.h */,
+				BFFCF2E70B0E4B4900634821 /* jdk_base64.h */,
+				BFFCF2E80B0E4B4900634821 /* jdk_bindir.h */,
+				BFFCF2E90B0E4B4900634821 /* jdk_buf.h */,
+				BFFCF2EA0B0E4B4900634821 /* jdk_cgi.h */,
+				BFFCF2EB0B0E4B4900634821 /* jdk_cgisettings.h */,
+				BFFCF2EC0B0E4B4900634821 /* jdk_crypt.h */,
+				BFFCF2ED0B0E4B4900634821 /* jdk_daemon.h */,
+				BFFCF2EE0B0E4B4900634821 /* jdk_dbm.h */,
+				BFFCF2EF0B0E4B4900634821 /* jdk_dll.h */,
+				BFFCF2F00B0E4B4900634821 /* jdk_dynbuf.h */,
+				BFFCF2F10B0E4B4900634821 /* jdk_elastic_queue.h */,
+				BFFCF2F20B0E4B4900634821 /* jdk_error.h */,
+				BFFCF2F30B0E4B4900634821 /* jdk_fast_url_lookup.h */,
+				BFFCF2F40B0E4B4900634821 /* jdk_fasttree.h */,
+				BFFCF2F50B0E4B4900634821 /* jdk_fork_server.h */,
+				BFFCF2F60B0E4B4900634821 /* jdk_heap.h */,
+				BFFCF2F70B0E4B4900634821 /* jdk_html.h */,
+				BFFCF2F80B0E4B4900634821 /* jdk_html_decode.h */,
+				BFFCF2F90B0E4B4900634821 /* jdk_html_template.h */,
+				BFFCF2FA0B0E4B4900634821 /* jdk_http.h */,
+				BFFCF2FB0B0E4B4900634821 /* jdk_http_admin.h */,
+				BFFCF2FC0B0E4B4900634821 /* jdk_http_server.h */,
+				BFFCF2FD0B0E4B4900634821 /* jdk_http_server_lua.h */,
+				BFFCF2FE0B0E4B4900634821 /* jdk_httprequest.h */,
+				BFFCF2FF0B0E4B4900634821 /* jdk_inet_server.h */,
+				BFFCF3000B0E4B4900634821 /* jdk_ipv4.h */,
+				BFFCF3010B0E4B4900634821 /* jdk_linesplit.h */,
+				BFFCF3020B0E4B4900634821 /* jdk_list.h */,
+				BFFCF3030B0E4B4900634821 /* jdk_log.h */,
+				BFFCF3040B0E4B4900634821 /* jdk_lz.h */,
+				BFFCF3050B0E4B4900634821 /* jdk_map.h */,
+				BFFCF3060B0E4B4900634821 /* jdk_mmap_buf.h */,
+				BFFCF3070B0E4B4900634821 /* jdk_nameserver.h */,
+				BFFCF3080B0E4B4900634821 /* jdk_nio.h */,
+				BFFCF3090B0E4B4900634821 /* jdk_objlog.h */,
+				BFFCF30A0B0E4B4900634821 /* jdk_pair.h */,
+				BFFCF30B0B0E4B4900634821 /* jdk_platform.h */,
+				BFFCF30C0B0E4B4900634821 /* jdk_platform_beos.h */,
+				BFFCF30D0B0E4B4900634821 /* jdk_platform_cygwin.h */,
+				BFFCF30E0B0E4B4900634821 /* jdk_platform_linux.h */,
+				BFFCF30F0B0E4B4900634821 /* jdk_platform_linuxthreads.h */,
+				BFFCF3100B0E4B4900634821 /* jdk_platform_macosx.h */,
+				BFFCF3110B0E4B4900634821 /* jdk_platform_unix.h */,
+				BFFCF3120B0E4B4900634821 /* jdk_platform_win32.h */,
+				BFFCF3130B0E4B4900634821 /* jdk_pool.h */,
+				BFFCF3140B0E4B4900634821 /* jdk_procmap.h */,
+				BFFCF3150B0E4B4900634821 /* jdk_questions.h */,
+				BFFCF3160B0E4B4900634821 /* jdk_queue.h */,
+				BFFCF3170B0E4B4900634821 /* jdk_remote_buf.h */,
+				BFFCF3180B0E4B4900634821 /* jdk_rs232.h */,
+				BFFCF3190B0E4B4900634821 /* jdk_scheme.h */,
+				BFFCF31A0B0E4B4900634821 /* jdk_serial_number.h */,
+				BFFCF31B0B0E4B4900634821 /* jdk_serialsocket.h */,
+				BFFCF31C0B0E4B4900634821 /* jdk_server.h */,
+				BFFCF31D0B0E4B4900634821 /* jdk_server_family.h */,
+				BFFCF31E0B0E4B4900634821 /* jdk_settings.h */,
+				BFFCF31F0B0E4B4900634821 /* jdk_settings_objc.h */,
+				BFFCF3200B0E4B4900634821 /* jdk_shmem.h */,
+				BFFCF3210B0E4B4900634821 /* jdk_smtp_send.h */,
+				BFFCF3220B0E4B4900634821 /* jdk_socket.h */,
+				BFFCF3230B0E4B4900634821 /* jdk_socket_beos.h */,
+				BFFCF3240B0E4B4900634821 /* jdk_socket_unix.h */,
+				BFFCF3250B0E4B4900634821 /* jdk_socket_win32.h */,
+				BFFCF3260B0E4B4900634821 /* jdk_socketswitch.h */,
+				BFFCF3270B0E4B4900634821 /* jdk_socketutil.h */,
+				BFFCF3280B0E4B4900634821 /* jdk_stream.h */,
+				BFFCF3290B0E4B4900634821 /* jdk_string.h */,
+				BFFCF32A0B0E4B4900634821 /* jdk_string_objc.h */,
+				BFFCF32B0B0E4B4900634821 /* jdk_systemsettings_macosx.h */,
+				BFFCF32C0B0E4B4900634821 /* jdk_table.h */,
+				BFFCF32D0B0E4B4900634821 /* jdk_test.h */,
+				BFFCF32E0B0E4B4900634821 /* jdk_thread.h */,
+				BFFCF32F0B0E4B4900634821 /* jdk_thread_server.h */,
+				BFFCF3300B0E4B4900634821 /* jdk_tree.h */,
+				BFFCF3310B0E4B4900634821 /* jdk_url.h */,
+				BFFCF3320B0E4B4900634821 /* jdk_utf.h */,
+				BFFCF3330B0E4B4900634821 /* jdk_util.h */,
+				BFFCF3340B0E4B4900634821 /* jdk_valarray.h */,
+				BFFCF3350B0E4B4900634821 /* jdk_valmap.h */,
+				BFFCF3360B0E4B4900634821 /* jdk_win32svc.h */,
+				BFFCF3370B0E4B4900634821 /* jdk_win32wtl.h */,
+				BFFCF3380B0E4B4900634821 /* jdk_winerror.h */,
+				BFFCF3390B0E4B4900634821 /* jdk_winhook.h */,
+				BFFCF33A0B0E4B4900634821 /* jdk_winver.h */,
+				BFFCF33B0B0E4B4900634821 /* jdk_world.h */,
+				BFFCF33C0B0E4B4900634821 /* jdk_xml.h */,
+				BFFCF33D0B0E4B4900634821 /* jdk_zipfile.h */,
+				BFFCF33E0B0E4B4900634821 /* JDKAuthorization.h */,
+				BFFCF33F0B0E4B4900634821 /* jdkvecstring.h */,
+				BFFCF3400B0E4B4900634821 /* jdkwx_form.h */,
+				BFFCF3410B0E4B4900634821 /* jdkwx_validator.h */,
+			);
+			name = include;
+			path = ../../../libjdk/include;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFFCF3420B0E4B7500634821 /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				BFFCF3430B0E4B7500634821 /* libjdk_compress.cpp */,
+				BFFCF3440B0E4B7500634821 /* libjdk_decompress.cpp */,
+				BFFCF3450B0E4B7500634821 /* libjdk_fasttree_example.cpp */,
+				BFFCF3460B0E4B7500634821 /* libjdk_html_decode.cpp */,
+				BFFCF3470B0E4B7500634821 /* libjdk_list_zip.cpp */,
+				BFFCF3480B0E4B7500634821 /* libjdk_make_serial_number.cpp */,
+				BFFCF3490B0E4B7500634821 /* libjdk_makebin.cpp */,
+				BFFCF34A0B0E4B7500634821 /* libjdk_tcp2rs232.cpp */,
+				BFFCF34B0B0E4B7500634821 /* libjdk_test_serial_number.cpp */,
+				BFFCF34C0B0E4B7500634821 /* libjdk_uncompress.cpp */,
+			);
+			name = tool;
+			path = ../../../libjdk/tool;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFFCF34D0B0E4B9900634821 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				BFFCF34E0B0E4B9900634821 /* if2k_mini_client.h */,
+				BFFCF34F0B0E4B9900634821 /* if2k_mini_compile.h */,
+				BFFCF3500B0E4B9900634821 /* if2k_mini_config.h */,
+				BFFCF3510B0E4B9900634821 /* if2k_mini_http_proxy.h */,
+				BFFCF3520B0E4B9900634821 /* if2k_mini_kernel.h */,
+				BFFCF3530B0E4B9900634821 /* if2k_mini_kernel_v2.h */,
+				BFFCF3540B0E4B9900634821 /* if2k_mini_log.h */,
+				BFFCF3550B0E4B9900634821 /* if2k_mini_nntp_proxy.h */,
+				BFFCF3560B0E4B9900634821 /* if2k_mini_scanner.h */,
+				BFFCF3570B0E4B9900634821 /* if2k_mini_server.h */,
+				BFFCF3580B0E4B9900634821 /* if2k_mini_tree.h */,
+				BFFCF3590B0E4B9900634821 /* if2k_mini_tunnel.h */,
+				BFFCF35A0B0E4B9900634821 /* if2k_pattern_expander.h */,
+				BFFCF35B0B0E4B9900634821 /* if2kkernel_internal.h */,
+			);
+			name = include;
+			path = ../../../libif2k/include;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFFCF35C0B0E4B9900634821 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				BFFCF35D0B0E4B9900634821 /* if2k_mini_http_proxy.cpp */,
+				BFFCF35E0B0E4B9900634821 /* if2k_mini_kernel_defaults.cpp */,
+				BFFCF35F0B0E4B9900634821 /* if2k_mini_kernel_v2.cpp */,
+				BFFCF3600B0E4B9900634821 /* if2k_mini_log.cpp */,
+				BFFCF3610B0E4B9900634821 /* if2k_mini_nntp_proxy.cpp */,
+				BFFCF3620B0E4B9900634821 /* if2k_mini_server.cpp */,
+				BFFCF3630B0E4B9900634821 /* if2k_mini_tunnel.cpp */,
+				BFFCF3640B0E4B9900634821 /* if2k_pattern_expander.cpp */,
+				BFFCF3650B0E4B9900634821 /* if2kkernel_internal.cpp */,
+			);
+			name = src;
+			path = ../../../libif2k/src;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFFCF36F0B0E4BAD00634821 /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				BFFCF3700B0E4BAD00634821 /* if2k_create_demo_license.cpp */,
+				BFFCF3710B0E4BAD00634821 /* if2k_mini_compile_list.cpp */,
+				BFFCF3720B0E4BAD00634821 /* if2k_mini_unmerge.cpp */,
+				BFFCF3730B0E4BAD00634821 /* if2k_precompile_all.cpp */,
+				BFFCF3740B0E4BAD00634821 /* if2k_set_db.cpp */,
+				BFFCF3750B0E4BAD00634821 /* if2k_text_licensor.cpp */,
+				BFFCF3760B0E4BAD00634821 /* if2kd.cpp */,
+				BFFCF3770B0E4BAD00634821 /* if2kd.h */,
+			);
+			name = tool;
+			path = ../../../libif2k/tool;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFFCF3780B0E4BC600634821 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				BFFCF3790B0E4BC600634821 /* crc32.h */,
+				BFFCF37A0B0E4BC600634821 /* crypt.h */,
+				BFFCF37B0B0E4BC600634821 /* deflate.h */,
+				BFFCF37C0B0E4BC600634821 /* inffast.h */,
+				BFFCF37D0B0E4BC600634821 /* inffixed.h */,
+				BFFCF37E0B0E4BC600634821 /* inflate.h */,
+				BFFCF37F0B0E4BC600634821 /* inftrees.h */,
+				BFFCF3800B0E4BC600634821 /* ioapi.h */,
+				BFFCF3810B0E4BC600634821 /* ioapi_mem.h */,
+				BFFCF3820B0E4BC600634821 /* iowin32.h */,
+				BFFCF3830B0E4BC600634821 /* trees.h */,
+				BFFCF3840B0E4BC600634821 /* unzip.h */,
+				BFFCF3850B0E4BC600634821 /* zconf.h */,
+				BFFCF3860B0E4BC600634821 /* zconf.in.h */,
+				BFFCF3870B0E4BC600634821 /* zip.h */,
+				BFFCF3880B0E4BC600634821 /* zlib.h */,
+				BFFCF3890B0E4BC600634821 /* zutil.h */,
+			);
+			name = include;
+			path = ../../../libzip/include;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFFCF38A0B0E4BC600634821 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				BFFCF38B0B0E4BC600634821 /* adler32.c */,
+				BFFCF38C0B0E4BC600634821 /* compress.c */,
+				BFFCF38D0B0E4BC600634821 /* crc32.c */,
+				BFFCF38E0B0E4BC600634821 /* deflate.c */,
+				BFFCF38F0B0E4BC600634821 /* gzio.c */,
+				BFFCF3900B0E4BC600634821 /* infback.c */,
+				BFFCF3910B0E4BC600634821 /* inffast.c */,
+				BFFCF3920B0E4BC600634821 /* inflate.c */,
+				BFFCF3930B0E4BC600634821 /* inftrees.c */,
+				BFFCF3940B0E4BC600634821 /* ioapi.c */,
+				BFFCF3950B0E4BC600634821 /* ioapi_mem.c */,
+				BFFCF3960B0E4BC600634821 /* iowin32.c */,
+				BFFCF3970B0E4BC600634821 /* minigzip.c */,
+				BFFCF3980B0E4BC600634821 /* miniunz.c */,
+				BFFCF3990B0E4BC600634821 /* minizip.c */,
+				BFFCF39A0B0E4BC600634821 /* trees.c */,
+				BFFCF39B0B0E4BC600634821 /* uncompr.c */,
+				BFFCF39C0B0E4BC600634821 /* unzip.c */,
+				BFFCF39D0B0E4BC600634821 /* zip.c */,
+				BFFCF39E0B0E4BC600634821 /* zutil.c */,
+			);
+			name = src;
+			path = ../../../libzip/src;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFFCF39F0B0E4BC600634821 /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				BFFCF3A00B0E4BC600634821 /* libzip_tool_miniunzip.cpp */,
+				BFFCF3A10B0E4BC600634821 /* libzip_tool_minizip.cpp */,
+			);
+			name = tool;
+			path = ../../../libzip/tool;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFFCF5BA0B0E4E3900634821 /* db */ = {
+			isa = PBXGroup;
+			children = (
+				BF7693280D0FF1D2009DAA2E /* 01postbadurl.txt */,
+				BF7693290D0FF1D2009DAA2E /* 02postbadurl.txt */,
+				BF76932A0D0FF1D2009DAA2E /* 03postbadurl.txt */,
+				BF76932B0D0FF1D2009DAA2E /* 04postbadurl.txt */,
+				BF76932C0D0FF1D2009DAA2E /* 05postbadurl.txt */,
+				BF76932D0D0FF1D2009DAA2E /* 06postbadurl.txt */,
+				BF76932E0D0FF1D2009DAA2E /* 07postbadurl.txt */,
+				BF76932F0D0FF1D2009DAA2E /* 08postbadurl.txt */,
+				BFFCF5CE0B0E4E6A00634821 /* 01badphr.txt */,
+				BFFCF5D00B0E4E6A00634821 /* 01badurl.txt */,
+				BFFCF5D20B0E4E6A00634821 /* 01goodurl.txt */,
+				BFFCF5D40B0E4E6A00634821 /* 02badphr.txt */,
+				BFFCF5D60B0E4E6A00634821 /* 02badurl.txt */,
+				BFFCF5D80B0E4E6A00634821 /* 03badphr.txt */,
+				BFFCF5DA0B0E4E6A00634821 /* 03badurl.txt */,
+				BFFCF5DC0B0E4E6A00634821 /* 04badphr.txt */,
+				BFFCF5DE0B0E4E6A00634821 /* 04badurl.txt */,
+				BFFCF5E10B0E4E6A00634821 /* 05badurl.txt */,
+				BFFCF5E40B0E4E6A00634821 /* 06badurl.txt */,
+				BFFCF5E70B0E4E6A00634821 /* 07badurl.txt */,
+				BFFCF5EA0B0E4E6A00634821 /* 08badurl.txt */,
+			);
+			name = db;
+			sourceTree = "<group>";
+		};
+		BFFCFA420B0E5C6600634821 /* web */ = {
+			isa = PBXGroup;
+			children = (
+				BFFCFA430B0E5C8700634821 /* barbwire.jpg */,
+				BFFCFA440B0E5C8700634821 /* block.html */,
+				BFFCFA450B0E5C8700634821 /* blocked.jpg */,
+				BFFCFA460B0E5C8700634821 /* blocked1.jpg */,
+				BFFCFA470B0E5C8700634821 /* connectionerror.html */,
+				BFFCFA480B0E5C8700634821 /* error404.html */,
+				BFFCFA490B0E5C8700634821 /* imageblock.gif */,
+				BFFCFA4A0B0E5C8700634821 /* imageblock.jpg */,
+				BFFCFA4B0B0E5C8700634821 /* imageblock.png */,
+				BFFCFA4C0B0E5C8700634821 /* index.html */,
+				BFFCFA4D0B0E5C8700634821 /* login.html */,
+				BFFCFA4E0B0E5C8700634821 /* logo.gif */,
+				BFFCFA4F0B0E5C8700634821 /* logout.html */,
+				BFFCFA500B0E5C8700634821 /* override.html */,
+			);
+			name = web;
+			sourceTree = "<group>";
+		};
+		BFFCFA5F0B0E5CA400634821 /* if2ksystem */ = {
+			isa = PBXGroup;
+			children = (
+				BFFAEB650B0F9F3B00E83D76 /* If2kSystem-Description.plist */,
+				BFFAEB660B0F9F3B00E83D76 /* If2kSystem-Info.plist */,
+				BFFAEAE20B0F94C900E83D76 /* com.internetfilter.if2kd.plist */,
+				BF2E39620B0E5DFD00E20D92 /* postflight */,
+				BF2E39630B0E5DFD00E20D92 /* preflight */,
+			);
+			name = if2ksystem;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BF2E3AAF0B0E63CF00E20D92 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF8F22B50D8C840A00786496 /* jdk_sha1.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF2E3AEC0B0E63E700E20D92 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF2E3AFA0B0E641400E20D92 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BF2E3AB20B0E63CF00E20D92 /* jdk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF2E3AFF0B0E643300E20D92 /* Build configuration list for PBXNativeTarget "jdk" */;
+			buildPhases = (
+				BF2E3AAF0B0E63CF00E20D92 /* Headers */,
+				BF2E3AB00B0E63CF00E20D92 /* Sources */,
+				BF2E3AB10B0E63CF00E20D92 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = jdk;
+			productName = jdk;
+			productReference = BF2E3AB30B0E63CF00E20D92 /* libjdk.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BF2E3AEF0B0E63E700E20D92 /* if2k */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF2E3B020B0E643300E20D92 /* Build configuration list for PBXNativeTarget "if2k" */;
+			buildPhases = (
+				BF2E3AEC0B0E63E700E20D92 /* Headers */,
+				BF2E3AED0B0E63E700E20D92 /* Sources */,
+				BF2E3AEE0B0E63E700E20D92 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = if2k;
+			productName = if2k;
+			productReference = BF2E3AF00B0E63E700E20D92 /* libif2k.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BF2E3AFD0B0E641400E20D92 /* zip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF2E3B050B0E643300E20D92 /* Build configuration list for PBXNativeTarget "zip" */;
+			buildPhases = (
+				BF2E3AFA0B0E641400E20D92 /* Headers */,
+				BF2E3AFB0B0E641400E20D92 /* Sources */,
+				BF2E3AFC0B0E641400E20D92 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = zip;
+			productName = zip;
+			productReference = BF2E3AFE0B0E641400E20D92 /* libzip.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BFFCF23F0B0E489300634821 /* If2k Settings */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFFCF2440B0E489400634821 /* Build configuration list for PBXNativeTarget "If2k Settings" */;
+			buildPhases = (
+				BFFCF23C0B0E489300634821 /* Resources */,
+				BFFCF23D0B0E489300634821 /* Sources */,
+				BFFCF23E0B0E489300634821 /* Frameworks */,
+				BFFAEBCA0B0FAA8500E83D76 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF2E3B3D0B0E64F100E20D92 /* PBXTargetDependency */,
+				BF2E3B3F0B0E64F100E20D92 /* PBXTargetDependency */,
+				BF2E3B410B0E64F100E20D92 /* PBXTargetDependency */,
+				BFFAEBC50B0FAA4500E83D76 /* PBXTargetDependency */,
+			);
+			name = "If2k Settings";
+			productName = "If2k Settings";
+			productReference = BFFCF2400B0E489300634821 /* If2k Settings.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BFFCF5080B0E4C3000634821 /* if2kd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFFCF50B0B0E4C4F00634821 /* Build configuration list for PBXNativeTarget "if2kd" */;
+			buildPhases = (
+				BFFCF5060B0E4C3000634821 /* Sources */,
+				BFFCF5070B0E4C3000634821 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF2E3B350B0E64E100E20D92 /* PBXTargetDependency */,
+				BF2E3B370B0E64E100E20D92 /* PBXTargetDependency */,
+				BF2E3B390B0E64E100E20D92 /* PBXTargetDependency */,
+			);
+			name = if2kd;
+			productName = if2kd;
+			productReference = BFFCF5090B0E4C3000634821 /* if2kd */;
+			productType = "com.apple.product-type.tool";
+		};
+		BFFCF5660B0E4CD200634821 /* if2k_precompile_all */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFFCF5690B0E4CF100634821 /* Build configuration list for PBXNativeTarget "if2k_precompile_all" */;
+			buildPhases = (
+				BFFCF5640B0E4CD200634821 /* Sources */,
+				BFFCF5650B0E4CD200634821 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF2E3B2D0B0E64D400E20D92 /* PBXTargetDependency */,
+				BF2E3B2F0B0E64D400E20D92 /* PBXTargetDependency */,
+				BF2E3B310B0E64D400E20D92 /* PBXTargetDependency */,
+			);
+			name = if2k_precompile_all;
+			productName = if2k_precompile_all;
+			productReference = BFFCF5670B0E4CD200634821 /* if2k_precompile_all */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF83A6780B0D45CA00CB2796 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = BF83A6790B0D45CA00CB2796 /* Build configuration list for PBXProject "if2k" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 0;
+			mainGroup = BF83A6760B0D45C900CB2796;
+			productRefGroup = BFFCF2410B0E489300634821 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = BF4B21E90CD96C53009C50FC /* Products */;
+					ProjectRef = BF4B21E20CD96C53009C50FC /* If2k Override.xcodeproj */;
+				},
+				{
+					ProductGroup = BF0D21F70E4161F300F413C6 /* Products */;
+					ProjectRef = BF0D21F60E4161F300F413C6 /* If2k-Remover.xcodeproj */;
+				},
+				{
+					ProductGroup = BFD8CBF70B9B4FAF00D01D9A /* Products */;
+					ProjectRef = BFD8CBF60B9B4FAF00D01D9A /* if2kext.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				BF2E3F350B0E68BF00E20D92 /* all */,
+				BF3B09EA0B0D4C93009144BC /* if2k.dmg */,
+				BFFCF23F0B0E489300634821 /* If2k Settings */,
+				BFFCF5980B0E4D8900634821 /* if2ksystem */,
+				BFFCF5080B0E4C3000634821 /* if2kd */,
+				BFFCF5660B0E4CD200634821 /* if2k_precompile_all */,
+				BF2E3AFD0B0E641400E20D92 /* zip */,
+				BF2E3AEF0B0E63E700E20D92 /* if2k */,
+				BF2E3AB20B0E63CF00E20D92 /* jdk */,
+				BFFAEB870B0FA26400E83D76 /* if2ksystem-prep */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		BF0D21FF0E4161F300F413C6 /* If2k-Remover.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "If2k-Remover.app";
+			remoteRef = BF0D21FE0E4161F300F413C6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BF0D22010E4161F300F413C6 /* if2k_remove_tool */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = if2k_remove_tool;
+			remoteRef = BF0D22000E4161F300F413C6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BF4B21ED0CD96C53009C50FC /* If2k Override.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "If2k Override.app";
+			remoteRef = BF4B21EC0CD96C53009C50FC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BFD8CC010B9B4FAF00D01D9A /* if2kext.kext */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = if2kext.kext;
+			remoteRef = BFD8CC000B9B4FAF00D01D9A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFFCF23C0B0E489300634821 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFFCF2690B0E4A7A00634821 /* InfoPlist.strings in Resources */,
+				BFFCF26A0B0E4A7A00634821 /* MainMenu.nib in Resources */,
+				BFFCF26B0B0E4A7A00634821 /* version.plist in Resources */,
+				BFFCF26D0B0E4ADC00634821 /* if2k-icon.icns in Resources */,
+				BFBA97F60B0E73C40046C24C /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BF3B09E90B0D4C93009144BC /* Build DMG */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build DMG";
+			outputPaths = (
+				$BUILT_PRODUCTS_DIR/If2k.dmg,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = "/bin/bash -x";
+			shellScript = "INSTALLER_PACKAGE_NAME=\"If2k\"\nINSTALLER_DMG_VOLUME_NAME=\"If2k\"\n\nhdiutil create -ov -srcfolder \"$BUILT_PRODUCTS_DIR/dmg\" \"$BUILT_PRODUCTS_DIR/$INSTALLER_PACKAGE_NAME.dmg\" -volname \"$INSTALLER_DMG_VOLUME_NAME\"\n\n";
+		};
+		BFFAEB030B0F96C800E83D76 /* Run Script - Fix perms */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script - Fix perms";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = "/bin/bash -x";
+			shellScript = "sudo chown root:admin \"${BUILT_PRODUCTS_DIR}\"/root/Library\nsudo chmod ug+rwx \"${BUILT_PRODUCTS_DIR}\"/root/Library\nsudo chmod o+r \"${BUILT_PRODUCTS_DIR}\"/root/Library\nsudo chmod +t \"${BUILT_PRODUCTS_DIR}\"/root/Library\n\nsudo chown root:admin \"${BUILT_PRODUCTS_DIR}\"/root/System/Library/Extensions\nsudo chown root:wheel \"${BUILT_PRODUCTS_DIR}/\"root/Library/LaunchDaemons\nsudo chown root:admin \"${BUILT_PRODUCTS_DIR}\"/root/Library/LaunchDaemons/*\n\nmkdir \"${BUILT_PRODUCTS_DIR}\"/root/Library/If2k/db\n\nsudo chown -R root:wheel \"${BUILT_PRODUCTS_DIR}\"/root/Library/If2k\nsudo chown -R root:wheel \"${BUILT_PRODUCTS_DIR}\"/root/System\nsudo chmod -R go-w \"${BUILT_PRODUCTS_DIR}\"/root/System\n\nsudo chown -R root:wheel \"${BUILT_PRODUCTS_DIR}\"/root/System/Library/Extensions/if2kext.kext\nsudo chmod -R go-w \"${BUILT_PRODUCTS_DIR}\"/root/System/Library/Extensions/if2kext.kext\n";
+		};
+		BFFAEB4E0B0F9D2500E83D76 /* Run Script - Make pkg */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script - Make pkg";
+			outputPaths = (
+				$BUILT_PRODUCTS_DIR/if2ksystemdmg/if2ksystem.dmg,
+				"${BUILT_PRODUCTS_DIR}/if2ksystem.pkg",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = "/bin/bash -x";
+			shellScript = "\n/Developer/Applications/Utilities/PackageMaker.app/Contents/MacOS/PackageMaker  -build -p \"${BUILT_PRODUCTS_DIR}\"/if2ksystem.pkg -f \"${BUILT_PRODUCTS_DIR}\"/root -v -r \"$PWD/if2ksystem/Resources\" -i \"$PWD/if2ksystem/If2kSystem-Info.plist\" -d \"$PWD/if2ksystem/If2kSystem-Description.plist\" \n\nrm -r -f \"${BUILT_PRODUCTS_DIR}\"/if2ksystem.pkg/Contents/Resources/.svn 2>/dev/null\n\nINSTALLER_PACKAGE_NAME=\"If2k\"\nINSTALLER_DMG_VOLUME_NAME=\"If2k\"\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/if2ksystemdmg\"\ncp -rp \"${BUILT_PRODUCTS_DIR}\"/if2ksystem.pkg \"${BUILT_PRODUCTS_DIR}/if2ksystemdmg/\" \nhdiutil create -ov -srcfolder \"${BUILT_PRODUCTS_DIR}/if2ksystemdmg\" \"$BUILT_PRODUCTS_DIR/if2ksystemdmg/if2ksystem.dmg\" -volname \"if2ksystem\"\n\n\nexit 0\n\n";
+		};
+		BFFAEB860B0FA26400E83D76 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = "/bin/bash -x";
+			shellScript = "sudo rm -r -f \"${BUILT_PRODUCTS_DIR}\"/root\nmkdir \"${BUILT_PRODUCTS_DIR}\"/root\n\nexit 0\n";
+		};
+		BFFAEBCA0B0FAA8500E83D76 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${BUILT_PRODUCTS_DIR}/if2ksystem.pkg",
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${WRAPPER_NAME}/Contents/Resources/if2ksystem.pkg",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = "/bin/bash -x";
+			shellScript = "echo \"if2k settings copy phase\"\nditto -v -V \"${BUILT_PRODUCTS_DIR}/if2ksystem.pkg\" \"${TARGET_BUILD_DIR}/${WRAPPER_NAME}/Contents/Resources/if2ksystem.pkg\"\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF2E3AB00B0E63CF00E20D92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF2E3AB40B0E63DA00E20D92 /* jdk_array.cpp in Sources */,
+				BF2E3AB50B0E63DA00E20D92 /* jdk_base64.cpp in Sources */,
+				BF2E3AB60B0E63DA00E20D92 /* jdk_bindir.cpp in Sources */,
+				BF2E3AB70B0E63DA00E20D92 /* jdk_buf.cpp in Sources */,
+				BF2E3AB80B0E63DA00E20D92 /* jdk_buf_zip.cpp in Sources */,
+				BF2E3AB90B0E63DA00E20D92 /* jdk_cgi.cpp in Sources */,
+				BF2E3ABA0B0E63DA00E20D92 /* jdk_cgisettings.cpp in Sources */,
+				BF2E3ABB0B0E63DA00E20D92 /* jdk_daemon.cpp in Sources */,
+				BF2E3ABC0B0E63DA00E20D92 /* jdk_dbm.cpp in Sources */,
+				BF2E3ABD0B0E63DA00E20D92 /* jdk_dll.cpp in Sources */,
+				BF2E3ABE0B0E63DA00E20D92 /* jdk_dynbuf.cpp in Sources */,
+				BF2E3ABF0B0E63DA00E20D92 /* jdk_dynbuf_http.cpp in Sources */,
+				BF2E3AC00B0E63DA00E20D92 /* jdk_fast_url_lookup.cpp in Sources */,
+				BF2E3AC10B0E63DA00E20D92 /* jdk_fork_server.cpp in Sources */,
+				BF2E3AC20B0E63DA00E20D92 /* jdk_heap.cpp in Sources */,
+				BF2E3AC30B0E63DA00E20D92 /* jdk_html.cpp in Sources */,
+				BF2E3AC40B0E63DA00E20D92 /* jdk_html_decode.cpp in Sources */,
+				BF2E3AC50B0E63DA00E20D92 /* jdk_html_template.cpp in Sources */,
+				BF2E3AC60B0E63DA00E20D92 /* jdk_http.cpp in Sources */,
+				BF2E3AC70B0E63DA00E20D92 /* jdk_http_server.cpp in Sources */,
+				BF2E3AC80B0E63DA00E20D92 /* jdk_httprequest.cpp in Sources */,
+				BF2E3AC90B0E63DA00E20D92 /* jdk_linesplit.cpp in Sources */,
+				BF2E3ACA0B0E63DA00E20D92 /* jdk_log.cpp in Sources */,
+				BF2E3ACB0B0E63DA00E20D92 /* jdk_log_osx.mm in Sources */,
+				BF2E3ACC0B0E63DA00E20D92 /* jdk_lz.cpp in Sources */,
+				BF2E3ACD0B0E63DA00E20D92 /* jdk_map.cpp in Sources */,
+				BF2E3ACE0B0E63DA00E20D92 /* jdk_mmap_buf.cpp in Sources */,
+				BF2E3ACF0B0E63DA00E20D92 /* jdk_nameserver.cpp in Sources */,
+				BF2E3AD00B0E63DA00E20D92 /* jdk_pair.cpp in Sources */,
+				BF2E3AD10B0E63DA00E20D92 /* jdk_procmap.cpp in Sources */,
+				BF2E3AD20B0E63DA00E20D92 /* jdk_questions.cpp in Sources */,
+				BF2E3AD30B0E63DA00E20D92 /* jdk_remote_buf.cpp in Sources */,
+				BF2E3AD40B0E63DA00E20D92 /* jdk_rs232.cpp in Sources */,
+				BF2E3AD50B0E63DA00E20D92 /* jdk_scheme.cpp in Sources */,
+				BF2E3AD60B0E63DA00E20D92 /* jdk_serial_number.cpp in Sources */,
+				BF2E3AD70B0E63DA00E20D92 /* jdk_serialsocket.cpp in Sources */,
+				BF2E3AD80B0E63DA00E20D92 /* jdk_server.cpp in Sources */,
+				BF2E3AD90B0E63DA00E20D92 /* jdk_server_family.cpp in Sources */,
+				BF2E3ADA0B0E63DA00E20D92 /* jdk_settings.cpp in Sources */,
+				BF2E3ADB0B0E63DA00E20D92 /* jdk_shmem.cpp in Sources */,
+				BF2E3ADC0B0E63DA00E20D92 /* jdk_smtp_send.cpp in Sources */,
+				BF2E3ADD0B0E63DA00E20D92 /* jdk_socket.cpp in Sources */,
+				BF2E3ADE0B0E63DA00E20D92 /* jdk_socketswitch.cpp in Sources */,
+				BF2E3ADF0B0E63DA00E20D92 /* jdk_socketutil.cpp in Sources */,
+				BF2E3AE00B0E63DA00E20D92 /* jdk_stream.cpp in Sources */,
+				BF2E3AE10B0E63DA00E20D92 /* jdk_string.cpp in Sources */,
+				BF2E3AE20B0E63DA00E20D92 /* jdk_thread.cpp in Sources */,
+				BF2E3AE30B0E63DA00E20D92 /* jdk_thread_mem.cpp in Sources */,
+				BF2E3AE40B0E63DA00E20D92 /* jdk_thread_mutex.cpp in Sources */,
+				BF2E3AE50B0E63DA00E20D92 /* jdk_thread_pool.cpp in Sources */,
+				BF2E3AE60B0E63DA00E20D92 /* jdk_url.cpp in Sources */,
+				BF2E3AE70B0E63DA00E20D92 /* jdk_utf.cpp in Sources */,
+				BF2E3AE80B0E63DA00E20D92 /* jdk_util.cpp in Sources */,
+				BF2E3AE90B0E63DA00E20D92 /* jdk_win32svc.cpp in Sources */,
+				BF2E3AEA0B0E63DA00E20D92 /* jdk_zipfile.cpp in Sources */,
+				BF2E3AEB0B0E63DA00E20D92 /* JDKAuthorization.mm in Sources */,
+				BF8F22B70D8C841D00786496 /* jdk_sha1.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF2E3AED0B0E63E700E20D92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF2E3AF10B0E640400E20D92 /* if2k_mini_http_proxy.cpp in Sources */,
+				BF2E3AF20B0E640400E20D92 /* if2k_mini_kernel_defaults.cpp in Sources */,
+				BF2E3AF30B0E640400E20D92 /* if2k_mini_kernel_v2.cpp in Sources */,
+				BF2E3AF40B0E640400E20D92 /* if2k_mini_log.cpp in Sources */,
+				BF2E3AF50B0E640400E20D92 /* if2k_mini_nntp_proxy.cpp in Sources */,
+				BF2E3AF60B0E640400E20D92 /* if2k_mini_server.cpp in Sources */,
+				BF2E3AF70B0E640400E20D92 /* if2k_mini_tunnel.cpp in Sources */,
+				BF2E3AF80B0E640400E20D92 /* if2k_pattern_expander.cpp in Sources */,
+				BF2E3AF90B0E640400E20D92 /* if2kkernel_internal.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF2E3AFB0B0E641400E20D92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF2E3B080B0E644100E20D92 /* adler32.c in Sources */,
+				BF2E3B090B0E644100E20D92 /* compress.c in Sources */,
+				BF2E3B0A0B0E644100E20D92 /* crc32.c in Sources */,
+				BF2E3B0B0B0E644100E20D92 /* deflate.c in Sources */,
+				BF2E3B0C0B0E644100E20D92 /* gzio.c in Sources */,
+				BF2E3B0D0B0E644100E20D92 /* infback.c in Sources */,
+				BF2E3B0E0B0E644100E20D92 /* inffast.c in Sources */,
+				BF2E3B0F0B0E644100E20D92 /* inflate.c in Sources */,
+				BF2E3B100B0E644100E20D92 /* inftrees.c in Sources */,
+				BF2E3B110B0E644100E20D92 /* ioapi.c in Sources */,
+				BF2E3B120B0E644100E20D92 /* ioapi_mem.c in Sources */,
+				BF2E3B130B0E644100E20D92 /* iowin32.c in Sources */,
+				BF2E3B140B0E644100E20D92 /* minigzip.c in Sources */,
+				BF2E3B150B0E644100E20D92 /* miniunz.c in Sources */,
+				BF2E3B160B0E644100E20D92 /* minizip.c in Sources */,
+				BF2E3B170B0E644100E20D92 /* trees.c in Sources */,
+				BF2E3B180B0E644100E20D92 /* uncompr.c in Sources */,
+				BF2E3B190B0E644100E20D92 /* unzip.c in Sources */,
+				BF2E3B1A0B0E644100E20D92 /* zip.c in Sources */,
+				BF2E3B1B0B0E644100E20D92 /* zutil.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFFCF23D0B0E489300634821 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFFCF25F0B0E4A4C00634821 /* If2kSettingsGui.mm in Sources */,
+				BFFCF2610B0E4A5F00634821 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFFCF5060B0E4C3000634821 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFFCF5250B0E4C6500634821 /* if2kd.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFFCF5640B0E4CD200634821 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFFCF58D0B0E4D0D00634821 /* if2k_precompile_all.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF0CA95D0B9B50CF00EE8DC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = if2kext;
+			targetProxy = BF0CA95C0B9B50CF00EE8DC8 /* PBXContainerItemProxy */;
+		};
+		BF0D22080E41628800F413C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "If2k-Remover";
+			targetProxy = BF0D22070E41628800F413C6 /* PBXContainerItemProxy */;
+		};
+		BF2E3B2D0B0E64D400E20D92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF2E3AB20B0E63CF00E20D92 /* jdk */;
+			targetProxy = BF2E3B2C0B0E64D400E20D92 /* PBXContainerItemProxy */;
+		};
+		BF2E3B2F0B0E64D400E20D92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF2E3AEF0B0E63E700E20D92 /* if2k */;
+			targetProxy = BF2E3B2E0B0E64D400E20D92 /* PBXContainerItemProxy */;
+		};
+		BF2E3B310B0E64D400E20D92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF2E3AFD0B0E641400E20D92 /* zip */;
+			targetProxy = BF2E3B300B0E64D400E20D92 /* PBXContainerItemProxy */;
+		};
+		BF2E3B350B0E64E100E20D92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF2E3AB20B0E63CF00E20D92 /* jdk */;
+			targetProxy = BF2E3B340B0E64E100E20D92 /* PBXContainerItemProxy */;
+		};
+		BF2E3B370B0E64E100E20D92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF2E3AEF0B0E63E700E20D92 /* if2k */;
+			targetProxy = BF2E3B360B0E64E100E20D92 /* PBXContainerItemProxy */;
+		};
+		BF2E3B390B0E64E100E20D92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF2E3AFD0B0E641400E20D92 /* zip */;
+			targetProxy = BF2E3B380B0E64E100E20D92 /* PBXContainerItemProxy */;
+		};
+		BF2E3B3D0B0E64F100E20D92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF2E3AB20B0E63CF00E20D92 /* jdk */;
+			targetProxy = BF2E3B3C0B0E64F100E20D92 /* PBXContainerItemProxy */;
+		};
+		BF2E3B3F0B0E64F100E20D92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF2E3AEF0B0E63E700E20D92 /* if2k */;
+			targetProxy = BF2E3B3E0B0E64F100E20D92 /* PBXContainerItemProxy */;
+		};
+		BF2E3B410B0E64F100E20D92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF2E3AFD0B0E641400E20D92 /* zip */;
+			targetProxy = BF2E3B400B0E64F100E20D92 /* PBXContainerItemProxy */;
+		};
+		BF2E3F370B0E68C500E20D92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF3B09EA0B0D4C93009144BC /* if2k.dmg */;
+			targetProxy = BF2E3F360B0E68C500E20D92 /* PBXContainerItemProxy */;
+		};
+		BF2E3F390B0E68C500E20D92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFFCF23F0B0E489300634821 /* If2k Settings */;
+			targetProxy = BF2E3F380B0E68C500E20D92 /* PBXContainerItemProxy */;
+		};
+		BF2E3F3B0B0E68C500E20D92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFFCF5080B0E4C3000634821 /* if2kd */;
+			targetProxy = BF2E3F3A0B0E68C500E20D92 /* PBXContainerItemProxy */;
+		};
+		BF2E3F3D0B0E68C500E20D92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFFCF5660B0E4CD200634821 /* if2k_precompile_all */;
+			targetProxy = BF2E3F3C0B0E68C500E20D92 /* PBXContainerItemProxy */;
+		};
+		BF2E3F3F0B0E68C500E20D92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFFCF5980B0E4D8900634821 /* if2ksystem */;
+			targetProxy = BF2E3F3E0B0E68C500E20D92 /* PBXContainerItemProxy */;
+		};
+		BF2E3F450B0E68C500E20D92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF2E3AB20B0E63CF00E20D92 /* jdk */;
+			targetProxy = BF2E3F440B0E68C500E20D92 /* PBXContainerItemProxy */;
+		};
+		BF2E3F470B0E68C500E20D92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF2E3AEF0B0E63E700E20D92 /* if2k */;
+			targetProxy = BF2E3F460B0E68C500E20D92 /* PBXContainerItemProxy */;
+		};
+		BF2E3F490B0E68C500E20D92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF2E3AFD0B0E641400E20D92 /* zip */;
+			targetProxy = BF2E3F480B0E68C500E20D92 /* PBXContainerItemProxy */;
+		};
+		BF35179A0B0E6D0100B0EE81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFFCF5080B0E4C3000634821 /* if2kd */;
+			targetProxy = BF3517990B0E6D0100B0EE81 /* PBXContainerItemProxy */;
+		};
+		BF35179C0B0E6D0100B0EE81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFFCF5660B0E4CD200634821 /* if2k_precompile_all */;
+			targetProxy = BF35179B0B0E6D0100B0EE81 /* PBXContainerItemProxy */;
+		};
+		BF4B21F10CD96C7E009C50FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "If2k Override";
+			targetProxy = BF4B21F00CD96C7E009C50FC /* PBXContainerItemProxy */;
+		};
+		BFFAEB8D0B0FA29400E83D76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFFAEB870B0FA26400E83D76 /* if2ksystem-prep */;
+			targetProxy = BFFAEB8C0B0FA29400E83D76 /* PBXContainerItemProxy */;
+		};
+		BFFAEBC50B0FAA4500E83D76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFFCF5980B0E4D8900634821 /* if2ksystem */;
+			targetProxy = BFFAEBC40B0FAA4500E83D76 /* PBXContainerItemProxy */;
+		};
+		BFFCF5A80B0E4DC400634821 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFFCF23F0B0E489300634821 /* If2k Settings */;
+			targetProxy = BFFCF5A70B0E4DC400634821 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BFFCF2630B0E4A7A00634821 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFFCF2640B0E4A7A00634821 /* English */,
+			);
+			name = InfoPlist.strings;
+			path = if2ksettings/English.lproj;
+			sourceTree = SOURCE_ROOT;
+		};
+		BFFCF2650B0E4A7A00634821 /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFFCF2660B0E4A7A00634821 /* English */,
+			);
+			name = MainMenu.nib;
+			path = if2ksettings/English.lproj;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF2E3B000B0E643300E20D92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/lib;
+				PREBINDING = NO;
+				PRODUCT_NAME = jdk;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		BF2E3B010B0E643300E20D92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/lib;
+				PREBINDING = NO;
+				PRODUCT_NAME = jdk;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		BF2E3B030B0E643300E20D92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/lib;
+				PREBINDING = NO;
+				PRODUCT_NAME = if2k;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		BF2E3B040B0E643300E20D92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/lib;
+				PREBINDING = NO;
+				PRODUCT_NAME = if2k;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		BF2E3B060B0E643300E20D92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/lib;
+				PREBINDING = NO;
+				PRODUCT_NAME = zip;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		BF2E3B070B0E643300E20D92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/lib;
+				PREBINDING = NO;
+				PRODUCT_NAME = zip;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		BF2E3F5B0B0E68DF00E20D92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = all;
+			};
+			name = Debug;
+		};
+		BF2E3F5C0B0E68DF00E20D92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				PRODUCT_NAME = all;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		BF3B09EF0B0D4CA4009144BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = if2k.dmg;
+			};
+			name = Debug;
+		};
+		BF3B09F00B0D4CA4009144BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				PRODUCT_NAME = if2k.dmg;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		BF83A67A0B0D45CA00CB2796 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_DEBUGGING_SYMBOLS = full;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(GCC_PREPROCESSOR_DEFINITIONS_QUOTED_1)",
+					"JDK_IS_MACOSX=1",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS_QUOTED_1 = "IF2K_MINI_VERSION=\"\\\"$(IF2K_MINI_VERSION)\\\"\"";
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				IF2K_MINI_VERSION = 2.2.8;
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				USER_HEADER_SEARCH_PATHS = "../../libjdk/include ../../libif2k/include ../../libzip/include";
+			};
+			name = Debug;
+		};
+		BF83A67B0B0D45CA00CB2796 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_DEBUGGING_SYMBOLS = full;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(GCC_PREPROCESSOR_DEFINITIONS_QUOTED_1)",
+					"JDK_IS_MACOSX=1",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS_QUOTED_1 = "IF2K_MINI_VERSION=\"\\\"$(IF2K_MINI_VERSION)\\\"\"";
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				IF2K_MINI_VERSION = 2.2.8;
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				USER_HEADER_SEARCH_PATHS = "../../libjdk/include ../../libif2k/include ../../libzip/include";
+			};
+			name = Release;
+		};
+		BFFAEB930B0FA2C700E83D76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "if2ksystem-prep";
+			};
+			name = Debug;
+		};
+		BFFAEB940B0FA2C700E83D76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				PRODUCT_NAME = "if2ksystem-prep";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		BFFCF2450B0E489400634821 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = if2ksettings/Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/build/Release\"";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "If2k Settings";
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		BFFCF2460B0E489400634821 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = if2ksettings/Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/build/Release\"";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "If2k Settings";
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		BFFCF50C0B0E4C4F00634821 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = "$(HOME)/bin";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/build/Release\"";
+				PREBINDING = NO;
+				PRODUCT_NAME = if2kd;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		BFFCF50D0B0E4C4F00634821 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = "$(HOME)/bin";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/build/Release\"";
+				ONLY_LINK_ESSENTIAL_SYMBOLS = NO;
+				PREBINDING = NO;
+				PRODUCT_NAME = if2kd;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		BFFCF56A0B0E4CF100634821 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = "$(HOME)/bin";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/build/Release\"";
+				PREBINDING = NO;
+				PRODUCT_NAME = if2k_precompile_all;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		BFFCF56B0B0E4CF100634821 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = "$(HOME)/bin";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/build/Release\"";
+				PREBINDING = NO;
+				PRODUCT_NAME = if2k_precompile_all;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		BFFCF5B30B0E4E1A00634821 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = if2ksystem;
+			};
+			name = Debug;
+		};
+		BFFCF5B40B0E4E1A00634821 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				PRODUCT_NAME = if2ksystem;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF2E3AFF0B0E643300E20D92 /* Build configuration list for PBXNativeTarget "jdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF2E3B000B0E643300E20D92 /* Debug */,
+				BF2E3B010B0E643300E20D92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF2E3B020B0E643300E20D92 /* Build configuration list for PBXNativeTarget "if2k" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF2E3B030B0E643300E20D92 /* Debug */,
+				BF2E3B040B0E643300E20D92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF2E3B050B0E643300E20D92 /* Build configuration list for PBXNativeTarget "zip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF2E3B060B0E643300E20D92 /* Debug */,
+				BF2E3B070B0E643300E20D92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF2E3F5A0B0E68DF00E20D92 /* Build configuration list for PBXAggregateTarget "all" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF2E3F5B0B0E68DF00E20D92 /* Debug */,
+				BF2E3F5C0B0E68DF00E20D92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF3B09EE0B0D4CA4009144BC /* Build configuration list for PBXAggregateTarget "if2k.dmg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF3B09EF0B0D4CA4009144BC /* Debug */,
+				BF3B09F00B0D4CA4009144BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF83A6790B0D45CA00CB2796 /* Build configuration list for PBXProject "if2k" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF83A67A0B0D45CA00CB2796 /* Debug */,
+				BF83A67B0B0D45CA00CB2796 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFFAEB920B0FA2C700E83D76 /* Build configuration list for PBXAggregateTarget "if2ksystem-prep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFFAEB930B0FA2C700E83D76 /* Debug */,
+				BFFAEB940B0FA2C700E83D76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFFCF2440B0E489400634821 /* Build configuration list for PBXNativeTarget "If2k Settings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFFCF2450B0E489400634821 /* Debug */,
+				BFFCF2460B0E489400634821 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFFCF50B0B0E4C4F00634821 /* Build configuration list for PBXNativeTarget "if2kd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFFCF50C0B0E4C4F00634821 /* Debug */,
+				BFFCF50D0B0E4C4F00634821 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFFCF5690B0E4CF100634821 /* Build configuration list for PBXNativeTarget "if2k_precompile_all" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFFCF56A0B0E4CF100634821 /* Debug */,
+				BFFCF56B0B0E4CF100634821 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFFCF5B20B0E4E1A00634821 /* Build configuration list for PBXAggregateTarget "if2ksystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFFCF5B30B0E4E1A00634821 /* Debug */,
+				BFFCF5B40B0E4E1A00634821 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF83A6780B0D45CA00CB2796 /* Project object */;
+}

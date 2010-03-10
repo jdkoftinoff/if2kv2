@@ -1,0 +1,9 @@
+#! /bin/sh
+
+DEST="/Library/If2k"
+DESTBIN="$DEST/bin"
+
+"$DESTBIN"/if2k_precompile_all 2>&1
+
+/bin/launchctl load "/Library/LaunchDaemons/com.internetfilter.if2kd.plist"
+/bin/launchctl start com.internetfilter.if2kd

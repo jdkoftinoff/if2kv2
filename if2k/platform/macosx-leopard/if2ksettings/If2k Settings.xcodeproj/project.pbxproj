@@ -1,0 +1,1224 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		BF99216E07556A4200791888 /* if2k-icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = BF99216C07556A4200791888 /* if2k-icon.icns */; };
+		BF9926A407556A7800791888 /* autoconf.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923A107556A7700791888 /* autoconf.h */; };
+		BF9926A507556A7800791888 /* jdk_archive.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923A207556A7700791888 /* jdk_archive.h */; };
+		BF9926A607556A7800791888 /* jdk_array.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923A307556A7700791888 /* jdk_array.h */; };
+		BF9926A707556A7800791888 /* jdk_atom.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923A407556A7700791888 /* jdk_atom.h */; };
+		BF9926A807556A7800791888 /* jdk_base64.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923A507556A7700791888 /* jdk_base64.h */; };
+		BF9926A907556A7800791888 /* jdk_bindir.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923A607556A7700791888 /* jdk_bindir.h */; };
+		BF9926AA07556A7800791888 /* jdk_buf.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923A707556A7700791888 /* jdk_buf.h */; };
+		BF9926AB07556A7800791888 /* jdk_cgi.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923A807556A7700791888 /* jdk_cgi.h */; };
+		BF9926AC07556A7800791888 /* jdk_cgisettings.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923A907556A7700791888 /* jdk_cgisettings.h */; };
+		BF9926AD07556A7800791888 /* jdk_crypt.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923AA07556A7700791888 /* jdk_crypt.h */; };
+		BF9926AE07556A7800791888 /* jdk_daemon.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923AB07556A7700791888 /* jdk_daemon.h */; };
+		BF9926AF07556A7800791888 /* jdk_dbm.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923AC07556A7700791888 /* jdk_dbm.h */; };
+		BF9926B007556A7800791888 /* jdk_dll.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923AD07556A7700791888 /* jdk_dll.h */; };
+		BF9926B107556A7800791888 /* jdk_dynbuf.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923AE07556A7700791888 /* jdk_dynbuf.h */; };
+		BF9926B207556A7800791888 /* jdk_elastic_queue.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923AF07556A7700791888 /* jdk_elastic_queue.h */; };
+		BF9926B307556A7800791888 /* jdk_error.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923B007556A7700791888 /* jdk_error.h */; };
+		BF9926B407556A7800791888 /* jdk_fast_url_lookup.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923B107556A7700791888 /* jdk_fast_url_lookup.h */; };
+		BF9926B507556A7800791888 /* jdk_fasttree.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923B207556A7700791888 /* jdk_fasttree.h */; };
+		BF9926B607556A7800791888 /* jdk_fork_server.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923B307556A7700791888 /* jdk_fork_server.h */; };
+		BF9926B707556A7800791888 /* jdk_heap.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923B407556A7700791888 /* jdk_heap.h */; };
+		BF9926B807556A7800791888 /* jdk_html.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923B507556A7700791888 /* jdk_html.h */; };
+		BF9926B907556A7800791888 /* jdk_html_decode.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923B607556A7700791888 /* jdk_html_decode.h */; };
+		BF9926BA07556A7800791888 /* jdk_html_template.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923B707556A7700791888 /* jdk_html_template.h */; };
+		BF9926BB07556A7800791888 /* jdk_http.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923B807556A7700791888 /* jdk_http.h */; };
+		BF9926BC07556A7800791888 /* jdk_http_admin.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923B907556A7700791888 /* jdk_http_admin.h */; };
+		BF9926BD07556A7800791888 /* jdk_http_server.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923BA07556A7700791888 /* jdk_http_server.h */; };
+		BF9926BE07556A7800791888 /* jdk_http_server_lua.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923BB07556A7700791888 /* jdk_http_server_lua.h */; };
+		BF9926BF07556A7800791888 /* jdk_httprequest.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923BC07556A7700791888 /* jdk_httprequest.h */; };
+		BF9926C007556A7800791888 /* jdk_inet_server.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923BD07556A7700791888 /* jdk_inet_server.h */; };
+		BF9926C107556A7800791888 /* jdk_ipv4.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923BE07556A7700791888 /* jdk_ipv4.h */; };
+		BF9926C207556A7800791888 /* jdk_linesplit.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923BF07556A7700791888 /* jdk_linesplit.h */; };
+		BF9926C307556A7800791888 /* jdk_list.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923C007556A7700791888 /* jdk_list.h */; };
+		BF9926C407556A7800791888 /* jdk_log.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923C107556A7700791888 /* jdk_log.h */; };
+		BF9926C507556A7800791888 /* jdk_lz.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923C207556A7700791888 /* jdk_lz.h */; };
+		BF9926C607556A7800791888 /* jdk_map.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923C307556A7700791888 /* jdk_map.h */; };
+		BF9926C707556A7800791888 /* jdk_mmap_buf.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923C407556A7700791888 /* jdk_mmap_buf.h */; };
+		BF9926C807556A7800791888 /* jdk_nameserver.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923C507556A7700791888 /* jdk_nameserver.h */; };
+		BF9926C907556A7800791888 /* jdk_objlog.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923C607556A7700791888 /* jdk_objlog.h */; };
+		BF9926CA07556A7800791888 /* jdk_pair.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923C707556A7700791888 /* jdk_pair.h */; };
+		BF9926CB07556A7800791888 /* jdk_platform.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923C807556A7700791888 /* jdk_platform.h */; };
+		BF9926CC07556A7800791888 /* jdk_platform_beos.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923C907556A7700791888 /* jdk_platform_beos.h */; };
+		BF9926CD07556A7800791888 /* jdk_platform_cygwin.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923CA07556A7700791888 /* jdk_platform_cygwin.h */; };
+		BF9926CE07556A7800791888 /* jdk_platform_linux.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923CB07556A7700791888 /* jdk_platform_linux.h */; };
+		BF9926CF07556A7800791888 /* jdk_platform_linuxthreads.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923CC07556A7700791888 /* jdk_platform_linuxthreads.h */; };
+		BF9926D007556A7800791888 /* jdk_platform_macosx.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923CD07556A7700791888 /* jdk_platform_macosx.h */; };
+		BF9926D107556A7800791888 /* jdk_platform_unix.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923CE07556A7700791888 /* jdk_platform_unix.h */; };
+		BF9926D207556A7800791888 /* jdk_platform_win32.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923CF07556A7700791888 /* jdk_platform_win32.h */; };
+		BF9926D307556A7800791888 /* jdk_pool.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923D007556A7700791888 /* jdk_pool.h */; };
+		BF9926D407556A7800791888 /* jdk_procmap.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923D107556A7700791888 /* jdk_procmap.h */; };
+		BF9926D507556A7800791888 /* jdk_questions.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923D207556A7700791888 /* jdk_questions.h */; };
+		BF9926D607556A7800791888 /* jdk_queue.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923D307556A7700791888 /* jdk_queue.h */; };
+		BF9926D707556A7800791888 /* jdk_remote_buf.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923D407556A7700791888 /* jdk_remote_buf.h */; };
+		BF9926D807556A7800791888 /* jdk_rs232.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923D507556A7700791888 /* jdk_rs232.h */; };
+		BF9926D907556A7800791888 /* jdk_scheme.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923D607556A7700791888 /* jdk_scheme.h */; };
+		BF9926DA07556A7800791888 /* jdk_serial_number.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923D707556A7700791888 /* jdk_serial_number.h */; };
+		BF9926DB07556A7800791888 /* jdk_serialsocket.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923D807556A7700791888 /* jdk_serialsocket.h */; };
+		BF9926DC07556A7800791888 /* jdk_server.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923D907556A7700791888 /* jdk_server.h */; };
+		BF9926DD07556A7800791888 /* jdk_server_family.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923DA07556A7700791888 /* jdk_server_family.h */; };
+		BF9926DE07556A7800791888 /* jdk_settings.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923DB07556A7700791888 /* jdk_settings.h */; };
+		BF9926DF07556A7800791888 /* jdk_settings_objc.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923DC07556A7700791888 /* jdk_settings_objc.h */; };
+		BF9926E007556A7800791888 /* jdk_shmem.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923DD07556A7700791888 /* jdk_shmem.h */; };
+		BF9926E107556A7800791888 /* jdk_smtp_send.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923DE07556A7700791888 /* jdk_smtp_send.h */; };
+		BF9926E207556A7800791888 /* jdk_socket.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923DF07556A7700791888 /* jdk_socket.h */; };
+		BF9926E307556A7800791888 /* jdk_socket_beos.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923E007556A7700791888 /* jdk_socket_beos.h */; };
+		BF9926E407556A7800791888 /* jdk_socket_unix.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923E107556A7700791888 /* jdk_socket_unix.h */; };
+		BF9926E507556A7800791888 /* jdk_socket_win32.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923E207556A7700791888 /* jdk_socket_win32.h */; };
+		BF9926E607556A7800791888 /* jdk_socketswitch.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923E307556A7700791888 /* jdk_socketswitch.h */; };
+		BF9926E707556A7800791888 /* jdk_socketutil.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923E407556A7700791888 /* jdk_socketutil.h */; };
+		BF9926E807556A7800791888 /* jdk_stream.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923E507556A7700791888 /* jdk_stream.h */; };
+		BF9926E907556A7800791888 /* jdk_string.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923E607556A7700791888 /* jdk_string.h */; };
+		BF9926EA07556A7800791888 /* jdk_string_objc.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923E707556A7700791888 /* jdk_string_objc.h */; };
+		BF9926EB07556A7800791888 /* jdk_systemsettings_macosx.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923E807556A7700791888 /* jdk_systemsettings_macosx.h */; };
+		BF9926EC07556A7800791888 /* jdk_table.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923E907556A7700791888 /* jdk_table.h */; };
+		BF9926ED07556A7800791888 /* jdk_test.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923EA07556A7700791888 /* jdk_test.h */; };
+		BF9926EE07556A7800791888 /* jdk_thread.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923EB07556A7700791888 /* jdk_thread.h */; };
+		BF9926EF07556A7800791888 /* jdk_thread_server.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923EC07556A7700791888 /* jdk_thread_server.h */; };
+		BF9926F007556A7800791888 /* jdk_tree.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923ED07556A7700791888 /* jdk_tree.h */; };
+		BF9926F107556A7800791888 /* jdk_url.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923EE07556A7700791888 /* jdk_url.h */; };
+		BF9926F207556A7800791888 /* jdk_utf.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923EF07556A7700791888 /* jdk_utf.h */; };
+		BF9926F307556A7800791888 /* jdk_util.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923F007556A7700791888 /* jdk_util.h */; };
+		BF9926F407556A7800791888 /* jdk_valarray.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923F107556A7700791888 /* jdk_valarray.h */; };
+		BF9926F507556A7800791888 /* jdk_valmap.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923F207556A7700791888 /* jdk_valmap.h */; };
+		BF9926F607556A7800791888 /* jdk_win32svc.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923F307556A7700791888 /* jdk_win32svc.h */; };
+		BF9926F707556A7800791888 /* jdk_win32wtl.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923F407556A7700791888 /* jdk_win32wtl.h */; };
+		BF9926F807556A7800791888 /* jdk_winerror.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923F507556A7700791888 /* jdk_winerror.h */; };
+		BF9926F907556A7800791888 /* jdk_winhook.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923F607556A7700791888 /* jdk_winhook.h */; };
+		BF9926FA07556A7800791888 /* jdk_winver.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923F707556A7700791888 /* jdk_winver.h */; };
+		BF9926FB07556A7800791888 /* jdk_world.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923F807556A7700791888 /* jdk_world.h */; };
+		BF9926FC07556A7800791888 /* jdk_xml.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923F907556A7700791888 /* jdk_xml.h */; };
+		BF9926FD07556A7800791888 /* jdk_zipfile.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923FA07556A7700791888 /* jdk_zipfile.h */; };
+		BF9926FE07556A7800791888 /* JDKAuthorization.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923FB07556A7700791888 /* JDKAuthorization.h */; };
+		BF9926FF07556A7800791888 /* jdkvecstring.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923FC07556A7700791888 /* jdkvecstring.h */; };
+		BF99270007556A7800791888 /* jdkwx_form.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923FD07556A7700791888 /* jdkwx_form.h */; };
+		BF99270107556A7800791888 /* jdkwx_validator.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9923FE07556A7700791888 /* jdkwx_validator.h */; };
+		BF99275D07556A7800791888 /* jdk_array.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF99246707556A7800791888 /* jdk_array.cpp */; };
+		BF99275E07556A7800791888 /* jdk_base64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF99246807556A7800791888 /* jdk_base64.cpp */; };
+		BF99275F07556A7800791888 /* jdk_bindir.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF99246907556A7800791888 /* jdk_bindir.cpp */; };
+		BF99276007556A7800791888 /* jdk_buf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF99246A07556A7800791888 /* jdk_buf.cpp */; };
+		BF99276107556A7800791888 /* jdk_buf_zip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF99246B07556A7800791888 /* jdk_buf_zip.cpp */; };
+		BF99276207556A7800791888 /* jdk_cgi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF99246C07556A7800791888 /* jdk_cgi.cpp */; };
+		BF99276307556A7800791888 /* jdk_cgisettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF99246D07556A7800791888 /* jdk_cgisettings.cpp */; };
+		BF99276707556A7800791888 /* jdk_dynbuf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF99247107556A7800791888 /* jdk_dynbuf.cpp */; };
+		BF99276807556A7800791888 /* jdk_dynbuf_http.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF99247207556A7800791888 /* jdk_dynbuf_http.cpp */; };
+		BF99276C07556A7800791888 /* jdk_html.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF99247607556A7800791888 /* jdk_html.cpp */; };
+		BF99276D07556A7800791888 /* jdk_html_decode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF99247707556A7800791888 /* jdk_html_decode.cpp */; };
+		BF99276E07556A7800791888 /* jdk_html_template.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF99247807556A7800791888 /* jdk_html_template.cpp */; };
+		BF99276F07556A7800791888 /* jdk_http.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF99247907556A7800791888 /* jdk_http.cpp */; };
+		BF99277107556A7800791888 /* jdk_httprequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF99247B07556A7800791888 /* jdk_httprequest.cpp */; };
+		BF99277207556A7800791888 /* jdk_linesplit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF99247C07556A7800791888 /* jdk_linesplit.cpp */; };
+		BF99277307556A7800791888 /* jdk_log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF99247D07556A7800791888 /* jdk_log.cpp */; };
+		BF99277407556A7800791888 /* jdk_log_osx.mm in Sources */ = {isa = PBXBuildFile; fileRef = BF99247E07556A7800791888 /* jdk_log_osx.mm */; };
+		BF99277507556A7800791888 /* jdk_lz.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF99247F07556A7800791888 /* jdk_lz.cpp */; };
+		BF99277607556A7800791888 /* jdk_map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF99248007556A7800791888 /* jdk_map.cpp */; };
+		BF99277707556A7800791888 /* jdk_mmap_buf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF99248107556A7800791888 /* jdk_mmap_buf.cpp */; };
+		BF99277907556A7800791888 /* jdk_pair.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF99248307556A7800791888 /* jdk_pair.cpp */; };
+		BF99277A07556A7800791888 /* jdk_procmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF99248407556A7800791888 /* jdk_procmap.cpp */; };
+		BF99277B07556A7800791888 /* jdk_questions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF99248507556A7800791888 /* jdk_questions.cpp */; };
+		BF99277C07556A7800791888 /* jdk_remote_buf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF99248607556A7800791888 /* jdk_remote_buf.cpp */; };
+		BF99277F07556A7800791888 /* jdk_serial_number.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF99248907556A7800791888 /* jdk_serial_number.cpp */; };
+		BF99278307556A7800791888 /* jdk_settings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF99248D07556A7800791888 /* jdk_settings.cpp */; };
+		BF99278607556A7800791888 /* jdk_socket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF99249007556A7800791888 /* jdk_socket.cpp */; };
+		BF99278A07556A7800791888 /* jdk_string.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF99249407556A7800791888 /* jdk_string.cpp */; };
+		BF99278B07556A7800791888 /* jdk_thread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF99249507556A7800791888 /* jdk_thread.cpp */; };
+		BF99278C07556A7800791888 /* jdk_thread_mem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF99249607556A7800791888 /* jdk_thread_mem.cpp */; };
+		BF99278D07556A7800791888 /* jdk_thread_mutex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF99249707556A7800791888 /* jdk_thread_mutex.cpp */; };
+		BF99278E07556A7800791888 /* jdk_thread_pool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF99249807556A7800791888 /* jdk_thread_pool.cpp */; };
+		BF99278F07556A7800791888 /* jdk_url.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF99249907556A7800791888 /* jdk_url.cpp */; };
+		BF99279007556A7800791888 /* jdk_utf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF99249A07556A7800791888 /* jdk_utf.cpp */; };
+		BF99279107556A7800791888 /* jdk_util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF99249B07556A7800791888 /* jdk_util.cpp */; };
+		BF99279307556A7800791888 /* jdk_zipfile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF99249D07556A7800791888 /* jdk_zipfile.cpp */; };
+		BF99279407556A7800791888 /* JDKAuthorization.mm in Sources */ = {isa = PBXBuildFile; fileRef = BF99249E07556A7800791888 /* JDKAuthorization.mm */; };
+		BF9927BF07556A7800791888 /* crc32.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9924CD07556A7800791888 /* crc32.h */; };
+		BF9927C007556A7800791888 /* crypt.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9924CE07556A7800791888 /* crypt.h */; };
+		BF9927C107556A7800791888 /* deflate.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9924CF07556A7800791888 /* deflate.h */; };
+		BF9927C207556A7800791888 /* inffast.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9924D007556A7800791888 /* inffast.h */; };
+		BF9927C307556A7800791888 /* inffixed.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9924D107556A7800791888 /* inffixed.h */; };
+		BF9927C407556A7800791888 /* inflate.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9924D207556A7800791888 /* inflate.h */; };
+		BF9927C507556A7800791888 /* inftrees.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9924D307556A7800791888 /* inftrees.h */; };
+		BF9927C607556A7800791888 /* ioapi.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9924D407556A7800791888 /* ioapi.h */; };
+		BF9927C707556A7800791888 /* ioapi_mem.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9924D507556A7800791888 /* ioapi_mem.h */; };
+		BF9927C807556A7800791888 /* iowin32.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9924D607556A7800791888 /* iowin32.h */; };
+		BF9927C907556A7800791888 /* trees.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9924D707556A7800791888 /* trees.h */; };
+		BF9927CA07556A7800791888 /* unzip.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9924D807556A7800791888 /* unzip.h */; };
+		BF9927CB07556A7800791888 /* zconf.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9924D907556A7800791888 /* zconf.h */; };
+		BF9927CC07556A7800791888 /* zconf.in.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9924DA07556A7800791888 /* zconf.in.h */; };
+		BF9927CD07556A7800791888 /* zip.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9924DB07556A7800791888 /* zip.h */; };
+		BF9927CE07556A7800791888 /* zlib.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9924DC07556A7800791888 /* zlib.h */; };
+		BF9927CF07556A7800791888 /* zutil.h in Sources */ = {isa = PBXBuildFile; fileRef = BF9924DD07556A7800791888 /* zutil.h */; };
+		BF9927D207556A7800791888 /* adler32.c in Sources */ = {isa = PBXBuildFile; fileRef = BF9924E107556A7800791888 /* adler32.c */; };
+		BF9927D307556A7800791888 /* compress.c in Sources */ = {isa = PBXBuildFile; fileRef = BF9924E207556A7800791888 /* compress.c */; };
+		BF9927D407556A7800791888 /* crc32.c in Sources */ = {isa = PBXBuildFile; fileRef = BF9924E307556A7800791888 /* crc32.c */; };
+		BF9927D507556A7800791888 /* deflate.c in Sources */ = {isa = PBXBuildFile; fileRef = BF9924E407556A7800791888 /* deflate.c */; };
+		BF9927D607556A7800791888 /* gzio.c in Sources */ = {isa = PBXBuildFile; fileRef = BF9924E507556A7800791888 /* gzio.c */; };
+		BF9927D707556A7800791888 /* infback.c in Sources */ = {isa = PBXBuildFile; fileRef = BF9924E607556A7800791888 /* infback.c */; };
+		BF9927D807556A7800791888 /* inffast.c in Sources */ = {isa = PBXBuildFile; fileRef = BF9924E707556A7800791888 /* inffast.c */; };
+		BF9927D907556A7800791888 /* inflate.c in Sources */ = {isa = PBXBuildFile; fileRef = BF9924E807556A7800791888 /* inflate.c */; };
+		BF9927DA07556A7800791888 /* inftrees.c in Sources */ = {isa = PBXBuildFile; fileRef = BF9924E907556A7800791888 /* inftrees.c */; };
+		BF9927DB07556A7800791888 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = BF9924EA07556A7800791888 /* ioapi.c */; };
+		BF9927DC07556A7800791888 /* ioapi_mem.c in Sources */ = {isa = PBXBuildFile; fileRef = BF9924EB07556A7800791888 /* ioapi_mem.c */; };
+		BF9927DD07556A7800791888 /* iowin32.c in Sources */ = {isa = PBXBuildFile; fileRef = BF9924EC07556A7800791888 /* iowin32.c */; };
+		BF9927E107556A7800791888 /* trees.c in Sources */ = {isa = PBXBuildFile; fileRef = BF9924F007556A7800791888 /* trees.c */; };
+		BF9927E207556A7800791888 /* uncompr.c in Sources */ = {isa = PBXBuildFile; fileRef = BF9924F107556A7800791888 /* uncompr.c */; };
+		BF9927E307556A7800791888 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = BF9924F207556A7800791888 /* unzip.c */; };
+		BF9927E407556A7800791888 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = BF9924F307556A7800791888 /* zip.c */; };
+		BF9927E507556A7800791888 /* zutil.c in Sources */ = {isa = PBXBuildFile; fileRef = BF9924F407556A7800791888 /* zutil.c */; };
+		BF992C5D07556AC100791888 /* if2k_mini_client.h in Sources */ = {isa = PBXBuildFile; fileRef = BF99282E07556AB400791888 /* if2k_mini_client.h */; };
+		BF992C5E07556AC100791888 /* if2k_mini_compile.h in Sources */ = {isa = PBXBuildFile; fileRef = BF99282F07556AB400791888 /* if2k_mini_compile.h */; };
+		BF992C5F07556AC100791888 /* if2k_mini_config.h in Sources */ = {isa = PBXBuildFile; fileRef = BF99283007556AB400791888 /* if2k_mini_config.h */; };
+		BF992C6007556AC100791888 /* if2k_mini_http_proxy.h in Sources */ = {isa = PBXBuildFile; fileRef = BF99283107556AB400791888 /* if2k_mini_http_proxy.h */; };
+		BF992C6107556AC100791888 /* if2k_mini_kernel.h in Sources */ = {isa = PBXBuildFile; fileRef = BF99283207556AB400791888 /* if2k_mini_kernel.h */; };
+		BF992C6207556AC100791888 /* if2k_mini_kernel_v2.h in Sources */ = {isa = PBXBuildFile; fileRef = BF99283307556AB400791888 /* if2k_mini_kernel_v2.h */; };
+		BF992C6307556AC100791888 /* if2k_mini_log.h in Sources */ = {isa = PBXBuildFile; fileRef = BF99283407556AB400791888 /* if2k_mini_log.h */; };
+		BF992C6407556AC100791888 /* if2k_mini_nntp_proxy.h in Sources */ = {isa = PBXBuildFile; fileRef = BF99283507556AB400791888 /* if2k_mini_nntp_proxy.h */; };
+		BF992C6507556AC100791888 /* if2k_mini_scanner.h in Sources */ = {isa = PBXBuildFile; fileRef = BF99283607556AB400791888 /* if2k_mini_scanner.h */; };
+		BF992C6607556AC100791888 /* if2k_mini_server.h in Sources */ = {isa = PBXBuildFile; fileRef = BF99283707556AB400791888 /* if2k_mini_server.h */; };
+		BF992C6707556AC100791888 /* if2k_mini_tree.h in Sources */ = {isa = PBXBuildFile; fileRef = BF99283807556AB400791888 /* if2k_mini_tree.h */; };
+		BF992C6807556AC100791888 /* if2k_mini_tunnel.h in Sources */ = {isa = PBXBuildFile; fileRef = BF99283907556AB400791888 /* if2k_mini_tunnel.h */; };
+		BF992C6907556AC100791888 /* if2k_pattern_expander.h in Sources */ = {isa = PBXBuildFile; fileRef = BF99283A07556AB400791888 /* if2k_pattern_expander.h */; };
+		BF992F7407556AC100791888 /* if2k_mini_kernel_defaults.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF992C2F07556AC000791888 /* if2k_mini_kernel_defaults.cpp */; };
+		BF992F7A07556AC100791888 /* if2k_pattern_expander.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF992C3507556AC000791888 /* if2k_pattern_expander.cpp */; };
+		BF99306107556CBD00791888 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B97325FDCFA39411CA2CEA /* Foundation.framework */; };
+		BF993090075690C600791888 /* If2kSettingsGui.mm in Sources */ = {isa = PBXBuildFile; fileRef = BF99308E075690C500791888 /* If2kSettingsGui.mm */; };
+		BFC8BE3909AD3BD400D766B6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC8BE0409AD3BD400D766B6 /* Security.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BF72870C09AE4D8A00005C29 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = ../If2kSystem/If2kSystem.pkg;
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* If2k Settings_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "If2k Settings_Prefix.pch"; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* If2k Settings.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "If2k Settings.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF3B09E40B0D4C6E009144BC /* if2ksystem.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = if2ksystem.xcodeproj; path = ../if2ksystem.xcodeproj; sourceTree = SOURCE_ROOT; };
+		BF99216C07556A4200791888 /* if2k-icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = "if2k-icon.icns"; path = "../../../../if2k-files/misc/if2k-icon.icns"; sourceTree = SOURCE_ROOT; };
+		BF9923A107556A7700791888 /* autoconf.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = autoconf.h; sourceTree = "<group>"; };
+		BF9923A207556A7700791888 /* jdk_archive.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_archive.h; sourceTree = "<group>"; };
+		BF9923A307556A7700791888 /* jdk_array.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_array.h; sourceTree = "<group>"; };
+		BF9923A407556A7700791888 /* jdk_atom.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_atom.h; sourceTree = "<group>"; };
+		BF9923A507556A7700791888 /* jdk_base64.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_base64.h; sourceTree = "<group>"; };
+		BF9923A607556A7700791888 /* jdk_bindir.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_bindir.h; sourceTree = "<group>"; };
+		BF9923A707556A7700791888 /* jdk_buf.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_buf.h; sourceTree = "<group>"; };
+		BF9923A807556A7700791888 /* jdk_cgi.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_cgi.h; sourceTree = "<group>"; };
+		BF9923A907556A7700791888 /* jdk_cgisettings.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_cgisettings.h; sourceTree = "<group>"; };
+		BF9923AA07556A7700791888 /* jdk_crypt.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_crypt.h; sourceTree = "<group>"; };
+		BF9923AB07556A7700791888 /* jdk_daemon.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_daemon.h; sourceTree = "<group>"; };
+		BF9923AC07556A7700791888 /* jdk_dbm.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_dbm.h; sourceTree = "<group>"; };
+		BF9923AD07556A7700791888 /* jdk_dll.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_dll.h; sourceTree = "<group>"; };
+		BF9923AE07556A7700791888 /* jdk_dynbuf.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_dynbuf.h; sourceTree = "<group>"; };
+		BF9923AF07556A7700791888 /* jdk_elastic_queue.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_elastic_queue.h; sourceTree = "<group>"; };
+		BF9923B007556A7700791888 /* jdk_error.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_error.h; sourceTree = "<group>"; };
+		BF9923B107556A7700791888 /* jdk_fast_url_lookup.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_fast_url_lookup.h; sourceTree = "<group>"; };
+		BF9923B207556A7700791888 /* jdk_fasttree.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_fasttree.h; sourceTree = "<group>"; };
+		BF9923B307556A7700791888 /* jdk_fork_server.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_fork_server.h; sourceTree = "<group>"; };
+		BF9923B407556A7700791888 /* jdk_heap.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_heap.h; sourceTree = "<group>"; };
+		BF9923B507556A7700791888 /* jdk_html.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_html.h; sourceTree = "<group>"; };
+		BF9923B607556A7700791888 /* jdk_html_decode.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_html_decode.h; sourceTree = "<group>"; };
+		BF9923B707556A7700791888 /* jdk_html_template.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_html_template.h; sourceTree = "<group>"; };
+		BF9923B807556A7700791888 /* jdk_http.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_http.h; sourceTree = "<group>"; };
+		BF9923B907556A7700791888 /* jdk_http_admin.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_http_admin.h; sourceTree = "<group>"; };
+		BF9923BA07556A7700791888 /* jdk_http_server.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_http_server.h; sourceTree = "<group>"; };
+		BF9923BB07556A7700791888 /* jdk_http_server_lua.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_http_server_lua.h; sourceTree = "<group>"; };
+		BF9923BC07556A7700791888 /* jdk_httprequest.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_httprequest.h; sourceTree = "<group>"; };
+		BF9923BD07556A7700791888 /* jdk_inet_server.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_inet_server.h; sourceTree = "<group>"; };
+		BF9923BE07556A7700791888 /* jdk_ipv4.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_ipv4.h; sourceTree = "<group>"; };
+		BF9923BF07556A7700791888 /* jdk_linesplit.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_linesplit.h; sourceTree = "<group>"; };
+		BF9923C007556A7700791888 /* jdk_list.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_list.h; sourceTree = "<group>"; };
+		BF9923C107556A7700791888 /* jdk_log.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_log.h; sourceTree = "<group>"; };
+		BF9923C207556A7700791888 /* jdk_lz.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_lz.h; sourceTree = "<group>"; };
+		BF9923C307556A7700791888 /* jdk_map.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_map.h; sourceTree = "<group>"; };
+		BF9923C407556A7700791888 /* jdk_mmap_buf.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_mmap_buf.h; sourceTree = "<group>"; };
+		BF9923C507556A7700791888 /* jdk_nameserver.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_nameserver.h; sourceTree = "<group>"; };
+		BF9923C607556A7700791888 /* jdk_objlog.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_objlog.h; sourceTree = "<group>"; };
+		BF9923C707556A7700791888 /* jdk_pair.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_pair.h; sourceTree = "<group>"; };
+		BF9923C807556A7700791888 /* jdk_platform.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_platform.h; sourceTree = "<group>"; };
+		BF9923C907556A7700791888 /* jdk_platform_beos.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_platform_beos.h; sourceTree = "<group>"; };
+		BF9923CA07556A7700791888 /* jdk_platform_cygwin.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_platform_cygwin.h; sourceTree = "<group>"; };
+		BF9923CB07556A7700791888 /* jdk_platform_linux.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_platform_linux.h; sourceTree = "<group>"; };
+		BF9923CC07556A7700791888 /* jdk_platform_linuxthreads.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_platform_linuxthreads.h; sourceTree = "<group>"; };
+		BF9923CD07556A7700791888 /* jdk_platform_macosx.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_platform_macosx.h; sourceTree = "<group>"; };
+		BF9923CE07556A7700791888 /* jdk_platform_unix.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_platform_unix.h; sourceTree = "<group>"; };
+		BF9923CF07556A7700791888 /* jdk_platform_win32.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_platform_win32.h; sourceTree = "<group>"; };
+		BF9923D007556A7700791888 /* jdk_pool.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_pool.h; sourceTree = "<group>"; };
+		BF9923D107556A7700791888 /* jdk_procmap.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_procmap.h; sourceTree = "<group>"; };
+		BF9923D207556A7700791888 /* jdk_questions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_questions.h; sourceTree = "<group>"; };
+		BF9923D307556A7700791888 /* jdk_queue.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_queue.h; sourceTree = "<group>"; };
+		BF9923D407556A7700791888 /* jdk_remote_buf.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_remote_buf.h; sourceTree = "<group>"; };
+		BF9923D507556A7700791888 /* jdk_rs232.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_rs232.h; sourceTree = "<group>"; };
+		BF9923D607556A7700791888 /* jdk_scheme.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_scheme.h; sourceTree = "<group>"; };
+		BF9923D707556A7700791888 /* jdk_serial_number.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_serial_number.h; sourceTree = "<group>"; };
+		BF9923D807556A7700791888 /* jdk_serialsocket.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_serialsocket.h; sourceTree = "<group>"; };
+		BF9923D907556A7700791888 /* jdk_server.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_server.h; sourceTree = "<group>"; };
+		BF9923DA07556A7700791888 /* jdk_server_family.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_server_family.h; sourceTree = "<group>"; };
+		BF9923DB07556A7700791888 /* jdk_settings.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_settings.h; sourceTree = "<group>"; };
+		BF9923DC07556A7700791888 /* jdk_settings_objc.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_settings_objc.h; sourceTree = "<group>"; };
+		BF9923DD07556A7700791888 /* jdk_shmem.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_shmem.h; sourceTree = "<group>"; };
+		BF9923DE07556A7700791888 /* jdk_smtp_send.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_smtp_send.h; sourceTree = "<group>"; };
+		BF9923DF07556A7700791888 /* jdk_socket.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_socket.h; sourceTree = "<group>"; };
+		BF9923E007556A7700791888 /* jdk_socket_beos.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_socket_beos.h; sourceTree = "<group>"; };
+		BF9923E107556A7700791888 /* jdk_socket_unix.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_socket_unix.h; sourceTree = "<group>"; };
+		BF9923E207556A7700791888 /* jdk_socket_win32.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_socket_win32.h; sourceTree = "<group>"; };
+		BF9923E307556A7700791888 /* jdk_socketswitch.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_socketswitch.h; sourceTree = "<group>"; };
+		BF9923E407556A7700791888 /* jdk_socketutil.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_socketutil.h; sourceTree = "<group>"; };
+		BF9923E507556A7700791888 /* jdk_stream.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_stream.h; sourceTree = "<group>"; };
+		BF9923E607556A7700791888 /* jdk_string.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_string.h; sourceTree = "<group>"; };
+		BF9923E707556A7700791888 /* jdk_string_objc.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_string_objc.h; sourceTree = "<group>"; };
+		BF9923E807556A7700791888 /* jdk_systemsettings_macosx.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_systemsettings_macosx.h; sourceTree = "<group>"; };
+		BF9923E907556A7700791888 /* jdk_table.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_table.h; sourceTree = "<group>"; };
+		BF9923EA07556A7700791888 /* jdk_test.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_test.h; sourceTree = "<group>"; };
+		BF9923EB07556A7700791888 /* jdk_thread.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_thread.h; sourceTree = "<group>"; };
+		BF9923EC07556A7700791888 /* jdk_thread_server.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_thread_server.h; sourceTree = "<group>"; };
+		BF9923ED07556A7700791888 /* jdk_tree.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_tree.h; sourceTree = "<group>"; };
+		BF9923EE07556A7700791888 /* jdk_url.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_url.h; sourceTree = "<group>"; };
+		BF9923EF07556A7700791888 /* jdk_utf.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_utf.h; sourceTree = "<group>"; };
+		BF9923F007556A7700791888 /* jdk_util.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_util.h; sourceTree = "<group>"; };
+		BF9923F107556A7700791888 /* jdk_valarray.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_valarray.h; sourceTree = "<group>"; };
+		BF9923F207556A7700791888 /* jdk_valmap.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_valmap.h; sourceTree = "<group>"; };
+		BF9923F307556A7700791888 /* jdk_win32svc.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_win32svc.h; sourceTree = "<group>"; };
+		BF9923F407556A7700791888 /* jdk_win32wtl.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_win32wtl.h; sourceTree = "<group>"; };
+		BF9923F507556A7700791888 /* jdk_winerror.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_winerror.h; sourceTree = "<group>"; };
+		BF9923F607556A7700791888 /* jdk_winhook.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_winhook.h; sourceTree = "<group>"; };
+		BF9923F707556A7700791888 /* jdk_winver.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_winver.h; sourceTree = "<group>"; };
+		BF9923F807556A7700791888 /* jdk_world.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_world.h; sourceTree = "<group>"; };
+		BF9923F907556A7700791888 /* jdk_xml.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_xml.h; sourceTree = "<group>"; };
+		BF9923FA07556A7700791888 /* jdk_zipfile.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdk_zipfile.h; sourceTree = "<group>"; };
+		BF9923FB07556A7700791888 /* JDKAuthorization.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = JDKAuthorization.h; sourceTree = "<group>"; };
+		BF9923FC07556A7700791888 /* jdkvecstring.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdkvecstring.h; sourceTree = "<group>"; };
+		BF9923FD07556A7700791888 /* jdkwx_form.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdkwx_form.h; sourceTree = "<group>"; };
+		BF9923FE07556A7700791888 /* jdkwx_validator.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = jdkwx_validator.h; sourceTree = "<group>"; };
+		BF99246707556A7800791888 /* jdk_array.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_array.cpp; sourceTree = "<group>"; };
+		BF99246807556A7800791888 /* jdk_base64.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_base64.cpp; sourceTree = "<group>"; };
+		BF99246907556A7800791888 /* jdk_bindir.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_bindir.cpp; sourceTree = "<group>"; };
+		BF99246A07556A7800791888 /* jdk_buf.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_buf.cpp; sourceTree = "<group>"; };
+		BF99246B07556A7800791888 /* jdk_buf_zip.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_buf_zip.cpp; sourceTree = "<group>"; };
+		BF99246C07556A7800791888 /* jdk_cgi.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_cgi.cpp; sourceTree = "<group>"; };
+		BF99246D07556A7800791888 /* jdk_cgisettings.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_cgisettings.cpp; sourceTree = "<group>"; };
+		BF99246E07556A7800791888 /* jdk_daemon.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_daemon.cpp; sourceTree = "<group>"; };
+		BF99246F07556A7800791888 /* jdk_dbm.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_dbm.cpp; sourceTree = "<group>"; };
+		BF99247007556A7800791888 /* jdk_dll.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_dll.cpp; sourceTree = "<group>"; };
+		BF99247107556A7800791888 /* jdk_dynbuf.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_dynbuf.cpp; sourceTree = "<group>"; };
+		BF99247207556A7800791888 /* jdk_dynbuf_http.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_dynbuf_http.cpp; sourceTree = "<group>"; };
+		BF99247307556A7800791888 /* jdk_fast_url_lookup.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_fast_url_lookup.cpp; sourceTree = "<group>"; };
+		BF99247407556A7800791888 /* jdk_fork_server.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_fork_server.cpp; sourceTree = "<group>"; };
+		BF99247507556A7800791888 /* jdk_heap.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_heap.cpp; sourceTree = "<group>"; };
+		BF99247607556A7800791888 /* jdk_html.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_html.cpp; sourceTree = "<group>"; };
+		BF99247707556A7800791888 /* jdk_html_decode.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_html_decode.cpp; sourceTree = "<group>"; };
+		BF99247807556A7800791888 /* jdk_html_template.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_html_template.cpp; sourceTree = "<group>"; };
+		BF99247907556A7800791888 /* jdk_http.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_http.cpp; sourceTree = "<group>"; };
+		BF99247A07556A7800791888 /* jdk_http_server.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_http_server.cpp; sourceTree = "<group>"; };
+		BF99247B07556A7800791888 /* jdk_httprequest.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_httprequest.cpp; sourceTree = "<group>"; };
+		BF99247C07556A7800791888 /* jdk_linesplit.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_linesplit.cpp; sourceTree = "<group>"; };
+		BF99247D07556A7800791888 /* jdk_log.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_log.cpp; sourceTree = "<group>"; };
+		BF99247E07556A7800791888 /* jdk_log_osx.mm */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.objcpp; path = jdk_log_osx.mm; sourceTree = "<group>"; };
+		BF99247F07556A7800791888 /* jdk_lz.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_lz.cpp; sourceTree = "<group>"; };
+		BF99248007556A7800791888 /* jdk_map.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_map.cpp; sourceTree = "<group>"; };
+		BF99248107556A7800791888 /* jdk_mmap_buf.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_mmap_buf.cpp; sourceTree = "<group>"; };
+		BF99248207556A7800791888 /* jdk_nameserver.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_nameserver.cpp; sourceTree = "<group>"; };
+		BF99248307556A7800791888 /* jdk_pair.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_pair.cpp; sourceTree = "<group>"; };
+		BF99248407556A7800791888 /* jdk_procmap.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_procmap.cpp; sourceTree = "<group>"; };
+		BF99248507556A7800791888 /* jdk_questions.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_questions.cpp; sourceTree = "<group>"; };
+		BF99248607556A7800791888 /* jdk_remote_buf.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_remote_buf.cpp; sourceTree = "<group>"; };
+		BF99248707556A7800791888 /* jdk_rs232.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_rs232.cpp; sourceTree = "<group>"; };
+		BF99248807556A7800791888 /* jdk_scheme.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_scheme.cpp; sourceTree = "<group>"; };
+		BF99248907556A7800791888 /* jdk_serial_number.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_serial_number.cpp; sourceTree = "<group>"; };
+		BF99248A07556A7800791888 /* jdk_serialsocket.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_serialsocket.cpp; sourceTree = "<group>"; };
+		BF99248B07556A7800791888 /* jdk_server.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_server.cpp; sourceTree = "<group>"; };
+		BF99248C07556A7800791888 /* jdk_server_family.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_server_family.cpp; sourceTree = "<group>"; };
+		BF99248D07556A7800791888 /* jdk_settings.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_settings.cpp; sourceTree = "<group>"; };
+		BF99248E07556A7800791888 /* jdk_shmem.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_shmem.cpp; sourceTree = "<group>"; };
+		BF99248F07556A7800791888 /* jdk_smtp_send.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_smtp_send.cpp; sourceTree = "<group>"; };
+		BF99249007556A7800791888 /* jdk_socket.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_socket.cpp; sourceTree = "<group>"; };
+		BF99249107556A7800791888 /* jdk_socketswitch.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_socketswitch.cpp; sourceTree = "<group>"; };
+		BF99249207556A7800791888 /* jdk_socketutil.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_socketutil.cpp; sourceTree = "<group>"; };
+		BF99249307556A7800791888 /* jdk_stream.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_stream.cpp; sourceTree = "<group>"; };
+		BF99249407556A7800791888 /* jdk_string.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_string.cpp; sourceTree = "<group>"; };
+		BF99249507556A7800791888 /* jdk_thread.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_thread.cpp; sourceTree = "<group>"; };
+		BF99249607556A7800791888 /* jdk_thread_mem.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_thread_mem.cpp; sourceTree = "<group>"; };
+		BF99249707556A7800791888 /* jdk_thread_mutex.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_thread_mutex.cpp; sourceTree = "<group>"; };
+		BF99249807556A7800791888 /* jdk_thread_pool.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_thread_pool.cpp; sourceTree = "<group>"; };
+		BF99249907556A7800791888 /* jdk_url.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_url.cpp; sourceTree = "<group>"; };
+		BF99249A07556A7800791888 /* jdk_utf.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_utf.cpp; sourceTree = "<group>"; };
+		BF99249B07556A7800791888 /* jdk_util.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_util.cpp; sourceTree = "<group>"; };
+		BF99249C07556A7800791888 /* jdk_win32svc.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_win32svc.cpp; sourceTree = "<group>"; };
+		BF99249D07556A7800791888 /* jdk_zipfile.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = jdk_zipfile.cpp; sourceTree = "<group>"; };
+		BF99249E07556A7800791888 /* JDKAuthorization.mm */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.objcpp; path = JDKAuthorization.mm; sourceTree = "<group>"; };
+		BF9924CD07556A7800791888 /* crc32.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = crc32.h; sourceTree = "<group>"; };
+		BF9924CE07556A7800791888 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		BF9924CF07556A7800791888 /* deflate.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = deflate.h; sourceTree = "<group>"; };
+		BF9924D007556A7800791888 /* inffast.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = inffast.h; sourceTree = "<group>"; };
+		BF9924D107556A7800791888 /* inffixed.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = inffixed.h; sourceTree = "<group>"; };
+		BF9924D207556A7800791888 /* inflate.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = inflate.h; sourceTree = "<group>"; };
+		BF9924D307556A7800791888 /* inftrees.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = inftrees.h; sourceTree = "<group>"; };
+		BF9924D407556A7800791888 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		BF9924D507556A7800791888 /* ioapi_mem.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ioapi_mem.h; sourceTree = "<group>"; };
+		BF9924D607556A7800791888 /* iowin32.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = iowin32.h; sourceTree = "<group>"; };
+		BF9924D707556A7800791888 /* trees.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = trees.h; sourceTree = "<group>"; };
+		BF9924D807556A7800791888 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		BF9924D907556A7800791888 /* zconf.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = zconf.h; sourceTree = "<group>"; };
+		BF9924DA07556A7800791888 /* zconf.in.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = zconf.in.h; sourceTree = "<group>"; };
+		BF9924DB07556A7800791888 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		BF9924DC07556A7800791888 /* zlib.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = zlib.h; sourceTree = "<group>"; };
+		BF9924DD07556A7800791888 /* zutil.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = zutil.h; sourceTree = "<group>"; };
+		BF9924E107556A7800791888 /* adler32.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = adler32.c; sourceTree = "<group>"; };
+		BF9924E207556A7800791888 /* compress.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = compress.c; sourceTree = "<group>"; };
+		BF9924E307556A7800791888 /* crc32.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = crc32.c; sourceTree = "<group>"; };
+		BF9924E407556A7800791888 /* deflate.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = deflate.c; sourceTree = "<group>"; };
+		BF9924E507556A7800791888 /* gzio.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = gzio.c; sourceTree = "<group>"; };
+		BF9924E607556A7800791888 /* infback.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = infback.c; sourceTree = "<group>"; };
+		BF9924E707556A7800791888 /* inffast.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = inffast.c; sourceTree = "<group>"; };
+		BF9924E807556A7800791888 /* inflate.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = inflate.c; sourceTree = "<group>"; };
+		BF9924E907556A7800791888 /* inftrees.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = inftrees.c; sourceTree = "<group>"; };
+		BF9924EA07556A7800791888 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		BF9924EB07556A7800791888 /* ioapi_mem.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = ioapi_mem.c; sourceTree = "<group>"; };
+		BF9924EC07556A7800791888 /* iowin32.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = iowin32.c; sourceTree = "<group>"; };
+		BF9924F007556A7800791888 /* trees.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = trees.c; sourceTree = "<group>"; };
+		BF9924F107556A7800791888 /* uncompr.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = uncompr.c; sourceTree = "<group>"; };
+		BF9924F207556A7800791888 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		BF9924F307556A7800791888 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		BF9924F407556A7800791888 /* zutil.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = zutil.c; sourceTree = "<group>"; };
+		BF99282E07556AB400791888 /* if2k_mini_client.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = if2k_mini_client.h; sourceTree = "<group>"; };
+		BF99282F07556AB400791888 /* if2k_mini_compile.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = if2k_mini_compile.h; sourceTree = "<group>"; };
+		BF99283007556AB400791888 /* if2k_mini_config.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = if2k_mini_config.h; sourceTree = "<group>"; };
+		BF99283107556AB400791888 /* if2k_mini_http_proxy.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = if2k_mini_http_proxy.h; sourceTree = "<group>"; };
+		BF99283207556AB400791888 /* if2k_mini_kernel.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = if2k_mini_kernel.h; sourceTree = "<group>"; };
+		BF99283307556AB400791888 /* if2k_mini_kernel_v2.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = if2k_mini_kernel_v2.h; sourceTree = "<group>"; };
+		BF99283407556AB400791888 /* if2k_mini_log.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = if2k_mini_log.h; sourceTree = "<group>"; };
+		BF99283507556AB400791888 /* if2k_mini_nntp_proxy.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = if2k_mini_nntp_proxy.h; sourceTree = "<group>"; };
+		BF99283607556AB400791888 /* if2k_mini_scanner.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = if2k_mini_scanner.h; sourceTree = "<group>"; };
+		BF99283707556AB400791888 /* if2k_mini_server.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = if2k_mini_server.h; sourceTree = "<group>"; };
+		BF99283807556AB400791888 /* if2k_mini_tree.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = if2k_mini_tree.h; sourceTree = "<group>"; };
+		BF99283907556AB400791888 /* if2k_mini_tunnel.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = if2k_mini_tunnel.h; sourceTree = "<group>"; };
+		BF99283A07556AB400791888 /* if2k_pattern_expander.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = if2k_pattern_expander.h; sourceTree = "<group>"; };
+		BF992C2E07556AC000791888 /* if2k_mini_http_proxy.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = if2k_mini_http_proxy.cpp; sourceTree = "<group>"; };
+		BF992C2F07556AC000791888 /* if2k_mini_kernel_defaults.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = if2k_mini_kernel_defaults.cpp; sourceTree = "<group>"; };
+		BF992C3007556AC000791888 /* if2k_mini_kernel_v2.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = if2k_mini_kernel_v2.cpp; sourceTree = "<group>"; };
+		BF992C3107556AC000791888 /* if2k_mini_log.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = if2k_mini_log.cpp; sourceTree = "<group>"; };
+		BF992C3207556AC000791888 /* if2k_mini_nntp_proxy.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = if2k_mini_nntp_proxy.cpp; sourceTree = "<group>"; };
+		BF992C3307556AC000791888 /* if2k_mini_server.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = if2k_mini_server.cpp; sourceTree = "<group>"; };
+		BF992C3407556AC000791888 /* if2k_mini_tunnel.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = if2k_mini_tunnel.cpp; sourceTree = "<group>"; };
+		BF992C3507556AC000791888 /* if2k_pattern_expander.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = if2k_pattern_expander.cpp; sourceTree = "<group>"; };
+		BF99308D075690C500791888 /* If2kSettingsGui.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = If2kSettingsGui.h; sourceTree = "<group>"; };
+		BF99308E075690C500791888 /* If2kSettingsGui.mm */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.objcpp; path = If2kSettingsGui.mm; sourceTree = "<group>"; };
+		BF9930C20756B7AA00791888 /* maindlg.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = maindlg.h; path = ../../vcpp/if2k_library/maindlg.h; sourceTree = SOURCE_ROOT; };
+		BFA902790A2FE8DD00C48D36 /* Info copy.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Info copy.plist"; sourceTree = "<group>"; };
+		BFC8BE0409AD3BD400D766B6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = /System/Library/Frameworks/Security.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF99306107556CBD00791888 /* Foundation.framework in Frameworks */,
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				BFC8BE3909AD3BD400D766B6 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BF99308D075690C500791888 /* If2kSettingsGui.h */,
+				BF99308E075690C500791888 /* If2kSettingsGui.mm */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFC8BE0409AD3BD400D766B6 /* Security.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* If2k Settings.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* If2k Settings */ = {
+			isa = PBXGroup;
+			children = (
+				BF3B09E40B0D4C6E009144BC /* if2ksystem.xcodeproj */,
+				BF9930C10756B78100791888 /* reference */,
+				BF99216B075569FB00791888 /* lib */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = "If2k Settings";
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* If2k Settings_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BF99216C07556A4200791888 /* if2k-icon.icns */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
+				BFA902790A2FE8DD00C48D36 /* Info copy.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF3B09E50B0D4C6E009144BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF99216B075569FB00791888 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				BF99280707556AB300791888 /* libif2k */,
+				BF99239F07556A7700791888 /* libjdk */,
+				BF9924CB07556A7800791888 /* libzip */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		BF99239F07556A7700791888 /* libjdk */ = {
+			isa = PBXGroup;
+			children = (
+				BF9923A007556A7700791888 /* include */,
+				BF99246607556A7800791888 /* src */,
+			);
+			name = libjdk;
+			path = ../../../../libjdk;
+			sourceTree = "<group>";
+		};
+		BF9923A007556A7700791888 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				BF9923A107556A7700791888 /* autoconf.h */,
+				BF9923A207556A7700791888 /* jdk_archive.h */,
+				BF9923A307556A7700791888 /* jdk_array.h */,
+				BF9923A407556A7700791888 /* jdk_atom.h */,
+				BF9923A507556A7700791888 /* jdk_base64.h */,
+				BF9923A607556A7700791888 /* jdk_bindir.h */,
+				BF9923A707556A7700791888 /* jdk_buf.h */,
+				BF9923A807556A7700791888 /* jdk_cgi.h */,
+				BF9923A907556A7700791888 /* jdk_cgisettings.h */,
+				BF9923AA07556A7700791888 /* jdk_crypt.h */,
+				BF9923AB07556A7700791888 /* jdk_daemon.h */,
+				BF9923AC07556A7700791888 /* jdk_dbm.h */,
+				BF9923AD07556A7700791888 /* jdk_dll.h */,
+				BF9923AE07556A7700791888 /* jdk_dynbuf.h */,
+				BF9923AF07556A7700791888 /* jdk_elastic_queue.h */,
+				BF9923B007556A7700791888 /* jdk_error.h */,
+				BF9923B107556A7700791888 /* jdk_fast_url_lookup.h */,
+				BF9923B207556A7700791888 /* jdk_fasttree.h */,
+				BF9923B307556A7700791888 /* jdk_fork_server.h */,
+				BF9923B407556A7700791888 /* jdk_heap.h */,
+				BF9923B507556A7700791888 /* jdk_html.h */,
+				BF9923B607556A7700791888 /* jdk_html_decode.h */,
+				BF9923B707556A7700791888 /* jdk_html_template.h */,
+				BF9923B807556A7700791888 /* jdk_http.h */,
+				BF9923B907556A7700791888 /* jdk_http_admin.h */,
+				BF9923BA07556A7700791888 /* jdk_http_server.h */,
+				BF9923BB07556A7700791888 /* jdk_http_server_lua.h */,
+				BF9923BC07556A7700791888 /* jdk_httprequest.h */,
+				BF9923BD07556A7700791888 /* jdk_inet_server.h */,
+				BF9923BE07556A7700791888 /* jdk_ipv4.h */,
+				BF9923BF07556A7700791888 /* jdk_linesplit.h */,
+				BF9923C007556A7700791888 /* jdk_list.h */,
+				BF9923C107556A7700791888 /* jdk_log.h */,
+				BF9923C207556A7700791888 /* jdk_lz.h */,
+				BF9923C307556A7700791888 /* jdk_map.h */,
+				BF9923C407556A7700791888 /* jdk_mmap_buf.h */,
+				BF9923C507556A7700791888 /* jdk_nameserver.h */,
+				BF9923C607556A7700791888 /* jdk_objlog.h */,
+				BF9923C707556A7700791888 /* jdk_pair.h */,
+				BF9923C807556A7700791888 /* jdk_platform.h */,
+				BF9923C907556A7700791888 /* jdk_platform_beos.h */,
+				BF9923CA07556A7700791888 /* jdk_platform_cygwin.h */,
+				BF9923CB07556A7700791888 /* jdk_platform_linux.h */,
+				BF9923CC07556A7700791888 /* jdk_platform_linuxthreads.h */,
+				BF9923CD07556A7700791888 /* jdk_platform_macosx.h */,
+				BF9923CE07556A7700791888 /* jdk_platform_unix.h */,
+				BF9923CF07556A7700791888 /* jdk_platform_win32.h */,
+				BF9923D007556A7700791888 /* jdk_pool.h */,
+				BF9923D107556A7700791888 /* jdk_procmap.h */,
+				BF9923D207556A7700791888 /* jdk_questions.h */,
+				BF9923D307556A7700791888 /* jdk_queue.h */,
+				BF9923D407556A7700791888 /* jdk_remote_buf.h */,
+				BF9923D507556A7700791888 /* jdk_rs232.h */,
+				BF9923D607556A7700791888 /* jdk_scheme.h */,
+				BF9923D707556A7700791888 /* jdk_serial_number.h */,
+				BF9923D807556A7700791888 /* jdk_serialsocket.h */,
+				BF9923D907556A7700791888 /* jdk_server.h */,
+				BF9923DA07556A7700791888 /* jdk_server_family.h */,
+				BF9923DB07556A7700791888 /* jdk_settings.h */,
+				BF9923DC07556A7700791888 /* jdk_settings_objc.h */,
+				BF9923DD07556A7700791888 /* jdk_shmem.h */,
+				BF9923DE07556A7700791888 /* jdk_smtp_send.h */,
+				BF9923DF07556A7700791888 /* jdk_socket.h */,
+				BF9923E007556A7700791888 /* jdk_socket_beos.h */,
+				BF9923E107556A7700791888 /* jdk_socket_unix.h */,
+				BF9923E207556A7700791888 /* jdk_socket_win32.h */,
+				BF9923E307556A7700791888 /* jdk_socketswitch.h */,
+				BF9923E407556A7700791888 /* jdk_socketutil.h */,
+				BF9923E507556A7700791888 /* jdk_stream.h */,
+				BF9923E607556A7700791888 /* jdk_string.h */,
+				BF9923E707556A7700791888 /* jdk_string_objc.h */,
+				BF9923E807556A7700791888 /* jdk_systemsettings_macosx.h */,
+				BF9923E907556A7700791888 /* jdk_table.h */,
+				BF9923EA07556A7700791888 /* jdk_test.h */,
+				BF9923EB07556A7700791888 /* jdk_thread.h */,
+				BF9923EC07556A7700791888 /* jdk_thread_server.h */,
+				BF9923ED07556A7700791888 /* jdk_tree.h */,
+				BF9923EE07556A7700791888 /* jdk_url.h */,
+				BF9923EF07556A7700791888 /* jdk_utf.h */,
+				BF9923F007556A7700791888 /* jdk_util.h */,
+				BF9923F107556A7700791888 /* jdk_valarray.h */,
+				BF9923F207556A7700791888 /* jdk_valmap.h */,
+				BF9923F307556A7700791888 /* jdk_win32svc.h */,
+				BF9923F407556A7700791888 /* jdk_win32wtl.h */,
+				BF9923F507556A7700791888 /* jdk_winerror.h */,
+				BF9923F607556A7700791888 /* jdk_winhook.h */,
+				BF9923F707556A7700791888 /* jdk_winver.h */,
+				BF9923F807556A7700791888 /* jdk_world.h */,
+				BF9923F907556A7700791888 /* jdk_xml.h */,
+				BF9923FA07556A7700791888 /* jdk_zipfile.h */,
+				BF9923FB07556A7700791888 /* JDKAuthorization.h */,
+				BF9923FC07556A7700791888 /* jdkvecstring.h */,
+				BF9923FD07556A7700791888 /* jdkwx_form.h */,
+				BF9923FE07556A7700791888 /* jdkwx_validator.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		BF99246607556A7800791888 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				BF99246707556A7800791888 /* jdk_array.cpp */,
+				BF99246807556A7800791888 /* jdk_base64.cpp */,
+				BF99246907556A7800791888 /* jdk_bindir.cpp */,
+				BF99246A07556A7800791888 /* jdk_buf.cpp */,
+				BF99246B07556A7800791888 /* jdk_buf_zip.cpp */,
+				BF99246C07556A7800791888 /* jdk_cgi.cpp */,
+				BF99246D07556A7800791888 /* jdk_cgisettings.cpp */,
+				BF99246E07556A7800791888 /* jdk_daemon.cpp */,
+				BF99246F07556A7800791888 /* jdk_dbm.cpp */,
+				BF99247007556A7800791888 /* jdk_dll.cpp */,
+				BF99247107556A7800791888 /* jdk_dynbuf.cpp */,
+				BF99247207556A7800791888 /* jdk_dynbuf_http.cpp */,
+				BF99247307556A7800791888 /* jdk_fast_url_lookup.cpp */,
+				BF99247407556A7800791888 /* jdk_fork_server.cpp */,
+				BF99247507556A7800791888 /* jdk_heap.cpp */,
+				BF99247607556A7800791888 /* jdk_html.cpp */,
+				BF99247707556A7800791888 /* jdk_html_decode.cpp */,
+				BF99247807556A7800791888 /* jdk_html_template.cpp */,
+				BF99247907556A7800791888 /* jdk_http.cpp */,
+				BF99247A07556A7800791888 /* jdk_http_server.cpp */,
+				BF99247B07556A7800791888 /* jdk_httprequest.cpp */,
+				BF99247C07556A7800791888 /* jdk_linesplit.cpp */,
+				BF99247D07556A7800791888 /* jdk_log.cpp */,
+				BF99247E07556A7800791888 /* jdk_log_osx.mm */,
+				BF99247F07556A7800791888 /* jdk_lz.cpp */,
+				BF99248007556A7800791888 /* jdk_map.cpp */,
+				BF99248107556A7800791888 /* jdk_mmap_buf.cpp */,
+				BF99248207556A7800791888 /* jdk_nameserver.cpp */,
+				BF99248307556A7800791888 /* jdk_pair.cpp */,
+				BF99248407556A7800791888 /* jdk_procmap.cpp */,
+				BF99248507556A7800791888 /* jdk_questions.cpp */,
+				BF99248607556A7800791888 /* jdk_remote_buf.cpp */,
+				BF99248707556A7800791888 /* jdk_rs232.cpp */,
+				BF99248807556A7800791888 /* jdk_scheme.cpp */,
+				BF99248907556A7800791888 /* jdk_serial_number.cpp */,
+				BF99248A07556A7800791888 /* jdk_serialsocket.cpp */,
+				BF99248B07556A7800791888 /* jdk_server.cpp */,
+				BF99248C07556A7800791888 /* jdk_server_family.cpp */,
+				BF99248D07556A7800791888 /* jdk_settings.cpp */,
+				BF99248E07556A7800791888 /* jdk_shmem.cpp */,
+				BF99248F07556A7800791888 /* jdk_smtp_send.cpp */,
+				BF99249007556A7800791888 /* jdk_socket.cpp */,
+				BF99249107556A7800791888 /* jdk_socketswitch.cpp */,
+				BF99249207556A7800791888 /* jdk_socketutil.cpp */,
+				BF99249307556A7800791888 /* jdk_stream.cpp */,
+				BF99249407556A7800791888 /* jdk_string.cpp */,
+				BF99249507556A7800791888 /* jdk_thread.cpp */,
+				BF99249607556A7800791888 /* jdk_thread_mem.cpp */,
+				BF99249707556A7800791888 /* jdk_thread_mutex.cpp */,
+				BF99249807556A7800791888 /* jdk_thread_pool.cpp */,
+				BF99249907556A7800791888 /* jdk_url.cpp */,
+				BF99249A07556A7800791888 /* jdk_utf.cpp */,
+				BF99249B07556A7800791888 /* jdk_util.cpp */,
+				BF99249C07556A7800791888 /* jdk_win32svc.cpp */,
+				BF99249D07556A7800791888 /* jdk_zipfile.cpp */,
+				BF99249E07556A7800791888 /* JDKAuthorization.mm */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		BF9924CB07556A7800791888 /* libzip */ = {
+			isa = PBXGroup;
+			children = (
+				BF9924CC07556A7800791888 /* include */,
+				BF9924E007556A7800791888 /* src */,
+			);
+			name = libzip;
+			path = ../../../../libzip;
+			sourceTree = "<group>";
+		};
+		BF9924CC07556A7800791888 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				BF9924CD07556A7800791888 /* crc32.h */,
+				BF9924CE07556A7800791888 /* crypt.h */,
+				BF9924CF07556A7800791888 /* deflate.h */,
+				BF9924D007556A7800791888 /* inffast.h */,
+				BF9924D107556A7800791888 /* inffixed.h */,
+				BF9924D207556A7800791888 /* inflate.h */,
+				BF9924D307556A7800791888 /* inftrees.h */,
+				BF9924D407556A7800791888 /* ioapi.h */,
+				BF9924D507556A7800791888 /* ioapi_mem.h */,
+				BF9924D607556A7800791888 /* iowin32.h */,
+				BF9924D707556A7800791888 /* trees.h */,
+				BF9924D807556A7800791888 /* unzip.h */,
+				BF9924D907556A7800791888 /* zconf.h */,
+				BF9924DA07556A7800791888 /* zconf.in.h */,
+				BF9924DB07556A7800791888 /* zip.h */,
+				BF9924DC07556A7800791888 /* zlib.h */,
+				BF9924DD07556A7800791888 /* zutil.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		BF9924E007556A7800791888 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				BF9924E107556A7800791888 /* adler32.c */,
+				BF9924E207556A7800791888 /* compress.c */,
+				BF9924E307556A7800791888 /* crc32.c */,
+				BF9924E407556A7800791888 /* deflate.c */,
+				BF9924E507556A7800791888 /* gzio.c */,
+				BF9924E607556A7800791888 /* infback.c */,
+				BF9924E707556A7800791888 /* inffast.c */,
+				BF9924E807556A7800791888 /* inflate.c */,
+				BF9924E907556A7800791888 /* inftrees.c */,
+				BF9924EA07556A7800791888 /* ioapi.c */,
+				BF9924EB07556A7800791888 /* ioapi_mem.c */,
+				BF9924EC07556A7800791888 /* iowin32.c */,
+				BF9924F007556A7800791888 /* trees.c */,
+				BF9924F107556A7800791888 /* uncompr.c */,
+				BF9924F207556A7800791888 /* unzip.c */,
+				BF9924F307556A7800791888 /* zip.c */,
+				BF9924F407556A7800791888 /* zutil.c */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		BF99280707556AB300791888 /* libif2k */ = {
+			isa = PBXGroup;
+			children = (
+				BF99282D07556AB400791888 /* include */,
+				BF992C2D07556AC000791888 /* src */,
+			);
+			name = libif2k;
+			path = ../../../../libif2k;
+			sourceTree = SOURCE_ROOT;
+		};
+		BF99282D07556AB400791888 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				BF99282E07556AB400791888 /* if2k_mini_client.h */,
+				BF99282F07556AB400791888 /* if2k_mini_compile.h */,
+				BF99283007556AB400791888 /* if2k_mini_config.h */,
+				BF99283107556AB400791888 /* if2k_mini_http_proxy.h */,
+				BF99283207556AB400791888 /* if2k_mini_kernel.h */,
+				BF99283307556AB400791888 /* if2k_mini_kernel_v2.h */,
+				BF99283407556AB400791888 /* if2k_mini_log.h */,
+				BF99283507556AB400791888 /* if2k_mini_nntp_proxy.h */,
+				BF99283607556AB400791888 /* if2k_mini_scanner.h */,
+				BF99283707556AB400791888 /* if2k_mini_server.h */,
+				BF99283807556AB400791888 /* if2k_mini_tree.h */,
+				BF99283907556AB400791888 /* if2k_mini_tunnel.h */,
+				BF99283A07556AB400791888 /* if2k_pattern_expander.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		BF992C2D07556AC000791888 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				BF992C2E07556AC000791888 /* if2k_mini_http_proxy.cpp */,
+				BF992C2F07556AC000791888 /* if2k_mini_kernel_defaults.cpp */,
+				BF992C3007556AC000791888 /* if2k_mini_kernel_v2.cpp */,
+				BF992C3107556AC000791888 /* if2k_mini_log.cpp */,
+				BF992C3207556AC000791888 /* if2k_mini_nntp_proxy.cpp */,
+				BF992C3307556AC000791888 /* if2k_mini_server.cpp */,
+				BF992C3407556AC000791888 /* if2k_mini_tunnel.cpp */,
+				BF992C3507556AC000791888 /* if2k_pattern_expander.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		BF9930C10756B78100791888 /* reference */ = {
+			isa = PBXGroup;
+			children = (
+				BF9930C20756B7AA00791888 /* maindlg.h */,
+			);
+			name = reference;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* If2k Settings */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF794F360854F8DB0057A35A /* Build configuration list for PBXNativeTarget "If2k Settings" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				BF72870C09AE4D8A00005C29 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "If2k Settings";
+			productInstallPath = "$(HOME)/Applications";
+			productName = "If2k Settings";
+			productReference = 8D1107320486CEB800E47090 /* If2k Settings.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = BF794F3A0854F8DB0057A35A /* Build configuration list for PBXProject "If2k Settings" */;
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* If2k Settings */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = BF3B09E50B0D4C6E009144BC /* Products */;
+					ProjectRef = BF3B09E40B0D4C6E009144BC /* if2ksystem.xcodeproj */;
+				},
+			);
+			targets = (
+				8D1107260486CEB800E47090 /* If2k Settings */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				BF99216E07556A4200791888 /* if2k-icon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF9926A407556A7800791888 /* autoconf.h in Sources */,
+				BF9927BF07556A7800791888 /* crc32.h in Sources */,
+				BF9927C007556A7800791888 /* crypt.h in Sources */,
+				BF9927C107556A7800791888 /* deflate.h in Sources */,
+				BF992C5D07556AC100791888 /* if2k_mini_client.h in Sources */,
+				BF992C5E07556AC100791888 /* if2k_mini_compile.h in Sources */,
+				BF992C5F07556AC100791888 /* if2k_mini_config.h in Sources */,
+				BF992C6007556AC100791888 /* if2k_mini_http_proxy.h in Sources */,
+				BF992C6107556AC100791888 /* if2k_mini_kernel.h in Sources */,
+				BF992C6207556AC100791888 /* if2k_mini_kernel_v2.h in Sources */,
+				BF992C6307556AC100791888 /* if2k_mini_log.h in Sources */,
+				BF992C6407556AC100791888 /* if2k_mini_nntp_proxy.h in Sources */,
+				BF992C6507556AC100791888 /* if2k_mini_scanner.h in Sources */,
+				BF992C6607556AC100791888 /* if2k_mini_server.h in Sources */,
+				BF992C6707556AC100791888 /* if2k_mini_tree.h in Sources */,
+				BF992C6807556AC100791888 /* if2k_mini_tunnel.h in Sources */,
+				BF992C6907556AC100791888 /* if2k_pattern_expander.h in Sources */,
+				BF9927C207556A7800791888 /* inffast.h in Sources */,
+				BF9927C307556A7800791888 /* inffixed.h in Sources */,
+				BF9927C407556A7800791888 /* inflate.h in Sources */,
+				BF9927C507556A7800791888 /* inftrees.h in Sources */,
+				BF9927C607556A7800791888 /* ioapi.h in Sources */,
+				BF9927C707556A7800791888 /* ioapi_mem.h in Sources */,
+				BF9927C807556A7800791888 /* iowin32.h in Sources */,
+				BF9926A507556A7800791888 /* jdk_archive.h in Sources */,
+				BF9926A607556A7800791888 /* jdk_array.h in Sources */,
+				BF9926A707556A7800791888 /* jdk_atom.h in Sources */,
+				BF9926A807556A7800791888 /* jdk_base64.h in Sources */,
+				BF9926A907556A7800791888 /* jdk_bindir.h in Sources */,
+				BF9926AA07556A7800791888 /* jdk_buf.h in Sources */,
+				BF9926AB07556A7800791888 /* jdk_cgi.h in Sources */,
+				BF9926AC07556A7800791888 /* jdk_cgisettings.h in Sources */,
+				BF9926AD07556A7800791888 /* jdk_crypt.h in Sources */,
+				BF9926AE07556A7800791888 /* jdk_daemon.h in Sources */,
+				BF9926AF07556A7800791888 /* jdk_dbm.h in Sources */,
+				BF9926B007556A7800791888 /* jdk_dll.h in Sources */,
+				BF9926B107556A7800791888 /* jdk_dynbuf.h in Sources */,
+				BF9926B207556A7800791888 /* jdk_elastic_queue.h in Sources */,
+				BF9926B307556A7800791888 /* jdk_error.h in Sources */,
+				BF9926B407556A7800791888 /* jdk_fast_url_lookup.h in Sources */,
+				BF9926B507556A7800791888 /* jdk_fasttree.h in Sources */,
+				BF9926B607556A7800791888 /* jdk_fork_server.h in Sources */,
+				BF9926B707556A7800791888 /* jdk_heap.h in Sources */,
+				BF9926B807556A7800791888 /* jdk_html.h in Sources */,
+				BF9926B907556A7800791888 /* jdk_html_decode.h in Sources */,
+				BF9926BA07556A7800791888 /* jdk_html_template.h in Sources */,
+				BF9926BB07556A7800791888 /* jdk_http.h in Sources */,
+				BF9926BC07556A7800791888 /* jdk_http_admin.h in Sources */,
+				BF9926BD07556A7800791888 /* jdk_http_server.h in Sources */,
+				BF9926BE07556A7800791888 /* jdk_http_server_lua.h in Sources */,
+				BF9926BF07556A7800791888 /* jdk_httprequest.h in Sources */,
+				BF9926C007556A7800791888 /* jdk_inet_server.h in Sources */,
+				BF9926C107556A7800791888 /* jdk_ipv4.h in Sources */,
+				BF9926C207556A7800791888 /* jdk_linesplit.h in Sources */,
+				BF9926C307556A7800791888 /* jdk_list.h in Sources */,
+				BF9926C407556A7800791888 /* jdk_log.h in Sources */,
+				BF9926C507556A7800791888 /* jdk_lz.h in Sources */,
+				BF9926C607556A7800791888 /* jdk_map.h in Sources */,
+				BF9926C707556A7800791888 /* jdk_mmap_buf.h in Sources */,
+				BF9926C807556A7800791888 /* jdk_nameserver.h in Sources */,
+				BF9926C907556A7800791888 /* jdk_objlog.h in Sources */,
+				BF9926CA07556A7800791888 /* jdk_pair.h in Sources */,
+				BF9926CB07556A7800791888 /* jdk_platform.h in Sources */,
+				BF9926CC07556A7800791888 /* jdk_platform_beos.h in Sources */,
+				BF9926CD07556A7800791888 /* jdk_platform_cygwin.h in Sources */,
+				BF9926CE07556A7800791888 /* jdk_platform_linux.h in Sources */,
+				BF9926CF07556A7800791888 /* jdk_platform_linuxthreads.h in Sources */,
+				BF9926D007556A7800791888 /* jdk_platform_macosx.h in Sources */,
+				BF9926D107556A7800791888 /* jdk_platform_unix.h in Sources */,
+				BF9926D207556A7800791888 /* jdk_platform_win32.h in Sources */,
+				BF9926D307556A7800791888 /* jdk_pool.h in Sources */,
+				BF9926D407556A7800791888 /* jdk_procmap.h in Sources */,
+				BF9926D507556A7800791888 /* jdk_questions.h in Sources */,
+				BF9926D607556A7800791888 /* jdk_queue.h in Sources */,
+				BF9926D707556A7800791888 /* jdk_remote_buf.h in Sources */,
+				BF9926D807556A7800791888 /* jdk_rs232.h in Sources */,
+				BF9926D907556A7800791888 /* jdk_scheme.h in Sources */,
+				BF9926DA07556A7800791888 /* jdk_serial_number.h in Sources */,
+				BF9926DB07556A7800791888 /* jdk_serialsocket.h in Sources */,
+				BF9926DC07556A7800791888 /* jdk_server.h in Sources */,
+				BF9926DD07556A7800791888 /* jdk_server_family.h in Sources */,
+				BF9926DE07556A7800791888 /* jdk_settings.h in Sources */,
+				BF9926DF07556A7800791888 /* jdk_settings_objc.h in Sources */,
+				BF9926E007556A7800791888 /* jdk_shmem.h in Sources */,
+				BF9926E107556A7800791888 /* jdk_smtp_send.h in Sources */,
+				BF9926E207556A7800791888 /* jdk_socket.h in Sources */,
+				BF9926E307556A7800791888 /* jdk_socket_beos.h in Sources */,
+				BF9926E407556A7800791888 /* jdk_socket_unix.h in Sources */,
+				BF9926E507556A7800791888 /* jdk_socket_win32.h in Sources */,
+				BF9926E607556A7800791888 /* jdk_socketswitch.h in Sources */,
+				BF9926E707556A7800791888 /* jdk_socketutil.h in Sources */,
+				BF9926E807556A7800791888 /* jdk_stream.h in Sources */,
+				BF9926E907556A7800791888 /* jdk_string.h in Sources */,
+				BF9926EA07556A7800791888 /* jdk_string_objc.h in Sources */,
+				BF9926EB07556A7800791888 /* jdk_systemsettings_macosx.h in Sources */,
+				BF9926EC07556A7800791888 /* jdk_table.h in Sources */,
+				BF9926ED07556A7800791888 /* jdk_test.h in Sources */,
+				BF9926EE07556A7800791888 /* jdk_thread.h in Sources */,
+				BF9926EF07556A7800791888 /* jdk_thread_server.h in Sources */,
+				BF9926F007556A7800791888 /* jdk_tree.h in Sources */,
+				BF9926F107556A7800791888 /* jdk_url.h in Sources */,
+				BF9926F207556A7800791888 /* jdk_utf.h in Sources */,
+				BF9926F307556A7800791888 /* jdk_util.h in Sources */,
+				BF9926F407556A7800791888 /* jdk_valarray.h in Sources */,
+				BF9926F507556A7800791888 /* jdk_valmap.h in Sources */,
+				BF9926F607556A7800791888 /* jdk_win32svc.h in Sources */,
+				BF9926F707556A7800791888 /* jdk_win32wtl.h in Sources */,
+				BF9926F807556A7800791888 /* jdk_winerror.h in Sources */,
+				BF9926F907556A7800791888 /* jdk_winhook.h in Sources */,
+				BF9926FA07556A7800791888 /* jdk_winver.h in Sources */,
+				BF9926FB07556A7800791888 /* jdk_world.h in Sources */,
+				BF9926FC07556A7800791888 /* jdk_xml.h in Sources */,
+				BF9926FD07556A7800791888 /* jdk_zipfile.h in Sources */,
+				BF9926FE07556A7800791888 /* JDKAuthorization.h in Sources */,
+				BF9926FF07556A7800791888 /* jdkvecstring.h in Sources */,
+				BF99270007556A7800791888 /* jdkwx_form.h in Sources */,
+				BF99270107556A7800791888 /* jdkwx_validator.h in Sources */,
+				BF9927C907556A7800791888 /* trees.h in Sources */,
+				BF9927CA07556A7800791888 /* unzip.h in Sources */,
+				BF9927CB07556A7800791888 /* zconf.h in Sources */,
+				BF9927CC07556A7800791888 /* zconf.in.h in Sources */,
+				BF9927CD07556A7800791888 /* zip.h in Sources */,
+				BF9927CE07556A7800791888 /* zlib.h in Sources */,
+				BF9927CF07556A7800791888 /* zutil.h in Sources */,
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				BF99275D07556A7800791888 /* jdk_array.cpp in Sources */,
+				BF99275E07556A7800791888 /* jdk_base64.cpp in Sources */,
+				BF99275F07556A7800791888 /* jdk_bindir.cpp in Sources */,
+				BF99276007556A7800791888 /* jdk_buf.cpp in Sources */,
+				BF99276107556A7800791888 /* jdk_buf_zip.cpp in Sources */,
+				BF99276207556A7800791888 /* jdk_cgi.cpp in Sources */,
+				BF99276307556A7800791888 /* jdk_cgisettings.cpp in Sources */,
+				BF99276707556A7800791888 /* jdk_dynbuf.cpp in Sources */,
+				BF99276807556A7800791888 /* jdk_dynbuf_http.cpp in Sources */,
+				BF99276C07556A7800791888 /* jdk_html.cpp in Sources */,
+				BF99276D07556A7800791888 /* jdk_html_decode.cpp in Sources */,
+				BF99276E07556A7800791888 /* jdk_html_template.cpp in Sources */,
+				BF99276F07556A7800791888 /* jdk_http.cpp in Sources */,
+				BF99277107556A7800791888 /* jdk_httprequest.cpp in Sources */,
+				BF99277207556A7800791888 /* jdk_linesplit.cpp in Sources */,
+				BF99277307556A7800791888 /* jdk_log.cpp in Sources */,
+				BF99277407556A7800791888 /* jdk_log_osx.mm in Sources */,
+				BF99277507556A7800791888 /* jdk_lz.cpp in Sources */,
+				BF99277607556A7800791888 /* jdk_map.cpp in Sources */,
+				BF99277707556A7800791888 /* jdk_mmap_buf.cpp in Sources */,
+				BF99277907556A7800791888 /* jdk_pair.cpp in Sources */,
+				BF99277A07556A7800791888 /* jdk_procmap.cpp in Sources */,
+				BF99277B07556A7800791888 /* jdk_questions.cpp in Sources */,
+				BF99277C07556A7800791888 /* jdk_remote_buf.cpp in Sources */,
+				BF99277F07556A7800791888 /* jdk_serial_number.cpp in Sources */,
+				BF99278307556A7800791888 /* jdk_settings.cpp in Sources */,
+				BF99278607556A7800791888 /* jdk_socket.cpp in Sources */,
+				BF99278A07556A7800791888 /* jdk_string.cpp in Sources */,
+				BF99278B07556A7800791888 /* jdk_thread.cpp in Sources */,
+				BF99278C07556A7800791888 /* jdk_thread_mem.cpp in Sources */,
+				BF99278D07556A7800791888 /* jdk_thread_mutex.cpp in Sources */,
+				BF99278E07556A7800791888 /* jdk_thread_pool.cpp in Sources */,
+				BF99278F07556A7800791888 /* jdk_url.cpp in Sources */,
+				BF99279007556A7800791888 /* jdk_utf.cpp in Sources */,
+				BF99279107556A7800791888 /* jdk_util.cpp in Sources */,
+				BF99279307556A7800791888 /* jdk_zipfile.cpp in Sources */,
+				BF99279407556A7800791888 /* JDKAuthorization.mm in Sources */,
+				BF9927D207556A7800791888 /* adler32.c in Sources */,
+				BF9927D307556A7800791888 /* compress.c in Sources */,
+				BF9927D407556A7800791888 /* crc32.c in Sources */,
+				BF9927D507556A7800791888 /* deflate.c in Sources */,
+				BF9927D607556A7800791888 /* gzio.c in Sources */,
+				BF9927D707556A7800791888 /* infback.c in Sources */,
+				BF9927D807556A7800791888 /* inffast.c in Sources */,
+				BF9927D907556A7800791888 /* inflate.c in Sources */,
+				BF9927DA07556A7800791888 /* inftrees.c in Sources */,
+				BF9927DB07556A7800791888 /* ioapi.c in Sources */,
+				BF9927DC07556A7800791888 /* ioapi_mem.c in Sources */,
+				BF9927DD07556A7800791888 /* iowin32.c in Sources */,
+				BF9927E107556A7800791888 /* trees.c in Sources */,
+				BF9927E207556A7800791888 /* uncompr.c in Sources */,
+				BF9927E307556A7800791888 /* unzip.c in Sources */,
+				BF9927E407556A7800791888 /* zip.c in Sources */,
+				BF9927E507556A7800791888 /* zutil.c in Sources */,
+				BF992F7407556AC100791888 /* if2k_mini_kernel_defaults.cpp in Sources */,
+				BF992F7A07556AC100791888 /* if2k_pattern_expander.cpp in Sources */,
+				BF993090075690C600791888 /* If2kSettingsGui.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29B97319FDCFA39411CA2CEA /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF794F370854F8DB0057A35A /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DEBUGGING_SYMBOLS = full;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ../../../../libjdk/include/jdk_world.h;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"JDK_IS_MACOSX=1",
+					"JDK_HAS_THREADS=1",
+					"JDK_IS_DEBUG=1",
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				PRODUCT_NAME = "If2k Settings";
+				REZ_PREPROCESSOR_DEFINITIONS = "JDK_IS_MACOSX=1 JDK_HAS_THREADS=1";
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		BF794F380854F8DB0057A35A /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_DEBUGGING_SYMBOLS = full;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INPUT_FILETYPE = "";
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = ../../../../libjdk/include/jdk_world.h;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"JDK_IS_MACOSX=1",
+					"JDK_HAS_THREADS=1",
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				PREBINDING = NO;
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
+				PRODUCT_NAME = "If2k Settings";
+				REZ_PREPROCESSOR_DEFINITIONS = "JDK_IS_MACOSX=1 JDK_HAS_THREADS=1";
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		BF794F390854F8DB0057A35A /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "If2k Settings_Prefix.pch";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "";
+				PRODUCT_NAME = "If2k Settings";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Default;
+		};
+		BF794F3B0854F8DB0057A35A /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Development;
+		};
+		BF794F3C0854F8DB0057A35A /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "JDK_IS_MACOSX=1";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Deployment;
+		};
+		BF794F3D0854F8DB0057A35A /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF794F360854F8DB0057A35A /* Build configuration list for PBXNativeTarget "If2k Settings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF794F370854F8DB0057A35A /* Development */,
+				BF794F380854F8DB0057A35A /* Deployment */,
+				BF794F390854F8DB0057A35A /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		BF794F3A0854F8DB0057A35A /* Build configuration list for PBXProject "If2k Settings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF794F3B0854F8DB0057A35A /* Development */,
+				BF794F3C0854F8DB0057A35A /* Deployment */,
+				BF794F3D0854F8DB0057A35A /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

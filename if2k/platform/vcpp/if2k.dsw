@@ -1,0 +1,215 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "httpget"=.\httpget\httpget.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name jdklibs
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "if2k_cleanup"=.\if2k_cleanup\if2k_cleanup.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name jdklibs
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "if2k_compile_list"=.\if2k_compile_list\if2k_compile_list.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name jdklibs
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "if2k_install_lists"=.\if2k_install_lists\if2k_install_lists.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name jdklibs
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "if2k_library"=.\if2k_library\if2k_library.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "if2k_licensor"=.\if2k_licensor\if2k_licensor.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name jdklibs
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "if2k_only"=.\if2k_only\if2k_only.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "if2k_override"=.\if2k_override\if2k_override.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name jdklibs
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "if2k_redir"=.\if2k_redir\if2k_redir.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "if2k_redir_test"=.\if2k_redir_test\if2k_redir_test.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name if2k_redir
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name jdklibs
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "if2kd"=.\if2kd\if2kd.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name jdklibs
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "if2kd server"=".\if2kd-server\if2kd-server.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name jdklibs
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "if2kkernel"=.\if2kkernel\if2kkernel.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "jdklibs"=.\jdklibs\jdklibs.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

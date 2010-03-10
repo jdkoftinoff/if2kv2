@@ -1,0 +1,1 @@
+cd "../build/$PLATFORM" && ../../MagicMake "${1:-all}" libjdk

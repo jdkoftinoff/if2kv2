@@ -1,0 +1,9 @@
+LIBPROJECT=jdk
+LDLIBS+=-lzip
+
+
+include $(TOP)/MagicMakefile
+
+
+
+

@@ -1,0 +1,17 @@
+#include "windows.h"
+#include "libwn_testpaintrc.h"
+
+ICONMAIN ICON "libwn_testpainticon.ico"
+
+BMPHELLO BITMAP "libwn_testbmp.bmp"
+
+DLGABOUT DIALOG 36, 28, 201, 51
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+{
+ CONTROL "", -1, "static", SS_BLACKFRAME | WS_CHILD | WS_VISIBLE, 8, 8, 188, 36
+ CTEXT "Jeffs libwn V1.0", -1, 25, 18, 160, 8
+ CTEXT "Copyright 2000 By J.D. Koftinoff Software, Ltd.", -1, 15, 28, 176, 8, WS_CHILD | WS_VISIBLE | WS_GROUP
+}
+
+
+

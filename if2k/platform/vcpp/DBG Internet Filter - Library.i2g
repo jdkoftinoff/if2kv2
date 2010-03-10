@@ -1,0 +1,188 @@
+[BUILDER_INFO]
+Version=4.1
+
+[GENERAL_INFO]
+ProductName=DBG Internet Filter - Library
+ProductVersion=2.2.8
+ProductManufacturer=Turner and Sons Productions, Inc.
+ProductCode={4F91B395-16B8-4E9B-8960-6ADB59813F1C}
+ProductUpdateCode={0096D5BB-51A0-4F1D-9EF0-DC706AA1602F}
+SummaryTitle=The Internet Filter if2k-library Ver. 2.2.8 - DBG -
+SummarySubject=Web Content Filtering
+SummaryAuthor=Turner and Sons Productions, inc.
+SummaryKeywords=Web Content Internet Filtering Libraries
+SummaryComments=The Internet Filter if2k-library is a web content control system specifically made for libraries.
+SupportProductURL=http://www.internetfilter.com/
+SupportURL=http://www.internetfilter.com/
+SupportPhoneNumber=
+SupportContactPerson=Jeff Koftinoff <jeffk@internetfilter.com>
+SupportProductUpdateURL=http://www.internetfilter.com/files/
+SupportProductComments=
+
+[SETUP_INFO]
+DefaultRootFolderID=0
+CustomRootFolderPath=
+DefaultInstallationPath=%ProductName%
+DefaultShortcutFolderName=%ProductName%
+ShortcutsInCommonProgramGroups=Yes
+CreateUninstallerIcon=No
+UninstallerIconDescription=Uninstall %ProductName%
+ForceRestart=Yes
+
+[SYSTEM_REQUIREMENTS]
+AnyWindows=No
+Windows95=No
+Windows98=No
+WindowsME=No
+WindowsNT4=Yes
+Windows2000=Yes
+WindowsXP=Yes
+Windows2003=No
+
+[DIALOGS]
+Layout=0
+CustomDialogImage=No
+SmallCustomDialogImage=No
+CustomDialogBitmap_Pathname=
+CustomDialogSmallBitmap_Pathname=
+Advertisement_Pathname=
+Advertisement_BitmapPathname=
+WelcomeDialog=Yes
+LicenseDialog=No
+ReadmeDialog=No
+UserInfoDialog=No
+TargetDirectoryDialog=Yes
+SetupTypeDialog=No
+CustomSetupDialog=No
+StartDialog=Yes
+FinishDialog=Yes
+AdvertisementDialog=No
+
+[LICENSE_DIALOG]
+License_Pathname=
+
+[README_DIALOG]
+Readme_Pathname=
+
+[FINISH_DIALOG]
+Show_ViewReadme_CheckBox=No
+Show_ViewReadme_Checked=No
+Show_RunApplication_CheckBox=No
+Show_RunApplication_Checked=Yes
+Readme_Pathname=
+Application_Pathname=%AppDir%\if2k_library.exe
+
+[CREATE_SETUP]
+OutputFolder=E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k&bs;platform&bs;vcpp&bs;debug
+SetupFilename=dbg-if2k-library-2.2.8-win32.msi
+SetupExeFilename=Setup.exe
+SetupIconPathname=if2k&bs;if2k_override&bs;res&bs;if2k_override.ico
+CreateSelfExtractedSetup=No
+IncludeMSIRuntime=No
+Language=English
+
+[APPLICATION_FILES]
+File=%AppDir%&bs;if2k_library.exe,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k&bs;platform&bs;vcpp&bs;debug&bs;if2k_library.exe,0,2
+File=%AppDir%&bs;if2k_override.exe,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k&bs;platform&bs;vcpp&bs;debug&bs;if2k_override.exe,1,2
+Folder=%WinSysDir%&bs;if2k
+Folder=%WinSysDir%&bs;if2k&bs;web
+File=%WinSysDir%&bs;if2k&bs;web&bs;override.html,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;web&bs;override.html,0,0
+File=%WinSysDir%&bs;if2k&bs;web&bs;barbwire.jpg,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;web&bs;barbwire.jpg,0,0
+File=%WinSysDir%&bs;if2k&bs;web&bs;block.html,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;web&bs;block.html,0,0
+File=%WinSysDir%&bs;if2k&bs;web&bs;blocked1.jpg,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;web&bs;blocked1.jpg,0,0
+File=%WinSysDir%&bs;if2k&bs;web&bs;blocked.jpg,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;web&bs;blocked.jpg,0,0
+File=%WinSysDir%&bs;if2k&bs;web&bs;connectionerror.html,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;web&bs;connectionerror.html,0,0
+File=%WinSysDir%&bs;if2k&bs;web&bs;error404.html,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;web&bs;error404.html,0,0
+File=%WinSysDir%&bs;if2k&bs;web&bs;imageblock.gif,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;web&bs;imageblock.gif,0,0
+File=%WinSysDir%&bs;if2k&bs;web&bs;imageblock.jpg,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;web&bs;imageblock.jpg,0,0
+File=%WinSysDir%&bs;if2k&bs;web&bs;imageblock.png,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;web&bs;imageblock.png,0,0
+File=%WinSysDir%&bs;if2k&bs;web&bs;index.html,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;web&bs;index.html,0,0
+File=%WinSysDir%&bs;if2k&bs;web&bs;login.html,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;web&bs;login.html,0,0
+File=%WinSysDir%&bs;if2k&bs;web&bs;logo.gif,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;web&bs;logo.gif,0,0
+File=%WinSysDir%&bs;if2k&bs;web&bs;logout.html,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;web&bs;logout.html,0,0
+Folder=%WinSysDir%&bs;if2k&bs;bin
+File=%WinSysDir%&bs;if2k&bs;bin&bs;if2kd.exe,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k&bs;platform&bs;vcpp&bs;debug&bs;if2kd.exe,0,0
+File=%WinSysDir%&bs;if2k&bs;bin&bs;if2k_install_lists.exe,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k&bs;platform&bs;vcpp&bs;debug&bs;if2k_install_lists.exe,0,2
+File=%WinSysDir%&bs;if2k&bs;bin&bs;if2k_cleanup.exe,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k&bs;platform&bs;vcpp&bs;debug&bs;if2k_cleanup.exe,0,0
+Folder=%WinSysDir%&bs;if2k&bs;predb
+File=%WinSysDir%&bs;if2k&bs;predb&bs;01postbadurl.txt,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;01postbadurl.txt,0,0
+File=%WinSysDir%&bs;if2k&bs;predb&bs;02postbadurl.txt,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;02postbadurl.txt,0,0
+File=%WinSysDir%&bs;if2k&bs;predb&bs;03postbadurl.txt,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;03postbadurl.txt,0,0
+File=%WinSysDir%&bs;if2k&bs;predb&bs;04postbadurl.txt,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;04postbadurl.txt,0,0
+File=%WinSysDir%&bs;if2k&bs;predb&bs;05postbadurl.txt,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;05postbadurl.txt,0,0
+File=%WinSysDir%&bs;if2k&bs;predb&bs;06postbadurl.txt,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;06postbadurl.txt,0,0
+File=%WinSysDir%&bs;if2k&bs;predb&bs;07postbadurl.txt,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;07postbadurl.txt,0,0
+File=%WinSysDir%&bs;if2k&bs;predb&bs;08postbadurl.txt,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;08postbadurl.txt,0,0
+File=%WinSysDir%&bs;if2k&bs;predb&bs;01postbadurl.txt.pre,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;01postbadurl.txt.pre,0,0
+File=%WinSysDir%&bs;if2k&bs;predb&bs;02postbadurl.txt.pre,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;02postbadurl.txt.pre,0,0
+File=%WinSysDir%&bs;if2k&bs;predb&bs;03postbadurl.txt.pre,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;03postbadurl.txt.pre,0,0
+File=%WinSysDir%&bs;if2k&bs;predb&bs;04postbadurl.txt.pre,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;04postbadurl.txt.pre,0,0
+File=%WinSysDir%&bs;if2k&bs;predb&bs;05postbadurl.txt.pre,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;05postbadurl.txt.pre,0,0
+File=%WinSysDir%&bs;if2k&bs;predb&bs;06postbadurl.txt.pre,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;06postbadurl.txt.pre,0,0
+File=%WinSysDir%&bs;if2k&bs;predb&bs;07postbadurl.txt.pre,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;07postbadurl.txt.pre,0,0
+File=%WinSysDir%&bs;if2k&bs;predb&bs;08postbadurl.txt.pre,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;08postbadurl.txt.pre,0,0
+File=%WinSysDir%&bs;if2k&bs;predb&bs;08badurl.txt,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;08badurl.txt,0,0
+File=%WinSysDir%&bs;if2k&bs;predb&bs;01badphr.txt,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;01badphr.txt,0,0
+File=%WinSysDir%&bs;if2k&bs;predb&bs;01badurl.txt,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;01badurl.txt,0,0
+File=%WinSysDir%&bs;if2k&bs;predb&bs;01goodurl.txt,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;01goodurl.txt,0,0
+File=%WinSysDir%&bs;if2k&bs;predb&bs;02badphr.txt,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;02badphr.txt,0,0
+File=%WinSysDir%&bs;if2k&bs;predb&bs;02badurl.txt,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;02badurl.txt,0,0
+File=%WinSysDir%&bs;if2k&bs;predb&bs;03badphr.txt,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;03badphr.txt,0,0
+File=%WinSysDir%&bs;if2k&bs;predb&bs;03badurl.txt,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;03badurl.txt,0,0
+File=%WinSysDir%&bs;if2k&bs;predb&bs;04badphr.txt,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;04badphr.txt,0,0
+File=%WinSysDir%&bs;if2k&bs;predb&bs;04badurl.txt,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;04badurl.txt,0,0
+File=%WinSysDir%&bs;if2k&bs;predb&bs;05badurl.txt,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;05badurl.txt,0,0
+File=%WinSysDir%&bs;if2k&bs;predb&bs;06badurl.txt,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;06badurl.txt,0,0
+File=%WinSysDir%&bs;if2k&bs;predb&bs;07badurl.txt,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;07badurl.txt,0,0
+File=%WinSysDir%&bs;if2k&bs;predb&bs;01badphr.txt.pre,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;01badphr.txt.pre,0,0
+File=%WinSysDir%&bs;if2k&bs;predb&bs;01badurl.txt.pre,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;01badurl.txt.pre,0,0
+File=%WinSysDir%&bs;if2k&bs;predb&bs;01goodurl.txt.pre,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;01goodurl.txt.pre,0,0
+File=%WinSysDir%&bs;if2k&bs;predb&bs;02badphr.txt.pre,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;02badphr.txt.pre,0,0
+File=%WinSysDir%&bs;if2k&bs;predb&bs;02badurl.txt.pre,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;02badurl.txt.pre,0,0
+File=%WinSysDir%&bs;if2k&bs;predb&bs;03badphr.txt.pre,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;03badphr.txt.pre,0,0
+File=%WinSysDir%&bs;if2k&bs;predb&bs;03badurl.txt.pre,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;03badurl.txt.pre,0,0
+File=%WinSysDir%&bs;if2k&bs;predb&bs;04badphr.txt.pre,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;04badphr.txt.pre,0,0
+File=%WinSysDir%&bs;if2k&bs;predb&bs;04badurl.txt.pre,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;04badurl.txt.pre,0,0
+File=%WinSysDir%&bs;if2k&bs;predb&bs;05badphr.txt.pre,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;05badphr.txt.pre,0,0
+File=%WinSysDir%&bs;if2k&bs;predb&bs;05badurl.txt.pre,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;05badurl.txt.pre,0,0
+File=%WinSysDir%&bs;if2k&bs;predb&bs;06badphr.txt.pre,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;06badphr.txt.pre,0,0
+File=%WinSysDir%&bs;if2k&bs;predb&bs;06badurl.txt.pre,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;06badurl.txt.pre,0,0
+File=%WinSysDir%&bs;if2k&bs;predb&bs;07badphr.txt.pre,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;07badphr.txt.pre,0,0
+File=%WinSysDir%&bs;if2k&bs;predb&bs;07badurl.txt.pre,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;07badurl.txt.pre,0,0
+File=%WinSysDir%&bs;if2k&bs;predb&bs;08badphr.txt.pre,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;08badphr.txt.pre,0,0
+File=%WinSysDir%&bs;if2k&bs;predb&bs;08badurl.txt.pre,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k-files&bs;db&bs;08badurl.txt.pre,0,0
+Folder=%WinSysDir%&bs;if2k&bs;db
+File=%WinSysDir%&bs;if2k_redir.dll,E:&bs;src&bs;jdks&bs;if2kv2.2.8&bs;if2k&bs;platform&bs;vcpp&bs;debug&bs;if2k_redir.dll,0,0
+
+[SHORTCUTS]
+Shortcut=0,%AppSCFolder%&bs;Internet Filter if2k-library settings,%AppDir%&bs;if2k_library.exe,,,,0,1,%AppDir%,
+Shortcut=0,%AppSCFolder%&bs;Internet Filter if2k-library override control,%AppDir%&bs;if2k_override.exe,,,,0,1,%AppDir%,
+Shortcut=0,%Desktop%&bs;Internet Filter - If2k Library Settings,%AppDir%&bs;if2k_library.exe,,,,0,1,%AppDir%,
+Shortcut=0,%QuickLaunchBar%&bs;Internet Filter if2k-library Override Control,%AppDir%&bs;if2k_override.exe,,,,0,1,%AppDir%,
+
+[REGISTRY_ENTRIES]
+KEY=%HKEY_LOCAL_MACHINE%&bs;SOFTWARE
+KEY=%HKEY_LOCAL_MACHINE%&bs;SOFTWARE&bs;Microsoft
+KEY=%HKEY_LOCAL_MACHINE%&bs;SOFTWARE&bs;Microsoft&bs;Windows NT
+KEY=%HKEY_LOCAL_MACHINE%&bs;SOFTWARE&bs;Microsoft&bs;Windows NT&bs;CurrentVersion
+KEY=%HKEY_LOCAL_MACHINE%&bs;SOFTWARE&bs;Microsoft&bs;Windows NT&bs;CurrentVersion&bs;Windows
+STRING2=%HKEY_LOCAL_MACHINE%&bs;SOFTWARE&bs;Microsoft&bs;Windows NT&bs;CurrentVersion&bs;Windows,AppInit_DLLs,if2k_redir.dll
+KEY=%HKEY_LOCAL_MACHINE%&bs;SOFTWARE&bs;Turner and Sons
+KEY=%HKEY_LOCAL_MACHINE%&bs;SOFTWARE&bs;Turner and Sons&bs;if2k_redir
+KEY=%HKEY_LOCAL_MACHINE%&bs;SOFTWARE&bs;Turner and Sons&bs;if2k
+
+[FILE_TYPES]
+
+[ENVIRONMENT]
+
+[CUSTOM_ACTIONS]
+%WinSysDir%&bs;if2k&bs;bin&bs;if2k_install_lists.exe,,82,1,
+%WinSysDir%&bs;if2k&bs;bin&bs;if2kd.exe,-i,82,1,
+%WinSysDir%&bs;if2k&bs;bin&bs;if2k_cleanup.exe,,18,2,
+
+[SERVICES]
+
+[MERGE_MODULES]
+
+[ODBC]
+

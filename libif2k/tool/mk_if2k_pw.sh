@@ -1,0 +1,1 @@
+g++ -D IF2K_MINI_VERSION=2.2.8 -DJDK_IS_MACOSX=1 if2k_pw.cpp -I ../include -I ../../libjdk/include ../../libjdk/src/jdk_sha1.cpp ../../libjdk/src/jdk_string.cpp ../../libjdk/src/jdk_log.cpp ../../libjdk/src/jdk_util.cpp -o if2k_pw 

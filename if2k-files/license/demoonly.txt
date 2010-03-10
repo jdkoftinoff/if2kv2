@@ -1,0 +1,17 @@
+license_name=Demonstration IF-ONLY
+license_email=
+license_clients=1
+license_valid=1
+serial=demoonly
+mode_ifonly=1
+mode_server=0
+mode_expert=0
+mode_demo=1
+loggerA_enable=0
+loggerB_enable=0
+threads=10
+block_unknown=1
+bad_urls_default_enable=0
+bad_phrases_default_enable=0
+good_urls_default_enable=1
+allow_override=1

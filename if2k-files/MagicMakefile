@@ -1,0 +1,134 @@
+
+include $(TOP)/MagicMakefile
+
+RESULTSDIR=$(shell pwd)/../results
+
+RESULTSINCLUDEDIR=$(RESULTSDIR)/include
+RESULTSLIBDIR=$(RESULTSDIR)/lib
+RESULTSBINDIR=$(RESULTSDIR)/bin
+
+
+CXXFLAGS+=-I$(RESULTSINCLUDEDIR)
+CFLAGS+=-I$(RESULTSINCLUDEDIR)
+MFLAGS+=-I$(RESULTSINCLUDEDIR)
+LDFLAGS+=-L$(RESULTSLIBDIR)
+
+MAKEBIN=$(RESULTSBINDIR)/libjdk_makebin
+COMPILE_LIST=$(RESULTSBINDIR)/if2k_mini_compile_list
+MAKEJZ=$(RESULTSBINDIR)/libjdk_compress
+
+IF2KFILES=$(TOP)/if2k-files
+
+VPATH=$(IF2KFILES)/web:$(IF2KFILES)/license:$(IF2KFILES)/db
+
+IF2K_WEB_FILES = $(wildcard $(IF2KFILES)/web/*.gif) \
+	$(wildcard $(IF2KFILES)/web/*.jpg) \
+	$(wildcard $(IF2KFILES)/web/*.html) \
+	$(wildcard $(IF2KFILES)/web/*.css) \
+	$(wildcard $(IF2KFILES)/web/*.png) \
+
+IF2K_WEB_FILES_JZ = $(addsuffix .jz,$(notdir $(IF2K_WEB_FILES)))
+
+IF2K_LICENSE_FILES = $(wildcard $(IF2KFILES)/license/*.txt)
+
+IF2K_LICENSE_FILES_JZ = $(addsuffix .jz,$(notdir $(IF2K_LICENSE_FILES)))
+
+IF2K_DB_FILES_URL = $(wildcard $(IF2KFILES)/db/*url.txt)
+
+IF2K_DB_FILES_PHR = $(wildcard $(IF2KFILES)/db/*phr.txt) $(wildcard $(IF2KFILES)/db/*nntp.txt)
+
+IF2K_DB_FILES = $(IF2K_DB_FILES_URL) $(IF2K_DB_FILES_PHR)
+
+IF2K_DB_FILES_JZ = $(addsuffix .jz,$(notdir $(IF2K_DB_FILES) ))
+
+
+
+DEST_DBDIR = $(RESULTSDIR)/lib/if2k/db
+
+DEST_DBDIRFILES_URL = $(addprefix $(DEST_DBDIR)/,$(notdir $(IF2K_DB_FILES_URL)))
+
+DEST_DBDIRFILES_PHR = $(addprefix $(DEST_DBDIR)/,$(notdir $(IF2K_DB_FILES_PHR)))
+
+DEST_DBDIRFILES = $(DEST_DBDIRFILES_URL) $(DEST_DBDIRFILES_PHR)
+
+
+
+DEST_PRECOMPDBDIR = $(RESULTSDIR)/lib/if2k/predb
+
+DEST_PRECOMPDBDIRFILES_URL = $(addprefix $(DEST_PRECOMPDBDIR)/,$(addsuffix .pre,$(notdir $(IF2K_DB_FILES_URL))))
+
+DEST_PRECOMPDBDIRFILES_PHR = $(addprefix $(DEST_PRECOMPDBDIR)/,$(addsuffix .pre,$(notdir $(IF2K_DB_FILES_PHR))))
+
+DEST_PRECOMPDBDIRFILES = $(DEST_PRECOMPDBDIRFILES_URL) $(DEST_PRECOMPDBDIRFILES_PHR) 
+
+
+DEST_WEBDIR = $(RESULTSDIR)/lib/if2k/web
+
+DEST_WEBFILES = $(addprefix $(DEST_WEBDIR)/,$(notdir $(IF2K_WEB_FILES)))
+
+ZIPDIR = $(RESULTSDIR)/lib/if2k/
+
+$(DEST_WEBDIR)/% : %
+	cp $< $@
+
+$(DEST_DBDIR)/%.txt : %.txt
+	cp $< $@
+
+%.jz : % $(MAKEJZ)
+	$(MAKEJZ) <$< >$@
+
+$(DEST_PRECOMPDBDIR)/%url.txt.pre : %url.txt #$(COMPILE_LIST)
+	$(COMPILE_LIST) url $< $@ 0 "" && cp $< $(DEST_PRECOMPDBDIR)
+
+$(DEST_PRECOMPDBDIR)/%phr.txt.pre : %phr.txt #$(COMPILE_LIST)
+	$(COMPILE_LIST) alpha $< $@ 0 "" && cp $< $(DEST_PRECOMPDBDIR)
+
+
+
+all : $(ZIPDIR) $(ZIPDIR)/if2kdb.zip $(ZIPDIR)/if2kweb.zip \
+	$(DEST_DBDIR) $(DEST_WEBDIR) $(DEST_PRECOMPDBDIR) $(DEST_DBDIRFILES) $(DEST_PRECOMPDBDIRFILES) $(DEST_WEBFILES)
+
+install : all
+
+$(DEST_PRECOMPDBDIR) : 
+	-@mkdir $(DEST_PRECOMPDBDIR) >/dev/null 2>&1
+
+$(DEST_DBDIR) : 
+	-@mkdir $(DEST_DBDIR) >/dev/null 2>&1
+
+$(DEST_WEBDIR) : 
+	-@mkdir $(DEST_WEBDIR) >/dev/null 2>&1
+
+$(DEST_DBDIRFILES) :  $(IF2K_DB_FILES)
+
+$(DEST_PRECOMPDBDIRFILES_URL) : $(IF2K_DBFILES_URL) 
+
+$(DEST_PRECOMPDBDIRFILES_PHR) : $(IF2K_DBFILES_PHR)
+
+$(ZIPDIR) : 
+	-@mkdir $(ZIPDIR) >/dev/null 2>&1
+
+$(ZIPDIR)/if2kdb.zip : $(IF2K_DB_FILES)
+	(cd $(IF2KFILES)/db && zip -uD $(ZIPDIR)/if2kdb.zip $(notdir $(IF2K_DB_FILES)))
+
+$(ZIPDIR)/if2kweb.zip : $(IF2K_WEB_FILES)
+	(cd $(IF2KFILES)/web && zip -uD $(ZIPDIR)/if2kweb.zip $(notdir $(IF2K_WEB_FILES)))
+
+#$(RESULTSDIR)/lib/libif2k-files.a
+
+$(RESULTSLIBDIR)/libif2k-files.a : $(RESULTSDIR)/lib/libif2k-files.a( if2k_web_files.o if2k_license_files.o if2k_db_files.o )
+	$(RANLIB) $(RESULTSLIBDIR)/libif2k-files.a 
+
+if2k_web_files.cpp if2k_web_files.h : $(IF2K_WEB_FILES_JZ)
+	$(MAKEBIN) web if2k_web_files $(IF2K_WEB_FILES_JZ)
+
+if2k_license_files.cpp if2k_license_files.h : $(IF2K_LICENSE_FILES_JZ)
+	$(MAKEBIN) license if2k_license_files $(IF2K_LICENSE_FILES_JZ)
+
+if2k_db_files.cpp if2k_db_files.h : $(IF2K_DB_FILES_JZ)
+	$(MAKEBIN) db if2k_db_files $(IF2K_DB_FILES_JZ)
+
+clean :
+
+realclean : clean
+

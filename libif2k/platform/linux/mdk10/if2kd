@@ -1,0 +1,76 @@
+#! /bin/sh
+
+# chkconfig: 35 10 99
+# description: The if2k internet filter daemon
+
+function success() {
+    echo " Success "
+}
+
+function failure() {
+    echo " Failure "
+}
+
+if [ -x /etc/rc.d/init.d/functions ]
+then
+    . /etc/rc.d/init.d/functions
+fi
+
+
+IF2KD_BIN="/usr/sbin/if2kd"
+PIDFILE="/var/run/if2kd.pid"
+
+test -x "$IF2KD_BIN" || exit 5
+
+case "$1" in
+    start)
+        echo -n "Starting Internet Filter if2kd service "
+
+        if [ -f "$PIDFILE" ]
+        then
+            PID=`cat "$PIDFILE"`
+            if [ -n "$PID" ]
+                then
+                "$IF2KD_BIN" --stop
+            fi
+        fi
+
+        if "$IF2KD_BIN"
+        then
+            success;echo
+            exit 0
+        else
+            failure;echo
+            exit 1
+        fi
+        ;;
+    stop)
+        echo -n "Shutting down Internet Filter if2kd:"
+        "$IF2KD_BIN" --stop
+        success;echo
+        ;;
+    restart)
+        $0 stop
+        $0 start
+        ;;
+    force-reload)
+        $0 restart
+        ;;
+    reload)
+        "$IF2KD_BIN" --restart
+        success;echo
+        ;;
+    status)
+        echo -n "Checking for service if2kd: "
+        PID=`cat /var/run/if2kd.pid`
+        if [ -n "$PID" ]
+        then
+            exit 1;
+        else
+            exit 0;
+        fi
+        ;;
+    *)
+        echo "Usage: $0 {start|stop|status|try-restart|restart|force-reload|reload}"
+        exit 1
+esac

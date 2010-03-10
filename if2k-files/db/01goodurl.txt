@@ -1,0 +1,5 @@
+internetfilter.com
+microsoft.com
+localhost
+127.0.0.1
+

@@ -1,0 +1,3 @@
+#! /bin/bash
+
+((cd debug && make $* ) & (cd release && make $*))
