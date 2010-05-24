@@ -323,6 +323,7 @@ public:
   virtual bool trigger_precompile();
   virtual void fix_url_list( jdk_dynbuf &bout, const jdk_buf &bin );
 
+  virtual bool is_fingerprint_valid() const { return fingerprint_valid; }
 
   virtual void verify_url( 
     if2k_mini_kernel_request &request    
@@ -381,6 +382,7 @@ protected:
   bool block_sites_with_bad_phrase_in_content;
   int content_match_threshold;
   jdk_str<4096> nntp_redirect_group;
+  bool fingerprint_valid;
 
 private:
   if2k_mini_url_scanner_precompiled *precompiled_good_urls[8];

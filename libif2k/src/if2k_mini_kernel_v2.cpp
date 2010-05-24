@@ -37,6 +37,7 @@ if2k_mini_kernel_v2::if2k_mini_kernel_v2(if2k_mini_kernel_v2_settings_collection
   settings( settings_collection_.get_merged_settings() )
 {
   int i;
+  fingerprint_valid=false;
   for( i=0; i<8; ++i )
   {
     precompiled_good_urls[i] = 0;
@@ -213,6 +214,8 @@ void if2k_mini_kernel_v2::load()
 
   jdk_mkdir( settings.get( cache_dir ).c_str(), 0750 );
 
+  fingerprint_valid=true;
+
   for( i=0; i<8; ++i )
   {
 
@@ -228,8 +231,12 @@ void if2k_mini_kernel_v2::load()
           "User good URL", 
           good_categories_name[i], 
           "", 
-          0 
+          0,
+          true
           );
+  
+      fingerprint_valid &= user_good_urls[i]->is_fingerprint_valid();
+
 #if IF2K_MINI_NNTP
       tmp_filename.form( "%02dgoodnntp.txt", i+1 );
       user_good_nntp[i] =
@@ -242,7 +249,8 @@ void if2k_mini_kernel_v2::load()
           "User good newsgroup", 
           good_categories_name[i], 
           "", 
-          0 
+          0,
+          false
           );
 #endif
     }
@@ -259,7 +267,11 @@ void if2k_mini_kernel_v2::load()
           "User bad URL", 
           categories_name[i], 
           "", 
-          0 );
+          0,
+          false
+          );
+
+      fingerprint_valid &= user_bad_urls[i]->is_fingerprint_valid();
 
       tmp_filename.form( "%02dpostbadurl.txt", i+1 );
       user_postbad_urls[i] =
@@ -272,7 +284,10 @@ void if2k_mini_kernel_v2::load()
           "User postbad URL", 
           categories_name[i], 
           "", 
-          0 );
+          0,
+          true
+          );
+      fingerprint_valid &= user_postbad_urls[i]->is_fingerprint_valid();
       
       tmp_filename.form( "%02dbadphr.txt", i+1 );
       user_bad_phrases[i] =
@@ -285,8 +300,11 @@ void if2k_mini_kernel_v2::load()
           "User bad phrase",
           categories_name[i], 
           "", 
-          0 
+          0,
+          false
           );
+      fingerprint_valid &= user_bad_phrases[i]->is_fingerprint_valid();
+
 #if IF2K_MINI_NNTP          
       tmp_filename.form( "%02dbadnntp.txt", i+1 );
       user_bad_nntp[i] =
@@ -299,7 +317,8 @@ void if2k_mini_kernel_v2::load()
           "User bad newsgroup", 
           categories_name[i], 
           "", 
-          0 
+          0,
+          false
           );
 #endif        
     }
@@ -1043,4 +1062,5 @@ void if2k_mini_kernel_v2::verify_nntp_article(
 {
   // todo: determine if content is bad
 }
+
 
